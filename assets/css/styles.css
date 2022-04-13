@@ -34,6 +34,10 @@ html, body{
     margin: 0 30px;
 }
 
+.header_navbar .menu_list  a:hover{
+    color: #D32046;
+}
+
 .header_navbar .menu_list li a{
     text-decoration: none;
     text-transform: uppercase;
@@ -41,6 +45,18 @@ html, body{
     font-size: 12px;
     line-height: 16px;
     color: #000000;
+}
+/* .header_navbar .menu_list .item.active{
+    color: #D32046;
+    border-bottom: 3px solid #D32046;
+} */
+
+.header_navbar .menu_list .dropdown::after{
+    content: "";
+    height: 10px;
+    width: 100%;
+    background: #FFFFFF;
+    display: block;
 }
 
 .dropdown-content{
