@@ -1007,7 +1007,7 @@ html, body{
 }
 
 .slick-initialized .slick-slide{
-    margin: 0 30px;
+    margin: 0 15px;
 }
 .slick-arrow{
     position: absolute;
