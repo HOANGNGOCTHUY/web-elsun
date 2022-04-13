@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEB ELSUN</title>
+    <title>DỊCH VỤ CỦA CHÚNG TÔI</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
 
+</head>
 <body>
-   <div id="app">
+    <div id="app">
         <div class="header">
             <div class="header_logo">
                 <img src="./assets/images/logo.png" alt="">
@@ -22,7 +23,7 @@
                     <li class="item active"><a href="index.html">Trang chủ</a></li>
                     <li class="item"><a href="#"> Nội thất 5.0</a></li>
                     <li class="dropdown">
-                        <a href="dichvu.html"> DỊCH VỤ CỦA ELSUN <i class="icon-down fa-solid fa-angle-down"></i></a>
+                        <a href="#"> DỊCH VỤ CỦA ELSUN <i class="icon-down fa-solid fa-angle-down"></i></a>
                         <div class="dropdown-content">
                             <a href="#">Link 1</a>
                             <a href="#">Link 2</a>
@@ -30,7 +31,7 @@
                         </div>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropbtn"> SẢN PHẨM NỘI THẤT <i class="icon-down fa-solid fa-angle-down"></i></a>
+                        <a href="product.html" class="dropbtn"> SẢN PHẨM NỘI THẤT <i class="icon-down fa-solid fa-angle-down"></i></a>
                         <div class="dropdown-content">
                             <a href="#">Link 1</a>
                             <a href="#">Link 2</a>
@@ -54,6 +55,7 @@
                             
                             <h4 class="header_cart-heading">Sản phẩm đã thêm</h4>
                             <ul class="header_cart-list-item">
+                                //Cart item
                                 <li class="header_cart-item">
                                     <img src="./assets/images/logo.png" alt="" class="header_cart-img">
                                     <div class="header_cart-item-info">
@@ -84,322 +86,771 @@
             
         
         </div>
-
         <!-- End header -->
-         <div class="grid wrap-slider ">
+        <div class="wrap-slides">
             <div class="row">
-                <div class="col l-6">
-                    <div class="slider-img">
-                        <img src="./assets/images/slider.png" alt="" class="img-slider">
+                <div class="col l-10">
+                    <div class="slider">
+                        <div class="bg-slider"></div>
+                        <div class="slider-content">
+                            <div class="slider-heading">
+                                <div class="slider-title">Phân vùng thoải mái trong một không gian mở</div>
+                                <p class="slider-description">Những yếu tố này bổ sung cho nhau tạo thành một dòng chảy liền mạch xung quanh bạn. Bạn có thể tùy ý sáng tạo hay thêm nếm những yếu tố nghệ thuật...</p>
+                                <a href="#" class="btn-readmore">Xem thêm</a>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="slider-image">
+                                <img src="./assets/images/dichvu/slider-dv.png" alt="Banner-Gioi-Thieu-San-Pham.">
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col l-6">
+
+                <div class="col l-2">
+                    <div class="pagination">
+                        <div class="page-item"><i class="fa-solid fa-arrow-up-long"></i></div>
+                        <div class="page-item active"></div>
+                        <div class="page-item"></div>
+                        <div class="page-item"></div>
+                        <div class="page-item"></div>
+                        <div class="page-item"></div>
+                        <div class="page-item"><i class="fa-solid fa-down-long"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End slider -->
+        <div class="wrap-services">
+            <div class="row">
+                <div class="col l-8">
+                        <div class="services-left">
+                            <div class="heading">
+                                <div class="title">
+                                    NỘI THẤT 5.0
+                                </div>
+                                <a href="#" class="services-readmore">
+                                    Xem thêm 
+                                    <i class="services-icon fa-solid fa-arrow-right-long"></i>
+                                </a>
+                            </div>
+                            <div class="services-img" >
+                                <img src="./assets/images/dichvu/bancafe.png" alt="">
+                            </div>
+                        </div>
+                   </div>
+                <div class="col l-4">
                     <div class="row">
-                        <div class="col l-8">
-                            <div class="header_content">
-                                <div class="slider_head">
-                                    <div class="slider_line"></div>
-                                    <span class="slider_head-name">bộ sưu tập tủ đầu giường</span>
-                                    <span class="slider-head-heading">BST01</span>
+                        <div class="col l-12">
+                            <div class="services-right-up">
+                                <div class="heading">
+                                    <div class="title">
+                                        NỘI THẤT TRUYỀN THỐNG
+                                    </div>
+                                    <a href="#" class="services-readmore">
+                                        Xem thêm 
+                                        <i class="services-icon fa-solid fa-arrow-right-long"></i>
+                                    </a>
                                 </div>
-                                <div class="slider_info">
-                                    <div class="slider_info-name">Tủ đầu giường tích hợp sạc không dây và ổ cắm âm bàn</div>
-                                    <span class="slider_info-price">4,500,000</span>
-                                    <a href="#" class="btn btn-buying">Mua ngay</a>
+                                <div class="services-img">
+                                    <img src="./assets/images/dichvu/bangocsofa.png" alt="">
                                 </div>
                             </div>
-                        </div>  
-                        <div class="col l-4">
-                            <div class="pagination">
-                                <div class="page-item"><i class="fa-solid fa-arrow-up-long"></i></div>
-                                <div class="page-item active"></div>
-                                <div class="page-item"></div>
-                                <div class="page-item"></div>
-                                <div class="page-item"></div>
-                                <div class="page-item"></div>
-                                <div class="page-item"><i class="fa-solid fa-down-long"></i></div>
-                        </div>
-
-                            <!-- <ul class="pagination">
-                                <li class="page-item">
-                                    <a href="#" class="page-link" aria-label="Previous">
-                                        <span aria-hidden="true">«</span>
-                                    </a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item active"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item"><a class="page-link" href="#">4</a></li>
-                                <li class="page-item"><a class="page-link" href="#">5</a></li>
-                                <li class="page-item">
-                                    <a href="#" class="page-link" aria-label="Next">
-                                        <span aria-hidden="true">»</span>
-                                    </a>
-                                </li>
-                            </ul> -->
                             
-
-                        </div>                 
-                     </div>
-                    
-                    
-                    
-                </div>   
-            </div>
-        </div> 
-
-        <div class="wrap-product-up">
-            <div class="row">
-                <div class="col l-8 m-12 c-12">
-                    <div class="wrap-product-left">
-                        <div class="img-product">
-                            <img src="./assets/images/sofa.png" alt="" class="img-product">
                         </div>
-                        <div class="wrap-product-info">
-                            <span class="wrap-product-saleof">20% sale off</span>
-                            <div class="wrap-product-title">
-                                <h4 class="wrap-product-heading">Nội thất truyền thống</h4>
-                                <span class="wrap-product-price">Giá từ 1,200,000</span>
-                                <div class="wrap-line"></div>
+                        <div class="col l-12">
+                            <div class="services-right-down">
+                                <div class="heading">
+                                    <div class="title">
+                                        ĐỒ GIA DỤNG TIỆN ÍCH
+                                    </div>
+                                    <a href="#" class="services-readmore">
+                                        Xem thêm 
+                                        <i class="services-icon fa-solid fa-arrow-right-long"></i>
+                                    </a>
+                                </div>
+                                <div class="services-img">
+                                    <img src="./assets/images/dichvu/amnuoc.png" alt="">
+                                </div>
                             </div>
-                            
-                            <a href="#" class="wrap-product-desc">Xem thêm nhiều sản phẩm nội thất khác 
-                                <i class="wrap-icon fa-solid fa-arrow-right-long"></i>
-                            </a>
                         </div>
                     </div>
                 </div>
-                
-                <div class="col l-4 m-12 c-12">
-                    <div class="wrap-product-right">
-                        <div class="wrap-product-info">
-                            <div class="wrap-product-title">
-                                <h4 class="wrap-product-heading">Đồ gia dụng tiện ích</h4>
-                                <span class="wrap-product-price">Giá từ 200,000</span>
-                                <div class="wrap-line"></div>
-                            </div>
-                            
-                            <a href="#" class="wrap-product-desc">sản phẩm khác 
-                                <i class="wrap-icon fa-solid fa-arrow-right-long"></i>
-                            </a >
+            </div>
+        </div>
+        <!-- End services -->
+        
+        <div class="head-product product-service ">
+            <div class="row">
+                <div class="col l-12">
+                        <div class="head">
+                            <h1 class="head-title">DỊCH VỤ CỦA CHÚNG TÔI</h1>
                         </div>
-                       <div class="img-product">
-                            <img src="./assets/images/noicom.png" alt="" class="img-product">
+                        <div class="head-list">
+                            <div class="head-line"></div>
+                            <div class="head-item "><a href="#thietke">Thiết kế</a></div>
+                            <div class="head-item"><a href="#thicong">THI CÔNG</a></div>
+                            <div class="head-item"><a href="#studio">STUDIO SÁNG TẠO</a></div>
+                        </div>
+                </div>
+            </div>
+
+            <div class="image-slider">
+                <div class="image-item">
+                    <div class="image">
+                        <img src="./assets/images/dichvu/design2.png" alt="">
+                    </div>
+                </div>
+                <div class="image-item">
+                    <div class="image">
+                        <img src="./assets/images/dichvu/design3.png" alt="">
+                    </div>
+                </div>
+                <div class="image-item">
+                    <div class="image">
+                        <img src="./assets/images/dichvu/design4.png" alt="">
+                    </div>
+                </div>
+                <div class="image-item">
+                    <div class="image">
+                        <img src="./assets/images/dichvu/design5.png" alt="">
+                    </div>
+                </div>
+                <div class="image-item">
+                    <div class="image">
+                        <img src="./assets/images/dichvu/design6.png" alt="">
+                    </div>
+                </div>
+                <div class="image-item">
+                    <div class="image">
+                        <img src="./assets/images/dichvu/design2.png" alt="">
+                    </div>
+                </div>
+                <div class="image-item">
+                    <div class="image">
+                        <img src="./assets/images/dichvu/design2.png" alt="">
+                    </div>
+                </div>
+                <div class="image-item">
+                    <div class="image">
+                        <img src="./assets/images/dichvu/design2.png" alt="">
+                    </div>
+                </div>
+                </div>
+        </div>
+
+
+        
+
+        <!-- End DỊCH VỤ  -->
+
+
+        <div class="head-product product-service ">
+            <div class="row">
+                <div class="col l-12">
+                        <div class="head">
+                            <h1 class="head-title" id="thietke">dự án thiết kế</h1>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid wide design">
+            <div class="row">
+                <div class="col l-4">
+                    <div class="design-product">
+                        <div class="design-img">
+                            <img src="./assets/images/dichvu/design2.png" alt="">
+                        </div>
+                        <div class="design-content">
+                            <div class="title">
+                                Relax with yourself!
+                            </div>
+                            <div class="heading">
+                                Không gian sống thượng hạng
+                            </div>
+                            <div class="desc">
+                                <p>
+                                    DT: 58m² - 71m² | Phong cách: Japandi
+                                </p> 
+                               <span>
+                                Thiết kế nội thất chung cư Vinhome Grand Park - TP.HCM
+                               </span> 
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col l-4">
+                    <div class="design-product">
+                        <div class="design-img">
+                            <img src="./assets/images/dichvu/design3.png" alt="">
+                        </div>
+                        <div class="design-content">
+                            <div class="title">
+                                Relax with yourself!
+                            </div>
+                            <div class="heading">
+                                Không gian sống thượng hạng
+                            </div>
+                            <div class="desc">
+                                <p>
+                                    DT: 58m² - 71m² | Phong cách: Japandi
+                                </p> 
+                               <span>
+                                Thiết kế nội thất chung cư Vinhome Grand Park - TP.HCM
+                               </span> 
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col l-4">
+                    <div class="design-product">
+                        <div class="design-img">
+                            <img src="./assets/images/dichvu/design4.png" alt="">
+                        </div>
+                        <div class="design-content">
+                            <div class="title">
+                                Relax with yourself!
+                            </div>
+                            <div class="heading">
+                                Không gian sống thượng hạng
+                            </div>
+                            <div class="desc">
+                                <p>
+                                    DT: 58m² - 71m² | Phong cách: Japandi
+                                </p> 
+                               <span>
+                                Thiết kế nội thất chung cư Vinhome Grand Park - TP.HCM
+                               </span> 
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col l-4">
+                    <div class="design-product">
+                        <div class="design-img">
+                            <img src="./assets/images/dichvu/design5.png" alt="">
+                        </div>
+                        <div class="design-content">
+                            <div class="title">
+                                Relax with yourself!
+                            </div>
+                            <div class="heading">
+                                Không gian sống thượng hạng
+                            </div>
+                            <div class="desc">
+                                <p>
+                                    DT: 58m² - 71m² | Phong cách: Japandi
+                                </p> 
+                               <span>
+                                Thiết kế nội thất chung cư Vinhome Grand Park - TP.HCM
+                               </span> 
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col l-4">
+                    <div class="design-product">
+                        <div class="design-img">
+                            <img src="./assets/images/dichvu/design6.png" alt="">
+                        </div>
+                        <div class="design-content">
+                            <div class="title">
+                                Relax with yourself!
+                            </div>
+                            <div class="heading">
+                                Không gian sống thượng hạng
+                            </div>
+                            <div class="desc">
+                                <p>
+                                    DT: 58m² - 71m² | Phong cách: Japandi
+                                </p> 
+                               <span>
+                                Thiết kế nội thất chung cư Vinhome Grand Park - TP.HCM
+                               </span> 
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col l-4">
+                    <div class="design-product">
+                        <div class="design-img">
+                            <img src="./assets/images/dichvu/design2.png" alt="">
+                        </div>
+                        <div class="design-content">
+                            <div class="title">
+                                Relax with yourself!
+                            </div>
+                            <div class="heading">
+                                Không gian sống thượng hạng
+                            </div>
+                            <div class="desc">
+                                <p>
+                                    DT: 58m² - 71m² | Phong cách: Japandi
+                                </p> 
+                               <span>
+                                Thiết kế nội thất chung cư Vinhome Grand Park - TP.HCM
+                               </span> 
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="design-readmore" >
+                <a href="#" class="design-button">xem tất cả</a>
+            </div>
+        </div>
+
+
+        <!-- END DESIGN -->
+        <div class="grid banner">
+            <div class="row">
+                <div class="col l-12">
+                    <div class="services-banner">
+                        <div class="services-content">
+                            <div class="title">
+                                ĐỘNG LỰC & ĐỔI MỚI
+                            </div>
+                            <div class="desc">
+                                Không ngừng theo đuổi<br>
+                                sự sáng tạo hoàn hảo
+                            </div>
+
+                            <a href="#" class="banner-btn">Xem thêm</a>
+                        </div>
+                        <div class="baner-img">
+                            <img src="./assets/images/dichvu/baner.png" alt="">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="wrap-product-down">
+        <!-- END banner-->
+
+        <div class="head-product product-service ">
             <div class="row">
-                 <div class="col l-5">
-                    <div class="wraper-product-left">
-                        <div class="img-product">
-                            <img src="./assets/images/ban.png" alt="" class="img-product">
+                <div class="col l-12">
+                        <div class="head">
+                            <h1 class="head-title" id="thicong" >công trình thi công</h1>
                         </div>
-                        <div class="wraper-product-info">
-                            <span class="wrap-product-saleof">sắp ra mắt</span>
-                            <div class="wrap-product-title">
-                                <h4 class="wrap-product-heading">Studio sáng tạo</h4>
-                                <span class="wrap-product-price">Giá từ 2,000,000</span>
-                                <div class="wrap-line"></div>
-                            </div>
-                            
-                            <a href="#" class="wrap-product-desc">tìm hiểu thêm
-                                <i class="wrap-icon fa-solid fa-arrow-right-long"></i>
-                            </a>
-                        </div>
-                    </div>
                 </div>
-                <div class="col l-7">
-                    <div class="wraper-product-right">
-                        <div class="wraper-product-info">
-                            <span class="wrap-product-saleof">hàng mới về</span>
-                            <div class="wrap-product-title">
-                                <h4 class="wrap-product-heading">dụng cụ làm việc tiện ích</h4>
-                                <span class="wrap-product-price">Giá từ 450,000</span>
-                                <div class="wrap-line"></div>
-                            </div>
-                            
-                            <a href="#" class="wrap-product-desc">tìm hiểu thêm nhiều sản phẩm khác
-                                <i class="wrap-icon fa-solid fa-arrow-right-long"></i>
-                            </a>
-                        </div>
-                       <div class="img-product">
-                            <img src="./assets/images/dungculamviectienich.png" alt="" class="img-product">
-                        </div>
-                    </div>
-                </div>
-                
-                
             </div>
         </div>
 
-        <div class="grid seller">
-            <div class="row">
-                <div class="l-4 m-4 c-12 l-o-4 m-o-4">
-                    <div class="seller-title">
-                        <h1>best seller</h1>
-                    </div>
-                </div>
-            </div>
+        <div class="grid wide design">
             <div class="row">
                 <div class="col l-4">
-                    <div class="product-category">
-                        <div class="category"><a href="#">Nội thất truyền thống</a></div>
-                    </div>
-                    <div class="product-grid ">
-                        <div class="bg-seller"></div>
-                        <div class="product-img bg-seller-pink">
-                            
-                            <a href="#" class="image"> 
-                                <img  src="./assets/images/product1.png" alt="">
-                            </a>
-                            <span class="product-sale">-20%</span>
-                            <ul class="product-links">
-                                <li><a href="#"><i class="links-icon fa fa-heart"></i></a></li>
-                                <li><a href="#"><i class="links-icon fa-solid fa-gem"></i></a></li>
-                                <li><a href="#" class="btn btn-buy">Mua ngay</a></li>
-                            </ul>
+                    <div class="design-product">
+                        <div class="design-img">
+                            <img src="./assets/images/dichvu/design3.png" alt="">
                         </div>
-                        <div class="product-content">
-                            <h3 class="product-heading"><a href="#">Armchair with wooden frame</a> </h3>
-                            <span class="classify">TF-BST02-01</span>
-                            <span class="seller-price">900,000</span>
-                            <div class="seller-line"></div>
+                        <div class="design-content">
+                            <div class="title">
+                                Relax with yourself!
+                            </div>
+                            <div class="heading">
+                                Không gian sống thượng hạng
+                            </div>
+                            <div class="desc">
+                                <p>
+                                    DT: 58m² - 71m² | Phong cách: Japandi
+                                </p> 
+                               <span>
+                                Thiết kế nội thất chung cư Vinhome Grand Park - TP.HCM
+                               </span> 
+                            </div>
                         </div>
                     </div>
+                    
                 </div>
                 <div class="col l-4">
-                    <div class="product-category">
-                        <div class="category"><a href="#">Nội thất truyền thống</a></div>
-                    </div>
-                    <div class="product-grid">
-                        <!-- <div class="bg-seller"></div> -->
-                        <div class="product-img bg-seller-green">
-                            <a href="#" class="image"> 
-                                <img  src="./assets/images/product2.png" alt="">
-                            </a>
-                            <ul class="product-links">
-                                <li><a href="#"><i class="links-icon fa fa-heart"></i></a></li>
-                                <li><a href="#"><i class="links-icon fa fa-heart"></i></a></li>
-                                <li><a href="#" class="btn btn-buy">Mua ngay</a></li>
-                            </ul>
+                    <div class="design-product">
+                        <div class="design-img">
+                            <img src="./assets/images/dichvu/design3.png" alt="">
                         </div>
-                        <div class="product-content">
-                            <h3 class="product-heading"><a href="#">Armchair with wooden frame</a> </h3>
-                            <span class="classify">TF-BST02-01</span>
-                            <span class="seller-price">900,000</span>
-                            <div class="seller-line"></div>
+                        <div class="design-content">
+                            <div class="title">
+                                Relax with yourself!
+                            </div>
+                            <div class="heading">
+                                Không gian sống thượng hạng
+                            </div>
+                            <div class="desc">
+                                <p>
+                                    DT: 58m² - 71m² | Phong cách: Japandi
+                                </p> 
+                               <span>
+                                Thiết kế nội thất chung cư Vinhome Grand Park - TP.HCM
+                               </span> 
+                            </div>
                         </div>
                     </div>
+                    
                 </div>
                 <div class="col l-4">
-                    <div class="product-category">
-                        <div class="category"><a href="#">Nội thất truyền thống</a></div>
-                    </div>
-                    <div class="product-grid">
-                        <!-- <div class="bg-seller"></div> -->
-                        <div class="product-img bg-seller-yellow">
-                            <a href="#" class="image"> 
-                                <img  src="./assets/images/product3.png" alt="">
-                            </a>
-                            <ul class="product-links">
-                                <li><a href="#"><i class="links-icon fa fa-heart"></i></a></li>
-                                <li><a href="#"><i class="links-icon fa fa-heart"></i></a></li>
-                                <li><a href="#" class="btn btn-buy">Mua ngay</a></li>
-                            </ul>
+                    <div class="design-product">
+                        <div class="design-img">
+                            <img src="./assets/images/dichvu/design3.png" alt="">
                         </div>
-                        <div class="product-content">
-                            <h3 class="product-heading"><a href="#">Armchair with wooden frame</a> </h3>
-                            <span class="classify">TF-BST02-01</span>
-                            <span class="seller-price">900,000</span>
-                            <div class="seller-line"></div>
+                        <div class="design-content">
+                            <div class="title">
+                                Relax with yourself!
+                            </div>
+                            <div class="heading">
+                                Không gian sống thượng hạng
+                            </div>
+                            <div class="desc">
+                                <p>
+                                    DT: 58m² - 71m² | Phong cách: Japandi
+                                </p> 
+                               <span>
+                                Thiết kế nội thất chung cư Vinhome Grand Park - TP.HCM
+                               </span> 
+                            </div>
                         </div>
                     </div>
+                    
                 </div>
                 <div class="col l-4">
-                    <div class="product-category">
-                        <div class="category"><a href="#">Nội thất truyền thống</a></div>
-                    </div>
-                    <div class="product-grid">
-                        <!-- <div class="bg-seller"></div> -->
-                        <div class="product-img">
-                            <a href="#" class="image"> 
-                                <img  src="./assets/images/product4.png" alt="">
-                            </a>
-                            <ul class="product-links">
-                                <li><a href="#"><i class="links-icon fa fa-heart"></i></a></li>
-                                <li><a href="#"><i class="links-icon fa fa-heart"></i></a></li>
-                                <li><a href="#" class="btn btn-buy">Mua ngay</a></li>
-                            </ul>
+                    <div class="design-product">
+                        <div class="design-img">
+                            <img src="./assets/images/dichvu/design3.png" alt="">
                         </div>
-                        <div class="product-content">
-                            <h3 class="product-heading"><a href="#">Armchair with wooden frame</a> </h3>
-                            <span class="classify">TF-BST02-01</span>
-                            <span class="seller-price">900,000</span>
-                            <div class="seller-line"></div>
+                        <div class="design-content">
+                            <div class="title">
+                                Relax with yourself!
+                            </div>
+                            <div class="heading">
+                                Không gian sống thượng hạng
+                            </div>
+                            <div class="desc">
+                                <p>
+                                    DT: 58m² - 71m² | Phong cách: Japandi
+                                </p> 
+                               <span>
+                                Thiết kế nội thất chung cư Vinhome Grand Park - TP.HCM
+                               </span> 
+                            </div>
                         </div>
                     </div>
+                    
                 </div>
                 <div class="col l-4">
-                    <div class="product-category">
-                        <div class="category"><a href="#">Nội thất truyền thống</a></div>
-                    </div>
-                    <div class="product-grid">
-                        <!-- <div class="bg-seller"></div> -->
-                        <div class="product-img">
-                            <a href="#" class="image"> 
-                                <img  src="./assets/images/product5.png" alt="">
-                            </a>
-                            <ul class="product-links">
-                                <li><a href="#"><i class="links-icon fa fa-heart"></i></a></li>
-                                <li><a href="#"><i class="links-icon fa fa-heart"></i></a></li>
-                                <li><a href="#" class="btn btn-buy">Mua ngay</a></li>
-                            </ul>
+                    <div class="design-product">
+                        <div class="design-img">
+                            <img src="./assets/images/dichvu/design3.png" alt="">
                         </div>
-                        <div class="product-content">
-                            <h3 class="product-heading"><a href="#">Armchair with wooden frame</a> </h3>
-                            <span class="classify">TF-BST02-01</span>
-                            <span class="seller-price">900,000</span>
-                            <div class="seller-line"></div>
+                        <div class="design-content">
+                            <div class="title">
+                                Relax with yourself!
+                            </div>
+                            <div class="heading">
+                                Không gian sống thượng hạng
+                            </div>
+                            <div class="desc">
+                                <p>
+                                    DT: 58m² - 71m² | Phong cách: Japandi
+                                </p> 
+                               <span>
+                                Thiết kế nội thất chung cư Vinhome Grand Park - TP.HCM
+                               </span> 
+                            </div>
                         </div>
                     </div>
+                    
                 </div>
                 <div class="col l-4">
-                    <div class="product-category">
-                        <div class="category"><a href="#">Nội thất truyền thống</a></div>
-                    </div>
-                    <div class="product-grid">
-                        <!-- <div class="bg-seller"></div> -->
-                        <div class="product-img">
-                            <a href="#" class="image"> 
-                                <img  src="./assets/images/product6.png" alt="">
-                            </a>
-                            <ul class="product-links">
-                                <li><a href="#"><i class="links-icon fa fa-heart"></i></a></li>
-                                <li><a href="#"><i class="links-icon fa fa-heart"></i></a></li>
-                                <li><a href="#" class="btn btn-buy">Mua ngay</a></li>
-                            </ul>
+                    <div class="design-product">
+                        <div class="design-img">
+                            <img src="./assets/images/dichvu/design3.png" alt="">
                         </div>
-                        <div class="product-content">
-                            <h3 class="product-heading"><a href="#">Armchair with wooden frame</a> </h3>
-                            <span class="classify">TF-BST02-01</span>
-                            <span class="seller-price">900,000</span>
-                            <div class="seller-line"></div>
+                        <div class="design-content">
+                            <div class="title">
+                                Relax with yourself!
+                            </div>
+                            <div class="heading">
+                                Không gian sống thượng hạng
+                            </div>
+                            <div class="desc">
+                                <p>
+                                    DT: 58m² - 71m² | Phong cách: Japandi
+                                </p> 
+                               <span>
+                                Thiết kế nội thất chung cư Vinhome Grand Park - TP.HCM
+                               </span> 
+                            </div>
                         </div>
                     </div>
+                    
                 </div>
             </div>
+            <div class="design-readmore" >
+                <a href="#" class="design-button">xem tất cả</a>
+            </div>
+        </div>
+        <!-- END CONGTRINH-->
+        <div class="grid banner">
+            <div class="row">
+                <div class="col l-12">
+                    <div class="services-banner">
+                        <div class="services-about">
+                            <div class="heading">
+                                Đôi lời về chúng tôi
+                            </div>
+                            <div class="description">
+                                Đánh vào thị trường đã có mặt nhiều doanh nghiệp, nhưng không phải vì vậy mà nội thất 5.0 ELSUN phải chùn bước. Chúng tôi lựa chọn một hướng đi mới, tự tạo nên sự khác biệt để gây dựng lòng tin nơi khách hàng. Bởi lẽ, cuộc chơi này không dành cho những người đến trước mà chỉ ưu ái với những người biết sáng tạo. Vậy ELSUN lựa chọn hướng đi nào để bứt phá trong cuộc đua nội thất?
+                                <p>Câu trả lời chính là nội thất 5.0</p>
+                            </div>
 
-            <div class="nagivation-pn">
-                <div class=" prev"><i class="nagivation-icon fa-solid fa-angle-right"></i></div>
-                <div class=" next"><i class="nagivation-icon fa-solid fa-right"></i></div>
+                            <a href="#" class="baner-readmore">tìm hiểu thêm <i class="fa-solid fa-right-long"></i></a>
+                        </div>
+                        <div class="baner-img">
+                            <img src="./assets/images/dichvu/baner2.png" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
-            
+        </div>
+
+        <!-- END banner 2-->
+
+        <div class="head-product product-service ">
+            <div class="row">
+                <div class="col l-12">
+                        <div class="head">
+                            <h1 class="head-title">khách hàng của chúng tôi</h1>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CUSTOMER -->
+        <div class="grid wide">
+                <div class="service-customer">
+                    <img src="./assets/images/dichvu/khachhang1.png" alt="">
+                    <img src="./assets/images/dichvu/khachhang2.png" alt="">
+                    <img src="./assets/images/dichvu/khachhang3.png" alt="">
+                    <img src="./assets/images/dichvu/khachhang4.png" alt="">
+                    <img src="./assets/images/dichvu/khachhang5.png" alt="">
+                    <img src="./assets/images/dichvu/khachhang6.png" alt="">
+                    <img src="./assets/images/dichvu/khachhang7.png" alt="">
+                </div>
+                
+                <div class="image-customers">
+                    <div class="image-item">
+                        <div class="heading">
+                            <div class="heading-icon">
+                                <i class="fa-solid fa-quote-left"></i>
+                            </div>
+                            <div class="title">
+                                <span class="name">Phạm Nhật Vượng</span>
+                                <span class="profect">Customer</span>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="./assets/images/dichvu/customer1.png" alt="">
+                        </div>
+                        <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum vitae fugiat accusamus rerum nobis molestias quae vero provident voluptatum dicta eum, aperiam porro beatae voluptatem obcaecati distinctio expedita minus sunt.</div>
+
+                    </div>
+                    <div class="image-item">
+                        <div class="heading">
+                            <div class="heading-icon">
+                                <i class="fa-solid fa-quote-left"></i>
+                            </div>
+                            <div class="title">
+                                <span class="name">Phạm Nhật Vượng</span>
+                                <span class="profect">Customer</span>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="./assets/images/dichvu/customer2.png" alt="">
+                        </div>
+                        <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum vitae fugiat accusamus rerum nobis molestias quae vero provident voluptatum dicta eum, aperiam porro beatae voluptatem obcaecati distinctio expedita minus sunt.</div>
+
+                    </div>
+                    <div class="image-item">
+                        <div class="heading">
+                            <div class="heading-icon">
+                                <i class="fa-solid fa-quote-left"></i>
+                            </div>
+                            <div class="title">
+                                <span class="name">Phạm Nhật Vượng</span>
+                                <span class="profect">Customer</span>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="./assets/images/dichvu/customer3.png" alt="">
+                        </div>
+                        <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum vitae fugiat accusamus rerum nobis molestias quae vero provident voluptatum dicta eum, aperiam porro beatae voluptatem obcaecati distinctio expedita minus sunt.</div>
+
+                    </div>
+                    <div class="image-item">
+                        <div class="heading">
+                            <div class="heading-icon">
+                                <i class="fa-solid fa-quote-left"></i>
+                            </div>
+                            <div class="title">
+                                <span class="name">Phạm Nhật Vượng</span>
+                                <span class="profect">Customer</span>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="./assets/images/dichvu/customer2.png" alt="">
+                        </div>
+                        <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum vitae fugiat accusamus rerum nobis molestias quae vero provident voluptatum dicta eum, aperiam porro beatae voluptatem obcaecati distinctio expedita minus sunt.</div>
+
+                    </div>
+                    <div class="image-item">
+                        <div class="heading">
+                            <div class="heading-icon">
+                                <i class="fa-solid fa-quote-left"></i>
+                            </div>
+                            <div class="title">
+                                <span class="name">Phạm Nhật Vượng</span>
+                                <span class="profect">Customer</span>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="./assets/images/dichvu/customer2.png" alt="">
+                        </div>
+                        <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum vitae fugiat accusamus rerum nobis molestias quae vero provident voluptatum dicta eum, aperiam porro beatae voluptatem obcaecati distinctio expedita minus sunt.</div>
+
+                    </div>
+                    <div class="image-item">
+                        <div class="heading">
+                            <div class="heading-icon">
+                                <i class="fa-solid fa-quote-left"></i>
+                            </div>
+                            <div class="title">
+                                <span class="name">Phạm Nhật Vượng</span>
+                                <span class="profect">Customer</span>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="./assets/images/dichvu/customer2.png" alt="">
+                        </div>
+                        <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum vitae fugiat accusamus rerum nobis molestias quae vero provident voluptatum dicta eum, aperiam porro beatae voluptatem obcaecati distinctio expedita minus sunt.</div>
+
+                    </div>
+                </div>
+                
+        </div>
+
+
+        <!-- SERVICE -->
+        <div class="grid service-bg">
+            <div class="service-support">
+
+                <div class="services">
+                    <img src="./assets/images/dichvu/ship.png" alt="">
+                    <div class="title">vận chuyển trong</div>
+                   <div class="desc">2 - 4 ngày làm việc</div> 
+                </div>
+                <div class="line"></div>
+                <div class="services">
+                    <img src="./assets/images/dichvu/24hour.png" alt="">
+                    <div class="title">HỖ trợ online</div>
+                    <div class="desc">tất cả các ngày</div> 
+                </div>
+                <div class="line"></div>
+                <div class="services">
+                    <img src="./assets/images/dichvu/chedo.png" alt="">
+                    <div class="title">Chế độ bảo hành</div>
+                   <div class="desc">chính hãng</div> 
+                </div>
+            </div>
+        </div>
+
+        <!-- SUB -->
+        <div class="head-product product-service ">
+            <div class="row">
+                <div class="col l-12">
+                        <div class="head">
+                            <h1 class="head-title">get subscribe</h1>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid wide">
+                <div class="service-subcribe">
+                    <form action="" class="form-sub">
+                        <label for="email">Your Email</label>
+                        <input type="text" name="email" id="email" class="cs-input">
+                        <button >subscribe</button>
+                    </form>
+
+                    <div class="service-social">
+                        <div class="service-icon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <span class="title">FaceBook</span> 
+                        </div>
+                        <div class="line"></div>
+                        <div class="service-icon">
+                            <i class="fa-brands fa-instagram"></i>
+                            <span class="title">FaceBook</span> 
+                        </div>
+                        <div class="line"></div>
+                        <div class="service-icon">
+                            <i class=" service-icon fa-brands fa-amazon"></i>
+                            <span class="title">Shopee</span> 
+                        </div>
+                        <div class="line"></div>
+                        <div class="service-icon">
+                            <i class=" service-icon fa-brands fa-amazon"></i>
+                            <span class="title">Amazon</span> 
+                        </div>
+                    </div>
+
+                </div>
+        </div>
+
+        <div class="grid footer">
+             <div class="footer-content">
+                    <div class="bg-footer"></div>
+                    <div class="footer-head">
+                        <ul class="footer-list">
+                            <a href="#"><li class="footer-items">CHÍNH SÁCH BẢO MẬT </li></a>
+                            <a href="#"><li class="footer-items">ĐIỀU KHOẢN & ĐIỀU KIỆN</li></a>
+                            <a href="#"><li class="footer-items">PHƯƠNG THỨC GIAO HÀNG </li></a>
+                            <a href="#"><li class="footer-items">PHƯƠNG THỨC THANH TOÁN</li></a>
+                        </ul>
+                    </div>
+
+                    <div class="footer-img">
+                        <img src="./assets/images/logofooter.png" alt="">
+                    </div>
+                    <div class="desc">ELSUN đặt chân vào ngành nội thất giữa lúc thị trường đang chứng kiến sự cạnh tranh gay gắt của nhiều tên tuổi. Tuy nhiên, điều này không thể cản trở chúng tôi trên con đường đem đến không gian sống tối ưu nhất cho khách hàng. ELSUN chọn cho mình lối đi riêng và hoàn toàn khác biệt với phân nhánh nội thất 5.0 làm chủ lực. “Mảnh đất” chưa được khai phá triệt để này cùng sự sáng tạo sẽ là nền tảng vững chắc giúp ELSUN tạo dựng một thương hiệu nổi bật không chỉ ở Việt Nam mà còn trên toàn cầu.
+                    </div>
+                    <div class="address">Địa chỉ văn phòng: <span>86/36/3 phổ quang, phường 2, quận Tân bình</span> </div>
+                    <div class="hotline">
+                        Hotline: <span>0833 611 116</span> 
+                    </div> 
+                    <div class="copyright">Copyright &copy; elsun.vn, 2020</div>
+                </div>
         </div>
     </div> 
-    
+
+
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./assets/js/app.js"></script>
+
 </body>
 </html>
