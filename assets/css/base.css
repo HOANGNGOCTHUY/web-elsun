@@ -1,6 +1,9 @@
 .clear{
     clear: both;
 }
+.mg-top{
+    margin-top: 65px;
+}
 
 @keyframes fadeIn{
     from{
