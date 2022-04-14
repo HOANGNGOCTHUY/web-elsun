@@ -4,6 +4,18 @@
 .mg-top{
     margin-top: 65px;
 }
+.mg-bottom{
+    margin-bottom: 82px;
+}
+.mg-bt-20px{
+    margin-bottom: 20px;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
 
 @keyframes fadeIn{
     from{
