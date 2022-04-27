@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time line</title>
+    <style>
+        .main-timeline{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .main-timeline .timeline{
+            width: calc(50%+65px);
+            padding: 0 123px 0 0 ;
+            float: left;
+            
+        }
+        .main-timeline .timeline-content{
+            color: #f63959;
+            background: linear-gradient(to top,transparent 50%, #F63959 50%);
+            text-align: center;
+            min-height: 170px;
+            padding: 15px;
+            border-radius: 40px;
+            display: block;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .main-timeline .timeline-content:before{
+            content: '';
+            background-color: #fff;
+            border-radius: 35px;
+            position: absolute;
+            left: 7px;
+            right: 7px;
+            top: 7px;
+            bottom: 7px;
+            z-index: -1;
+        }
+        .main-timeline .timeline-content:hover{ 
+            text-decoration: none;
+         }
+         .main-timeline .timeline-year{
+            color: #fff;
+            background: linear-gradient(transparent 50%, #F63959 50%);
+            font-size: 33px;
+            line-height: 130px;
+            height: 130px;
+            width: 130px;
+            border-radius: 50%;
+            transform: translateY(-50%);
+            position: absolute;
+            right: -123px;
+            top: 50%;
+            z-index: 1;
+        }
+        .main-timeline .timeline-year:before{
+            content: '';
+            background-color: #F63959;
+            border-radius: inherit;
+            border: 10px solid #fff;
+            position: absolute;
+            left: 7px;
+            right: 7px;
+            top: 7px;
+            bottom: 7px;
+            z-index: -1;
+        }
+        /* .main-timeline .timeline:nth-child(even){
+        padding: 0 0 0 123px;
+        float: left;
+        }
+        .main-timeline .timeline:nth-child(even) .timeline-year{
+            right: auto;
+            left: -123px;
+        } */
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-timeline">
+            <div class="timeline">
+                <a href="#" class="timeline-content">
+                    <div class="timeline-year">2020</div>
+                    <div class="timeline-icon"><i class="fa fa-rocket"></i></div>    
+                    <h3 class="title">Web Development</h3>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo
+                    </p>
+                </a>
+            </div>
+    </div>
+    
+</body>
+</html>

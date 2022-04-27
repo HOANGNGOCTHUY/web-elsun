@@ -1,18 +1,13 @@
 .clear{
     clear: both;
 }
-.mg-top{
-    margin-top: 65px;
-}
-.mg-bottom{
-    margin-bottom: 82px;
-}
-.mg-bt-20px{
-    margin-bottom: 20px;
-}
 
+.container-fuild{
+    width: 100%;
+    max-width: 100%;
+}
 .container{
-    width: 1200px;
+    width: 1110px;
     margin: 0 auto;
     max-width: 100%;
 }
@@ -32,6 +27,15 @@
 }
 .center{
     text-align: center;
+}
+.global-title{
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--black-color);
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 50px;
+    /* identical to box height, or 139% */
 }
 @keyframes fadeIn{
     from{
