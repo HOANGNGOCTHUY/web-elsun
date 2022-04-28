@@ -1,9 +1,9 @@
 @media screen and (max-width: 1365px) {
     /* Header */
-    .header_navbar .menu_list li{
+    .menu_list li{
         margin: 0 20px;
     }
-    .header_navbar .menu_list li:first-child{
+    .menu_list li:first-child{
         margin-left: 0;
     }
     /* S.subscribe-main */
@@ -19,6 +19,10 @@
         padding: 18px 0;
         font-size: 14px;
         line-height: 20px;
+    }
+    /* ***********************Liên hệ***************** */
+    .infomation-main{
+        padding: 0 20px;
     }
 }
 @media screen and (max-width: 1023px) {
@@ -89,6 +93,39 @@
     .dropdown-content{
         min-width: 260px;
     }
+    /* SUB */
+    .service-social .line{
+        width: 30px;
+    }
+    /* footer */
+    .footer-content{
+        padding: 30px;
+    }
+    .footer-list{
+        margin-bottom: 30px;
+    }
+    .footer-list .footer-item .footer-links{
+        font-size: 8px;
+
+    }
+    .footer-desc{
+        max-width: 600px;
+        font-size: 10px;
+        margin: 20px auto;
+    }
+    .footer-title{
+        font-size: 10px;
+    }
+    .footer-text{
+        font-size: 12px;
+    }
+    .footer-coppyright{
+        font-size: 10px;
+    }
+    /* .footer-image .footer-logo{
+        width: 100%;
+        height: auto;
+    } */
 
      /* ***********************DỊCH VỤ***************** */
     /* Construction Design */
@@ -128,39 +165,21 @@
         font-size: 10px;
         line-height: 18px;
     }
-    /* SUB */
-    .service-social .line{
-        width: 30px;
-    }
-    /* footer */
-    .footer-content{
-        padding: 30px;
-    }
-    .footer-list{
-        margin-bottom: 30px;
-    }
-    .footer-list .footer-item .footer-links{
-        font-size: 8px;
-
-    }
-    .footer-desc{
-        max-width: 600px;
-        font-size: 10px;
-        margin: 20px auto;
-    }
-    .footer-title{
-        font-size: 10px;
-    }
-    .footer-text{
-        font-size: 12px;
-    }
-    .footer-coppyright{
-        font-size: 10px;
-    }
-    /* .footer-image .footer-logo{
-        width: 100%;
-        height: auto;
-    } */
+     /* ***********************Liên hệ***************** */
+     .infomation-main{
+         flex-direction: column;
+     }
+     .infomation-info{
+         display: flex;
+         justify-content: space-between;
+     }
+     .contact-title{
+         text-align: center;
+     }
+     .infomation-form{
+         margin: 0;
+     }
+    
 }
 @media screen and (max-width:767px) {
     /* header */
@@ -407,7 +426,19 @@
     .design-step .down-icon{
         display: block;
     }
+ /* ***********************Liên hệ***************** */
+ .infomation-main{
 
+ }
+ .infomation-info{
+     flex-direction: column;
+ }
+ .infomation-title{
+     text-align: center;
+ }
+ .half-width{
+     width: 100%;
+ }
 
     
 }

@@ -1477,346 +1477,187 @@ html, body{
     margin: 50px 60px 0 60px;
 } 
 
-/* SUB */
-/* .service-subcribe{
-    margin: 60px 0;
+/* Về Chúng tôi */
+.journeys{
+    margin-bottom: 70px;
 }
-.form-sub{
-    margin-bottom: 60px;
-    position: relative;
+.journeys-heading{
+    text-align: center;
 }
-.form-sub label{
-    position: absolute;
-    padding: 23px 0 23px 30px;
-    font-weight: 400;
+.journeys-logo{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: var(--black-color);
+    margin-bottom: 25px;
+
+}
+.journeys-maxim{
+    text-transform: uppercase;
+    font-weight: 700;
     font-size: 14px;
     line-height: 14px;
     letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: #000000;
+    color: var(--black-color);
+    margin-bottom: 25px;
 }
-.form-sub .cs-input{
-    width: 100%;
-    height: 60px;
-    border: 1px solid #CECECE;
-    box-sizing: border-box;
-    border-radius: 30px;
-    background: #FFFFFF;
-    padding: 0 200px;
-}
-.form-sub button{
-    position: absolute;
-    right: 0;
-    padding: 23px 47px;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 14px;
-    text-align: center;
-    color: #000000;
-    background: transparent;
-    border: none;
-}
-.form-sub button:hover{
-    cursor: pointer;
-    color: #D32046;
-}
-.service-social{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.service-icon{
-    display: flex;
-    align-items: center;
-}
-.service-icon i{
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 30px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #000000;
-    margin-right: 15px;
-}
-.service-icon svg{
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 30px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #000000;
-    margin-right: 15px;
-}
-
-.service-icon span{
+.journeys-title{
     font-weight: 300;
     font-size: 20px;
     line-height: 27px;
+    color: var(--primary-color);
 }
-.service-social .line{
-    width: 90px;
-    height: 1px;
-    background: #000000;
-}  */
-/* 
-Footer
-.footer{
-    background: #FFFFFF;
-    margin-top: 73px;
+.journeys-line{
     position: relative;
-    overflow: hidden;
+}
+.journeys-line::before{
+    content: "";
+    position: absolute;
+    display: block;
+    border: 1px solid var(--black-color);
+    width: 90px;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.journeys-text{
+    margin: 90px 0 35px 0 ;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    /* or 188% */
+    text-align: justify;
+    /* #000 */
+    color: var(--black-color);
 }
 
-.bg-footer{
-    position: absolute;
-    background-color: #D32046;
-    border-radius: 50px;
-    transform: rotate(-45deg);
-    width: 1296.32px;
-    height: 1296.32px;
-    top: -500px;
-    left: 300px;
-}
-.footer-content{
-    width: 800px;
-    margin: 0 auto;
-    padding: 60px 0;
-}
-.footer-list{
-    position: relative;
+.journeys-list{
     display: flex;
-    list-style: none;
-    justify-content: center;
-    align-items: center;
+    margin-top: 90px;
+    position: relative;
 }
-.footer-list a{
-    border-right: 1px solid #FFFFFF;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 16px;
+.journeys-item{
+    width: 25%;
     text-align: center;
+    padding: 0 18px;
+
+}
+.journeys-image{
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+}
+.journeys-img{
+    width: 100%;
+    height: auto;
+}
+.journeys-name{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
     text-transform: uppercase;
-    color: #FFFFFF;
-    padding: 0 15px;
-    text-decoration: none;
-}
-.footer-list a:last-child{
-    border-right: 0;
-}
-.footer-img{
-    margin-top: 50px;
-    margin-bottom: 38px;
+    color: var(--primary-color);
+    border: 2px solid #D32046;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-top: 30px;
+    padding: 9px 0;
+    background: var(--white-color);
+    margin-bottom: 12px;
     position: relative;
-    text-align: center;
 }
-.footer-content .desc{
-    position: relative;
+.journeys-list::before{
+    content: "";
+    position: absolute;
+    border: 1px solid var(--primary-color);
+    transform: translateX(-50%) translateY(-50%);
+    top: 55%;
+    width: 90%;
+    left: 50%;
+}
+
+.journeys-desc{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    /* or 156% */
     text-align: center;
-    color: #FFFFFF;
+    color: var(--black-color);
+}
+.videos{
+    margin-bottom: 70px;
+}
+.video-image img{
+    width: 100%;
+    height: auto;
+}
+/* visionmission */
+.visionmission{
+    margin-bottom: 70px;
+}
+.vision-main{
+    
+}
+.visionmission-title{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+    text-transform: uppercase;
+    color: var(--primary-color);
+    margin-bottom: 34px;
+    position: relative;
+}
+.visionmission-title::before{
+    content: "";
+    position: absolute;
+    border: 1px solid var(--black-color);
+    width: 90px;
+    bottom: -20px;
+}
+.visionmission-name{
+    margin-bottom: 22px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: justify;
+    color: var(--primary-color);
+}
+.visionmission-up{
+    display: flex;
+}
+.visionmission-text{
+    width: 100%;
+    max-width: 538px;
     font-weight: 400;
     font-size: 16px;
     line-height: 25px;
-    margin-bottom: 30px;
-}
-.footer-content .address{
-    position: relative;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 14px;
-    text-align: center;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: #FFFFFF;
-}
-.footer-content .address span{
-    font-weight: 800;
-    font-size: 16px;
-    line-height: 30px;
-    letter-spacing: 0;
-}
-.footer-content .hotline{
-    position: relative;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 14px;
-    text-align: center;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: #FFFFFF;
-}
-.footer-content .hotline span{
-    font-weight: 800;
-    font-size: 16px;
-    line-height: 30px;
-    letter-spacing: 0;
-}
-.copyright{
-    position: relative;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 14px;
-    text-align: center;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    margin-top: 30px;
-} */
-
-/* Về Chúng tôi */
-.about-main{
-    color: #000000;
-}
-.about-header{
-    text-align: center;
-    text-transform: uppercase;
-}
-.about-title{
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 133%;
-    margin-bottom: 15px;
-}
-.about-brands{
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 100%;
-    letter-spacing: 0.02em;
-    margin-bottom: 20px;
-}
-.heading{
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 27px;
-    color: #D32046;
-    position: relative;
-}
-.about-heading{
-    position: relative;
-    text-align: center;
-
-}
-.about-heading::before{
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: -20px;
-    height: 1px;
-    width: 90px;
-    background: #000000;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-}
-.heading-left{
-  
-}
-.about-text{
+    /* or 156% */
     text-align: justify;
-    font-size: 16px;
-    line-height: 166%;
+    /* #000 */
+    color: var(--black-color);
 }
-.about-procedure{
-    margin-top: 37px;
-    position: relative;
-    margin-bottom: 72px;
+.vision-text{
+    margin-right: 33px;
 }
-
- .about-procedure::before{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background: #D32046;
-    top: 69%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    z-index: -1;
-} 
-.about-item{
-    text-align: center;
-    position: relative;
-    background: #FFFFFF;
+.visionmission-image{
+    width: 538px;
+    height: 372px;
 }
-/* .about-item::before{
-    content: "";
-    position: absolute;
-    width: 8%;
-    height: 0px;
-   background: #D32046; 
-    top: 53%;
-    right: -39px;
-    transform: translateX(-50%) translateY(-50%);
-    border: 2px solid #D32046;
-}
-.about-item:last-child{
-    border: 2px solid #D32046;
-} */
-
-
-.about-img{
-    width: 50px;
-    height: 50px;
-}
-
-.about-img{
+.visionmission-image img{
     width: 100%;
     height: auto;
 }
-.about-name{
-    margin-top: 30px;
-    margin-bottom: 12px;
-    padding: 9px 22px;
-    border-radius: 20px ;
-    border: 2px solid #D32046;
-    color: #D32046;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 22px;
-    z-index: 9999;
-}
-.about-item .about-text{
-    text-align: center;
-    padding: 4px 10px;
-}
-
-/* ************************************************************** */
-/* Về chúng tôi */
-
-.about-video{
-    margin-bottom: 70px;
-}
-.about-vision{
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 22px;
-    text-transform: uppercase;
-    color: #D32046;
-    position: relative;
-    margin-bottom: 34px;
-}
-.about-vision::before{
-    content: "";
-    display: block;
-    position: absolute;
-    height: 2px;
-    background: #D32046;
-    width: 88px;
-    left: 0;
-    bottom: -10px;
-}
-
-.about-body-img img{
-    width: 100%;
-    height: auto;
-}
-.vision-up{
-    margin-top: 22px;
-}
-.vision-down{
+.mission-main{
+    display: flex;
+    flex-direction: row-reverse;
     margin-top: 70px;
 }
-
+.visionmission-down{
+    margin-left: 33px;
+}
 /* Liên hệ */
 .maps{
     margin-bottom: 50px;
@@ -1895,8 +1736,12 @@ Footer
 
     text-align: justify;
 }
-.col{
+.form-title{
+    padding: 0 8px;
+}
+.coll{
     float: left;
+    padding: 0 8px;
 }
 .height-90{
     height: 90px;
