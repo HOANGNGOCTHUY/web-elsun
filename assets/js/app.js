@@ -31,3 +31,23 @@ $(document).ready(function(){
     else
       myVideo.pause();
   }
+
+  // Toggle Menu
+  const hambuger = document.querySelector(".header-hamburger");
+  const navMenu = document.querySelector('.menu_list');
+  const menuItem =document.querySelector(".item");
+  const overlay =document.querySelector("#overlay");
+
+  hambuger.addEventListener("click", function(){
+      hambuger.classList.toggle("actived");
+      navMenu.classList.toggle("actived");
+      overlay.classList.toggle("actived");
+
+  })
+
+  overlay.addEventListener("click", function(){
+    hambuger.classList.remove("actived");
+    navMenu.classList.remove("actived");
+    overlay.classList.remove("actived");
+
+  })

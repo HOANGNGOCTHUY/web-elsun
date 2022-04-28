@@ -1,0 +1,413 @@
+@media screen and (max-width: 1365px) {
+    /* Header */
+    .header_navbar .menu_list li{
+        margin: 0 20px;
+    }
+    .header_navbar .menu_list li:first-child{
+        margin-left: 0;
+    }
+    /* S.subscribe-main */
+    .subscribe-main{
+        padding: 0 20px;
+    }
+    /* ***********************DỊCH VỤ***************** */
+    /* Construction Design */
+    .construction-main{
+        padding: 0 20px;
+    }
+    .contruction-title span{
+        padding: 18px 0;
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+@media screen and (max-width: 1023px) {
+     /* Header */
+    .header-main{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 0 50px;
+    }
+    .header_logo{
+        width: 33.333333%;
+        order: 2;
+    }
+    .header_search{
+        order: 4;
+        width: 100%;
+    }
+    .header_cart{
+        order: 3;
+        width: 33.333333%;
+        text-align: right;
+    }
+    .icon-search-cart{
+        margin: 0;
+        font-size: 29px;
+    }
+    .header-hamburger{
+        display: block;
+        order: 1;
+        width: 33.333333%;
+        text-align: left;
+    }
+    .bar{
+        margin: 5px 0;
+    }
+    #overlay.actived{
+        display: block;
+    }
+    .menu_list{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: -100%;
+        background: var(--white-color);
+        width: 300px;
+        height: 100%;
+        z-index: 9;
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        padding: 50px 0;
+        box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+        transition: all .3s ease-in-out;
+    }
+    .menu_list.actived{
+        left: 0;
+    }
+    
+    .menu_list li:first-child{
+        margin-left: 20px;
+    }
+    .menu_list li{
+        margin: 16px 20px;   
+    }
+    .dropdown-content{
+        min-width: 260px;
+    }
+
+     /* ***********************DỊCH VỤ***************** */
+    /* Construction Design */
+     /* procedure   */
+     .procedure-list{
+         flex-wrap: wrap;
+     }
+     .procedure-item{
+         width: 50%;
+         margin-bottom: 70px;
+         padding: 0 20px;
+     }
+    .procedure-item:nth-child(3), .procedure-item:nth-child(4){
+        margin-bottom: 0;
+    }
+    .procedure-item:first-child{
+        padding-left: 20px;
+    }
+    .procedure-item:last-child{
+        padding-right: 20px;
+    }
+    /* Price Service  */
+    .price-packages{
+        padding: 33px 20px;
+    }
+    .price-combo{
+        margin-right: 30px;
+    }
+    .price-combo .packages-links{
+        padding: 9px 25px;
+    }
+    /* Procedure-design */
+    .produre-design-main{
+        padding: 50px 0;
+    }
+    .design-step .design-name{
+        font-size: 10px;
+        line-height: 18px;
+    }
+    /* SUB */
+    .service-social .line{
+        width: 30px;
+    }
+    /* footer */
+    .footer-content{
+        padding: 30px;
+    }
+    .footer-list{
+        margin-bottom: 30px;
+    }
+    .footer-list .footer-item .footer-links{
+        font-size: 8px;
+
+    }
+    .footer-desc{
+        max-width: 600px;
+        font-size: 10px;
+        margin: 20px auto;
+    }
+    .footer-title{
+        font-size: 10px;
+    }
+    .footer-text{
+        font-size: 12px;
+    }
+    .footer-coppyright{
+        font-size: 10px;
+    }
+    /* .footer-image .footer-logo{
+        width: 100%;
+        height: auto;
+    } */
+}
+@media screen and (max-width:767px) {
+    /* header */
+    .header_logo{
+        margin: 20px 0;
+    }
+    .header_logo img{
+        width: 100%;
+        height: auto;
+    }
+    .icon-search-cart{
+        font-size: 20px;
+    }
+    .bar{
+        width: 20px;
+        height: 2px;
+    }
+    /* Banner */
+    .banner{
+        margin-bottom: 30px;
+    }
+    .banner-title{
+        font-size: 12px;
+        margin-bottom: 0;
+        line-height: 100%;
+    }
+    .breadcrumb .breadcrumb-item{
+        font-size: 8px;
+    }
+
+   /* Sub */
+   .subscribe{
+    margin-bottom: 30px;
+    }
+    .global-title{
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .subscribe-title::before{
+        width: 175px;
+    }
+    .form-subscribe{
+        margin-bottom: 30px;
+    }
+    .subscribe-heading{
+        margin-bottom: 30px;
+    }
+    .form-subscribe label{
+        font-size: 8px;
+        padding: 23px 0 23px 18px;
+    }
+    .form-subscribe .form-sub{
+        padding: 22px 85px;
+        font-size: 10px;
+    }
+    .form-subscribe .btn-subscribe{
+        font-size: 10px;
+        padding: 23px 18px 23px 0;
+    }
+  
+    .service-social{
+        /* flex-direction: column; */
+    }
+    .service-icon i{
+        margin: 0 0 15px 0;
+        font-size: 25px;
+    }
+    .service-icon svg{
+        margin: 0 0 15px 0;
+        width: 25px;
+        height: 25px;
+    }
+    .service-icon{
+        flex-direction: column;
+    }
+    .service-social .line{
+       display: none;
+    }
+    .service-icon span{
+        font-size: 14px;
+    }
+    /* Footer */
+    .footer-content{
+        padding: 20px;
+    }
+    .footer-list{
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+    }
+    .footer-list .footer-item{
+        width: 50%;
+        text-align: center;
+    }
+    .footer-list .footer-item .footer-links{
+        padding: 0;
+        border-right: 0;
+    }
+    .footer-desc{
+        margin: 10px 0;
+    }
+    .footer-contact{
+        margin-bottom: 10px;
+    }
+    .footer-title{
+        font-size: 8px;
+    }
+    .footer-text{
+        font-size: 8px;
+    }
+    .footer-coppyright{
+        font-size: 8px;
+    }
+
+
+    /* **********************************Dịch vụ************************************ */
+     /* Construction Design */
+     .construction{
+         margin-bottom: 30px;
+     }
+     .construction-main{
+         flex-direction: column;
+     }
+     .construction-timeline{
+        margin: 30px 0 0 0 ;
+     }
+     .contruction-title span{
+         padding: 12px 0;
+         font-size: 10px;
+     }
+     /* procedure */
+     .procedure{
+         margin-bottom: 30px;
+     }
+     .procedure-main{
+         padding: 0 20px;
+     }
+     .project-heading{
+         padding: 0 20px;
+         margin-bottom: 30px;
+     }
+     .project-title{
+         font-size: 24px;
+         line-height: 30px;
+     }
+     .project-title::before{
+         width: 190px;
+     }
+     .procedure-name{
+         font-size: 11px;
+     }
+     .project-text{
+         font-size: 14px;
+         line-height: 20px;
+     }
+     .procedure-desc{
+         font-size: 8px;
+     }
+    /* Project */
+    .project{
+        margin-bottom: 30px;
+    }
+    .project-list{
+        margin-bottom: 0px;
+    }
+    .project-item{
+        width: 100%;
+    }
+    .project-content{
+        /* display: block; */
+    }
+    .pagination-list .pani-item{
+        margin: 0 10px;
+    }
+    .pagination-list .pani-item .pani-link{
+        font-size: 14px;
+    }
+    .pagination-content{
+        font-size: 12px;
+    }
+    /* Price Service */
+    .price-service{
+        margin-bottom: 30px;
+    }
+    .price-main{
+        padding: 30px 20px ;
+    }
+    .service-title{
+        font-size: 14px;
+    }
+   
+    .service-desc{
+        font-size: 14px;
+    }
+    .price-packages{
+        flex-direction: column;
+    }
+    .price-combo{
+        margin: 0;
+    }
+
+    .price-combo .contact-links{
+        max-width: 100%;
+        margin-bottom: 30px;
+        margin-top: 10px;
+    }
+    .price-nest{
+        border-bottom: 1px solid #ccc;
+    }
+    .price-nest .price-stt{
+        font-size: 10px;
+    }
+    .price-nest .price-desc{
+        font-size: 10px;
+        line-height: 14px;
+    }
+    .price-list{
+        flex-wrap: wrap;
+    }
+    .price-item{
+        width: 50%;
+        margin-bottom: 50px;
+    }
+    .price-item:nth-child(3), .price-item:nth-child(4){
+        margin-bottom: 0;
+    }
+    /* Procedure-design */
+    .produre-design{
+        margin-bottom: 30px;
+    }
+    .produre-design-main{
+        padding: 30px 0;
+    }
+    .design-step{
+        flex-direction: column;
+    }
+    .design-step .design-name{
+        font-size: 14px;
+        line-height: 14px;
+        margin: 20px 0;
+    }
+    .design-step .design-icon{
+        display: none;
+    }
+    .design-step .down-icon{
+        display: block;
+    }
+
+
+    
+}

@@ -37,6 +37,81 @@
     line-height: 50px;
     /* identical to box height, or 139% */
 }
+
+
+/* Breadcrumb */
+.breadcrumb{
+    list-style: none;
+    text-align: center;
+}
+.breadcrumb li+li:before {
+    content: ">";
+    color: #FFFFFF;
+}
+.breadcrumb .breadcrumb-item{
+    display: inline;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 100%;
+}
+.breadcrumb a{
+    text-decoration: none;
+    color: #FFFFFF;
+    margin:0 10px;
+}
+.breadcrumb a:hover{
+    color: #D32046;
+    text-decoration: underline;
+}
+
+/* Banner */
+.banner{
+    position: relative;
+    margin-bottom: 70px;
+    
+}
+.banner-image{
+    width: 100%;
+    height: 100%;
+    display: block;
+    filter: brightness(50%);
+}
+.banner-img{
+    width: 100%;
+    height: auto;
+}
+.banner-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.banner-title{
+    position: relative;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 139%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+    text-align: center;
+    
+}
+.banner-title::before{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #FFFFFF;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+/*  */
 @keyframes fadeIn{
     from{
         opacity: 0;

@@ -8,108 +8,109 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
-    <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/css/fontello.css">
 
 </head>
 <body>
     <div id="app">
-        <div class="header">
-            <div class="header_logo">
-                <img src="./assets/images/logo.png" alt="">
-            </div>
-            <div class="header_navbar">
-                <ul class="menu_list" >
-                    <li class="item active"><a href="index.html">Trang chủ</a></li>
-                    <li class="item"><a href="#"> Nội thất 5.0</a></li>
-                    <li class="dropdown">
-                        <a href="#"> DỊCH VỤ CỦA ELSUN <i class="icon-down-open"></i></a>
-                        <div class="dropdown-content">
-                            <a href="aboutus.html">Về chúng tôi</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <a href="product.html" class="dropbtn"> SẢN PHẨM NỘI THẤT <i class="icon-down-open"></i></a>
-                        <div class="dropdown-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
-                        </div>
-                    </li>
-                    <li class="item"><a href="#"> Studio sáng tạo</a></li>
-                    <li class="item"><a href="contact.html"> Contact</a></li>
-                </ul>
-                <div class="header_search"><i class="icon-search-cart icon-search"></i></div>
-                <div class="header_cart">
-                    <div class="header_cart-wrap">
-                        <i class=" icon-search-cart icon-cart"></i>
-                        <span class="header_cart-notice">3</span>
-                        <!-- no cart: header_cart-no-cart  -->
-                        <!-- <div class="header_cart-list ">
-                                <img src="./assets/images/no-cart.png" alt="" class="header_cart-no-cart-img">
-                                <span class="header_cart-no-cart-msg">
-                                    Chưa có sản phẩm
-                                </span>
-                            
-                            <h4 class="header_cart-heading">Sản phẩm đã thêm</h4>
-                            <ul class="header_cart-list-item">
-                                //Cart item
-                                <li class="header_cart-item">
-                                    <img src="./assets/images/logo.png" alt="" class="header_cart-img">
-                                    <div class="header_cart-item-info">
-                                        <div class="header_cart-item-head">
-                                            <h5 class="header_cart-item-name">Armchair with wooden frame</h5>
-                                            <div class="header_cart-item-wrap">
-                                                <span class="header_cart-item-price">900,000</span>
-                                                <span class="header_cart-item-multiply">x</span>
-                                                <span class="header_cart-item-quantity">1</span>
+        <!-- Header -->
+        <section class="header">
+            <div class="container-fuild">
+                <div class="header-main">
+                    <div class="header_logo">
+                        <img src="./assets/images/logo.png" alt="">
+                    </div>
+                    <div id="overlay"></div>
+                    <div class="header-hamburger">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                    </div>
+                    <ul class="menu_list" >
+                        <li class="item active"><a href="index.html">Trang chủ</a></li>
+                        <li class="item"><a href="#"> Nội thất 5.0</a></li>
+                        <li class="dropdown">
+                            <a href="#"> DỊCH VỤ CỦA ELSUN <i class="icon-down-open"></i></a>
+                            <div class="dropdown-content">
+                                <a href="aboutus.html">Về chúng tôi</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="product.html" class="dropbtn"> SẢN PHẨM NỘI THẤT <i class="icon-down-open"></i></a>
+                            <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                        </li>
+                        <li class="item"><a href="#"> Studio sáng tạo</a></li>
+                        <li class="item"><a href="contact.html"> Contact</a></li>
+                    </ul>
+                        
+                    <div class="header_search"><i class="icon-search-cart icon-search"></i></div>
+                        <div class="header_cart">
+                            <div class="header_cart-wrap">
+                                <i class=" icon-search-cart icon-cart"></i>
+                                <span class="header_cart-notice">3</span>
+                                <!-- no cart: header_cart-no-cart  -->
+                                <!-- <div class="header_cart-list ">
+                                        <img src="./assets/images/no-cart.png" alt="" class="header_cart-no-cart-img">
+                                        <span class="header_cart-no-cart-msg">
+                                            Chưa có sản phẩm
+                                        </span>
+                                    
+                                    <h4 class="header_cart-heading">Sản phẩm đã thêm</h4>
+                                    <ul class="header_cart-list-item">
+                                        //Cart item
+                                        <li class="header_cart-item">
+                                            <img src="./assets/images/logo.png" alt="" class="header_cart-img">
+                                            <div class="header_cart-item-info">
+                                                <div class="header_cart-item-head">
+                                                    <h5 class="header_cart-item-name">Armchair with wooden frame</h5>
+                                                    <div class="header_cart-item-wrap">
+                                                        <span class="header_cart-item-price">900,000</span>
+                                                        <span class="header_cart-item-multiply">x</span>
+                                                        <span class="header_cart-item-quantity">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header_cart-item-body">
+                                                    <span class="header_cart-item-description">
+                                                        TF-BST02-01
+                                                    </span>
+                                                    <span class="header_cart-item-remove">xóa</span>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="header_cart-item-body">
-                                            <span class="header_cart-item-description">
-                                                TF-BST02-01
-                                            </span>
-                                            <span class="header_cart-item-remove">xóa</span>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                                <a href="#" class="header_cart-view btn btn-cart">Xem giỏ hàng</a>
-
-                        </div> -->
-                    </div>
-                    
-                </div>
-            </div>
-            
+                                        </li>
+                                    </ul>
+                                        <a href="#" class="header_cart-view btn btn-cart">Xem giỏ hàng</a>
         
-        </div>
-        <!-- End header -->
-
-        <div class="grid header-banner">
-            <div class="row">
-                <div class="col l-12 m-12 c-12">
-                    <div class="banner-img">
-                        <img src="./assets/images/banner/bannerdv.png" alt="">
-                    </div>
-                </div>
-                <div class="col l-12">
-                    <div class="row">
-                        <div class="banner-content">
-                            <h3 class="header-banner-title">Dịch vụ</h3>
-                            <ul class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
-                                <li class="breadcrumb-item"><a href="#">Dịch vụ của chúng tôi</a></li>
-                            </ul>
+                                </div> -->
+                            </div>
+                            
                         </div>
-                    </div>
                 </div>
             </div>
-        </div>
-        <!-- END BANER --> 
+        </section>
+        <!-- Banner -->
+        <section class="banner">
+            <div class="container-fuild">
+                <div class="banner-image">
+                    <img src="./assets/images/banner/bannerdv.png" alt="" class="banner-img">
+                </div>
+                <div class="banner-content">
+                    <h3 class="banner-title">Dịch vụ</h3>
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+                        <li class="breadcrumb-item"><a href="#">Dịch vụ của chúng tôi</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
         <!-- Construction Design -->
         <section class="construction">
             <div class="container">
@@ -635,12 +636,16 @@
                     <div class="design-step">
                             <span class="design-name">KHẢO SÁT - ĐO ĐẠC</span>
                             <i class="design-icon fa-solid fa-angle-right"></i>
+                            <i class="down-icon fa-solid fa-angle-down"></i>
                             <span class="design-name">TƯ VẤN </span>
                             <i class="design-icon fa-solid fa-angle-right"></i>
+                            <i class="down-icon fa-solid fa-angle-down"></i>
                             <span class="design-name">3D CONCEPT</span>
                             <i class="design-icon fa-solid fa-angle-right"></i>
+                            <i class="down-icon fa-solid fa-angle-down"></i>
                             <span class="design-name">BẢN VẼ THI CÔNG</span>
                             <i class="design-icon fa-solid fa-angle-right"></i>
+                            <i class="down-icon fa-solid fa-angle-down"></i>
                             <span class="design-name">GIÁM SÁT BẢN QUYỀN TÁC GIẢ</span>
                     </div>
                 </div>
@@ -810,35 +815,37 @@
          <!-- SUB -->
          <section class="subscribe">
              <div class="container">
-                <div class="subscribe-heading">
-                    <h1 class="global-title subscribe-title">get subscribe</h1>
-                </div>
-                <form action="" class="form-subscribe">
-                    <label for="email">your email</label>
-                    <input type="text" class="form-sub">
-                    <input type="submit" class="btn btn-subscribe" value="subscribe">
-                </form>
-                <div class="service-social">
-                    <div class="service-icon">
-                        <i class="icon-facebook"></i>
-                        <span class="title">Facebook</span> 
+                 <div class="subscribe-main">
+                    <div class="subscribe-heading">
+                        <h1 class="global-title subscribe-title">get subscribe</h1>
                     </div>
-                    <div class="line"></div>
-                    <div class="service-icon">
-                        <i class="icon-instagram"></i>
-                        <span class="title">Instagram</span> 
+                    <form action="" class="form-subscribe">
+                        <label for="email">your email</label>
+                        <input type="text" class="form-sub">
+                        <input type="submit" class="btn btn-subscribe" value="subscribe">
+                    </form>
+                    <div class="service-social">
+                        <div class="service-icon">
+                            <i class="icon-facebook"></i>
+                            <span class="title">Facebook</span> 
+                        </div>
+                        <div class="line"></div>
+                        <div class="service-icon">
+                            <i class="icon-instagram"></i>
+                            <span class="title">Instagram</span> 
+                        </div>
+                        <div class="line"></div>
+                        <div class="service-icon">
+                            <svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="30px" height="30px"><path d="M 25 1 C 19.672869 1 15.604123 5.9531422 15.166016 12 L 5.0585938 12 C 3.9235937 12 2.999376 12.980995 3.0625 14.113281 L 4.7871094 44.285156 C 4.9365844 46.922145 7.1369035 49 9.7773438 49 L 40.222656 49 C 42.863851 49 45.063433 46.921831 45.212891 44.285156 L 46.9375 14.115234 C 47.002643 12.982141 46.076406 12 44.941406 12 L 34.833984 12 C 34.395877 5.9531422 30.327131 1 25 1 z M 25 3 C 29.036936 3 32.408924 6.8867916 32.835938 12 L 17.164062 12 C 17.591075 6.8867916 20.963064 3 25 3 z M 25.080078 18 C 28.920078 18 31.799062 20.060938 32.039062 20.210938 L 31.009766 21.880859 C 30.759766 21.710859 30.310625 21.439844 30.140625 21.339844 C 29.120625 20.789844 27.240078 19.970703 25.080078 19.970703 C 21.830078 19.970703 19.480469 21.77 19.480469 24.25 C 19.480469 26.72 21.660234 27.699766 25.240234 29.009766 C 28.870234 30.329766 32.970703 31.829609 32.970703 36.599609 C 32.970703 40.189609 29.430156 43.009766 24.910156 43.009766 C 20.920156 43.009766 17.640078 40.560156 16.830078 39.910156 L 17.939453 38.259766 C 17.969453 38.289766 21.160156 41.029297 24.910156 41.029297 C 28.270156 41.029297 31 39.039609 31 36.599609 C 31 33.439609 28.570547 32.319375 24.560547 30.859375 C 21.260547 29.649375 17.509766 28.28 17.509766 24.25 C 17.509766 20.69 20.760078 18 25.080078 18 z"/></svg>
+                            <span class="title">Shopee</span> 
+                        </div>
+                        <div class="line"></div>
+                        <div class="service-icon">
+                            <i class=" icon-amazon"></i>
+                            <span class="title">Amazon</span> 
+                        </div>
                     </div>
-                    <div class="line"></div>
-                    <div class="service-icon">
-                        <svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="30px" height="30px"><path d="M 25 1 C 19.672869 1 15.604123 5.9531422 15.166016 12 L 5.0585938 12 C 3.9235937 12 2.999376 12.980995 3.0625 14.113281 L 4.7871094 44.285156 C 4.9365844 46.922145 7.1369035 49 9.7773438 49 L 40.222656 49 C 42.863851 49 45.063433 46.921831 45.212891 44.285156 L 46.9375 14.115234 C 47.002643 12.982141 46.076406 12 44.941406 12 L 34.833984 12 C 34.395877 5.9531422 30.327131 1 25 1 z M 25 3 C 29.036936 3 32.408924 6.8867916 32.835938 12 L 17.164062 12 C 17.591075 6.8867916 20.963064 3 25 3 z M 25.080078 18 C 28.920078 18 31.799062 20.060938 32.039062 20.210938 L 31.009766 21.880859 C 30.759766 21.710859 30.310625 21.439844 30.140625 21.339844 C 29.120625 20.789844 27.240078 19.970703 25.080078 19.970703 C 21.830078 19.970703 19.480469 21.77 19.480469 24.25 C 19.480469 26.72 21.660234 27.699766 25.240234 29.009766 C 28.870234 30.329766 32.970703 31.829609 32.970703 36.599609 C 32.970703 40.189609 29.430156 43.009766 24.910156 43.009766 C 20.920156 43.009766 17.640078 40.560156 16.830078 39.910156 L 17.939453 38.259766 C 17.969453 38.289766 21.160156 41.029297 24.910156 41.029297 C 28.270156 41.029297 31 39.039609 31 36.599609 C 31 33.439609 28.570547 32.319375 24.560547 30.859375 C 21.260547 29.649375 17.509766 28.28 17.509766 24.25 C 17.509766 20.69 20.760078 18 25.080078 18 z"/></svg>
-                        <span class="title">Shopee</span> 
-                    </div>
-                    <div class="line"></div>
-                    <div class="service-icon">
-                        <i class=" icon-amazon"></i>
-                        <span class="title">Amazon</span> 
-                    </div>
-                </div>
+                 </div>
              </div>
          </section>
          <!-- Footer -->
