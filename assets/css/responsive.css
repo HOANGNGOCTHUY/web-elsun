@@ -24,6 +24,35 @@
     .infomation-main{
         padding: 0 20px;
     }
+
+    /* ***********************Về chúng tôi***************** */
+    /* Journeys */
+    .journeys-main{
+        padding: 0 20px
+    }
+    .journeys-name{
+        font-size: 14px;
+    }
+    .journeys-desc{
+        font-size: 12px;
+    }
+   /* vision and mission */
+   .vision-main{
+       padding: 0 20px;
+   }
+   .mission-main{
+        padding: 0 20px;
+   }
+    /* CUSTOMER */
+    .customers-icon{
+        margin-right: 30px;
+        font-size: 50px;
+        line-height: 50px;
+
+    }
+    .customers-name{
+        font-size: 18px;
+    }
 }
 @media screen and (max-width: 1023px) {
      /* Header */
@@ -179,7 +208,66 @@
      .infomation-form{
          margin: 0;
      }
-    
+
+      /* ***********************Về chúng tôi***************** */
+    /* Journeys */
+    .journeys-list{
+        flex-wrap: wrap;
+        margin-top: 60px;
+    }
+    .journeys-list::before{
+        display: none;
+    }
+    .journeys-item{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    .journeys-item:nth-child(3), .journeys-item:nth-child(4){
+        margin-bottom: 0;
+    }
+    .journeys-desc{
+        font-size: 20px;
+    }
+    /* vision and mission */
+    .visionmission-up{
+        flex-direction: column;
+    }
+    .visionmission-text{
+        max-width: 100%;
+    }
+    .vision-text{
+        margin: 0 0 30px 0;
+    }
+    .visionmission-image{
+        width: 100%;
+        height: auto;
+    }
+    .mission-main{
+        flex-direction: column;
+    }
+    .visionmission-down{
+        margin: 0 0 30px;
+    }
+    /* CUSTOMER */
+    .customers-infomation{
+        padding: 0 30px ; 
+    }
+    .customer-image{
+        margin: 0 20px;
+    }
+    .customers-icon{
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .customers-name{
+        font-size: 16px;
+    }
+    .customers-profect{
+        font-size: 18px;
+    }
+    .customers-description{
+        font-size: 14px;
+    }
 }
 @media screen and (max-width:767px) {
     /* header */
@@ -215,7 +303,7 @@
     margin-bottom: 30px;
     }
     .global-title{
-        font-size: 24px;
+        font-size: 20px;
         line-height: 30px;
     }
     .subscribe-title::before{
@@ -439,6 +527,66 @@
  .half-width{
      width: 100%;
  }
+ /* ***********************Dịch vụ***************** */
+/* Journeys  */
+.journeys{
+    margin-bottom: 30px;
+}
+.journeys-title{
+    font-size: 16px;
+    line-height: 20px;
+}
+.journeys-text{
+    margin-top: 30px;
+    font-size: 14px;
+}
+.journeys-list{
 
-    
+}
+.journeys-item{
+    width: 100%;
+}
+.journeys-desc{
+    font-size: 14px;
+}
+.journeys-item:nth-child(3), .journeys-item:nth-child(4){
+    margin-bottom: 30px;
+}
+/* videos */
+.videos{
+    margin-bottom: 30px;
+}
+/* vision and mission */
+.visionmission-name{
+    font-size: 16px;
+}
+.visionmission-text{
+    font-size: 14px;
+}
+.mission-main{
+    margin-top: 30px;
+}
+/* Customers */
+.customer{
+    margin-bottom: 30px;
+}
+.customer-line::before{
+    width: 300px ;
+}
+.customer-line{
+    margin-bottom: 30px;
+}
+.service-customer{
+    margin-bottom: 30px;
+}
+.customers-icon{
+    font-size: 60px;
+    line-height: 60px;
+}
+.customers-name{
+    font-size: 22px;
+}
+.customers-profect{
+    font-size: 20px;
+}
 }
