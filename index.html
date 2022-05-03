@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME DỊCH VỤ</title>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/css/fontello.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
 </head>
 <body>
@@ -52,7 +52,13 @@
                         <li class="item"><a href="contact.html"> Contact</a></li>
                     </ul>
                         
-                    <div class="header_search"><i class="icon-search-cart icon-search"></i></div>
+                    <div class="header_search">
+                        <input type="search" class="search-box" placeholder="Nhập tìm kiếm"/>
+                            <div class="search-button">
+                                <i class="icon-search-cart icon-search" aria-hidden="true"></i>
+                            </div>
+                        
+                    </div>
                         <div class="header_cart">
                             <div class="header_cart-wrap">
                                 <i class=" icon-search-cart icon-cart"></i>
@@ -97,6 +103,32 @@
             </div>
         </section>
         <!-- Slider -->
+        <section class="slider">
+            <div class="container-fuild">
+                <div class="slider-main">
+                    <div class="slider-content">
+                        <div class="slider-title">Phân vùng thoải mái trong một không gian mở</div>
+                        <div class="slider-desc">Những yếu tố này bổ sung cho nhau tạo thành một dòng chảy liền mạch xung quanh bạn. Bạn có thể tùy ý sáng tạo hay thêm nếm những yếu tố nghệ thuật...</div>
+                        <a href="#" class="slider-readmore">xem thêm</a>
+                        <div class="slider-image">
+                            <img src="./assets/images/dichvu/Banner-Gioi-Thieu-San-Pham.png" alt="" class="slider-img">
+                        </div>
+                    </div>
+                    <div class="slider-panivation">
+                        <div class="slider-btn btn-prev"><i class="fa-solid fa-arrow-up"></i></div>
+                        <div class="btn"></div>
+                        <div class="btn"></div>
+                        <div class="btn"></div>
+                        <div class="btn"></div>
+                        <div class="btn"></div>
+                        <div class="slider-btn btn-next"><i class="fa-solid fa-arrow-down"></i></div>
+                    </div>
+                    <a href="#" class="slider-heart"><i class="fa-solid fa-heart"></i></a>
+                </div>
+               
+            </div>
+        </section>
+        <!-- Category -->
         <section class="category">
             <div class="container-fuild">
                 <div class="category-main">
@@ -167,7 +199,6 @@
             </div>
 
         </section>
-   
         <!-- Project project  -->
         <section class="project" id="duan">
         <div class="container">
@@ -265,11 +296,11 @@
         <!-- Banner About -->
         <section class="banner-about">
             <div class="container-fuild">
-                <div class="banner-about-main">
-                    <div class="banner-about-image">
+                <div class="banner-about-main-up">
+                    <!-- <div class="banner-about-image">
                         <img src="./assets/images/dichvu/baner.png" alt="" class="banner-about-img">
                     </div>
-                    <div class="clear"></div>
+                    <div class="clear"></div> -->
                     <div class="banner-about-body">
                         <div class="banner-titlee">ĐỘNG LỰC & ĐỔI MỚI</div>
                         <div class="banner-heading">Không ngừng theo đuổi sự sáng tạo hoàn hảo</div>
@@ -377,11 +408,7 @@
         <!-- Banner About -->
         <section class="banner-about">
             <div class="container-fuild">
-                <div class="banner-about-main">
-                    <div class="banner-about-image">
-                        <img src="./assets/images/dichvu/baner2.png" alt="" class="banner-about-img">
-                    </div>
-                    <div class="clear"></div>
+                <div class="banner-about-main-down">
                     <div class="banner-about-content">
                         <div class="banner-about-title">Đôi lời về chúng tôi</div>
                         <div class="banner-about-text">Đánh vào thị trường đã có mặt nhiều doanh nghiệp, nhưng không phải vì vậy mà nội thất 5.0 ELSUN phải chùn bước. Chúng tôi lựa chọn một hướng đi mới, tự tạo nên sự khác biệt để gây dựng lòng tin nơi khách hàng. Bởi lẽ, cuộc chơi này không dành cho những người đến trước mà chỉ ưu ái với những người biết sáng tạo. Vậy ELSUN lựa chọn hướng đi nào để bứt phá trong cuộc đua nội thất?
@@ -512,30 +539,44 @@
 
         </section>
         <!-- SERVICE -->
-        <div class="grid service-bg">
-            <div class="service-support">
-
-                <div class="services">
-                    <img src="./assets/images/dichvu/ship.png" alt="">
-                    <div class="title">vận chuyển trong</div>
-                   <div class="desc">2 - 4 ngày làm việc</div> 
-                </div>
-                <div class="line"></div>
-                <div class="services">
-                    <img src="./assets/images/dichvu/24hour.png" alt="">
-                    <div class="title">HỖ trợ online</div>
-                    <div class="desc">tất cả các ngày</div> 
-                </div>
-                <div class="line"></div>
-                <div class="services">
-                    <img src="./assets/images/dichvu/chedo.png" alt="">
-                    <div class="title">Chế độ bảo hành</div>
-                   <div class="desc">chính hãng</div> 
+        <section class="support">
+            <div class="container-fuild">
+                <div class="support-main">
+                    <div class="support-list">
+                        <div class="support-item">
+                            <div class="support-image">
+                                <img src="./assets/images/dichvu/ship.png" alt="" class="support-img">
+                            </div>
+                            <div class="support-content">
+                                <div class="support-title">vận chuyển trong</div>
+                                <div class="support-desc">2 - 4 ngày làm việc</div>
+                            </div>
+                        </div>
+                        <div class="support-line"></div>
+                        <div class="support-item">
+                            <div class="support-image">
+                                <img src="./assets/images/dichvu/24hour.png" alt="" class="support-img">
+                            </div>
+                            <div class="support-content">
+                                <div class="support-title">HỖ trợ online</div>
+                                <div class="support-desc">tất cả các ngày</div>
+                            </div>
+                        </div>
+                        <div class="support-line"></div>
+                        <div class="support-item">
+                            <div class="support-image">
+                                <img src="./assets/images/dichvu/chedo.png" alt="" class="support-img">
+                            </div>
+                            <div class="support-content">
+                                <div class="support-title">chế độ bảo hành</div>
+                                <div class="support-desc">chính hãng</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <!-- SUB -->
+        </section>
+        <!-- subscribe -->
         <section class="subscribe">
             <div class="container">
                 <div class="subscribe-main">
@@ -573,48 +614,45 @@
         </section>
         <!-- Footer -->
         <section class="footer">
-        <div class="container-fuild">
-            <div class="footer-main">
-                <div class="footer-content">
-                    <ul class="footer-list">
-                        <li class="footer-item"><a class="footer-links" href="#">CHÍNH SÁCH BẢO MẬT</a></li>
-                        <li class="footer-item"><a class="footer-links" href="#">ĐIỀU KHOẢN & ĐIỀU KIỆN</a></li>
-                        <li class="footer-item"><a class="footer-links" href="#">PHƯƠNG THỨC GIAO HÀNG</a></li>
-                        <li class="footer-item"><a class="footer-links" href="#">PHƯƠNG THỨC THANH TOÁN</a></li>
-                    </ul>
-                    <div class="footer-image">
-                        <img src="./assets/images/logofooter.png" alt="" class="footer-logo">
-                    </div>
-                    <div class="footer-desc">ELSUN đặt chân vào ngành nội thất giữa lúc thị trường đang chứng kiến sự cạnh tranh gay gắt của nhiều tên tuổi. Tuy nhiên, điều này không thể cản trở chúng tôi trên con đường đem đến không gian sống tối ưu nhất cho khách hàng. ELSUN chọn cho mình lối đi riêng và hoàn toàn khác biệt với phân nhánh nội thất 5.0 làm chủ lực. “Mảnh đất” chưa được khai phá triệt để này cùng sự sáng tạo sẽ là nền tảng vững chắc giúp ELSUN tạo dựng một thương hiệu nổi bật không chỉ ở Việt Nam mà còn trên toàn cầu.
-                    </div>
-                    <div class="footer-contact">
-                        <div class="footer-address">
-                            <span class="footer-title">Địa chỉ văn phòng:</span>
-                            <span class="footer-text"> 86/36/3 phổ quang, phường 2, quận Tân bình</span>
+            <div class="container-fuild">
+                <div class="footer-main">
+                    <div class="footer-content">
+                        <ul class="footer-list">
+                            <li class="footer-item"><a class="footer-links" href="#">CHÍNH SÁCH BẢO MẬT</a></li>
+                            <li class="footer-item"><a class="footer-links" href="#">ĐIỀU KHOẢN & ĐIỀU KIỆN</a></li>
+                            <li class="footer-item"><a class="footer-links" href="#">PHƯƠNG THỨC GIAO HÀNG</a></li>
+                            <li class="footer-item"><a class="footer-links" href="#">PHƯƠNG THỨC THANH TOÁN</a></li>
+                        </ul>
+                        <div class="footer-image">
+                            <img src="./assets/images/logofooter.png" alt="" class="footer-logo">
                         </div>
-                        <div class="footer-address">
-                            <span class="footer-title">Hotline:</span>
-                            <span class="footer-text"> 0833 611 116</span>
+                        <div class="footer-desc">ELSUN đặt chân vào ngành nội thất giữa lúc thị trường đang chứng kiến sự cạnh tranh gay gắt của nhiều tên tuổi. Tuy nhiên, điều này không thể cản trở chúng tôi trên con đường đem đến không gian sống tối ưu nhất cho khách hàng. ELSUN chọn cho mình lối đi riêng và hoàn toàn khác biệt với phân nhánh nội thất 5.0 làm chủ lực. “Mảnh đất” chưa được khai phá triệt để này cùng sự sáng tạo sẽ là nền tảng vững chắc giúp ELSUN tạo dựng một thương hiệu nổi bật không chỉ ở Việt Nam mà còn trên toàn cầu.
                         </div>
-                        
+                        <div class="footer-contact">
+                            <div class="footer-address">
+                                <span class="footer-title">Địa chỉ văn phòng:</span>
+                                <span class="footer-text"> 86/36/3 phổ quang, phường 2, quận Tân bình</span>
+                            </div>
+                            <div class="footer-address">
+                                <span class="footer-title">Hotline:</span>
+                                <span class="footer-text"> 0833 611 116</span>
+                            </div>
+                            
+                        </div>
+                        <div class="footer-coppyright">
+                            Copyright &copy; elsun.vn, 2020
+                        </div>
                     </div>
-                    <div class="footer-coppyright">
-                        Copyright &copy; elsun.vn, 2020
-                    </div>
+                    
                 </div>
-                
+            
+            
             </div>
-            
-            
-        </div>
         </section>
     </div> 
 
 
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-1.11.0.min.js"
-    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script
       type="text/javascript"
       src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
@@ -624,6 +662,14 @@
       src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <script src="./assets/js/app.js"></script>
+    <script>
+        $(".icon-search").click(function(){
+        // $(".search-box").toggleClass("active").focus;
+        // $(this).toggleClass("animate");
+        // $(".search-box").val("");
+        $(".search-box").css("display", "block");
+        });
+    </script>
 
 </body>
 </html>

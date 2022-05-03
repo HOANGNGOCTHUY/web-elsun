@@ -295,8 +295,155 @@ html, body{
     font-size: 20px;
     line-height: 20px;
     margin-left: 30px;
+    color: var(--black-color);
+    cursor: pointer;
+}
+.header_search{
+    position: relative;
+}
+.search-box{
+    position: absolute;
+    width: 500px;
+    top: 15%;
+    left: -337%;
+    border:  1px solid #ccc;
+    outline: none;
+    background: beige;
+    padding: 16px 32px;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 30px;
+    display: none;
+}
+/* Slider-Service */
+.slider{
+    margin-bottom: 30px;
+}
+.slider-main{
+    background: url(../images/header.png) no-repeat;
+    background-size: contain;
+    display: flex;
+    position: relative;
+}
+.slider-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 90px 0;
+    max-width: 1529px;
+    width: 100%;
+}
+.slider-title{
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 50px;
+    /* or 139% */
+    text-transform: uppercase;
+    width: 100%;
+    max-width: 570px;
+    margin-bottom: 30px;
+    text-align: right;
+
+}
+.slider-desc{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    /* or 156% */
+    color: #000000;
+    width: 100%;
+    max-width: 591px ;
+    margin-bottom: 23px;
+    text-align: right;
+}
+.slider-readmore{
+    text-decoration: none;
+    color: var(--black-color);
+    background: var(--white-color);
+    padding: 7px 23px;
+    border-radius: 30px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    border: 1px solid var(--black-color);
+    margin-bottom: 8px;
+}
+.slider-readmore:hover{
+    background: var(--primary-color);
+    border: none;
+    color: var(--white-color);
+}
+.slider-image img{
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 0 1px var(--black-color));
 }
 
+/* Panivation Slider */
+.slider-panivation{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    cursor: pointer;
+}
+.slider-panivation::before{
+    content: "";
+    position: absolute;
+    height: 80%;
+    width: 1px;
+    background: #000000;
+}
+.btn{
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    margin: 10px 0;
+    border: 1px solid var(--black-color);
+    background: var(--white-color);
+    position: relative;
+}
+.btn:hover{
+    background: var(--primary-color);
+    width: 20px;
+    height: 20px;
+    border: 2px solid #F5F5F5;
+
+}
+.btn:first-child{
+    margin-top: 26px;
+}
+.btn:last-child{
+    margin-bottom: 26px;
+}
+.btn-prev, .btn-next{
+    background: var(--white-color);
+    position: relative;
+    /* font-size: 20px;
+    line-height: 20px; */
+    /* margin: 10px 0; */
+}
+.slider-btn:hover {
+    color: var(--primary-color);
+}
+.slider-heart{
+    position: absolute;
+    /* top: 0; */
+    left: 0;
+    bottom: 210px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background: var(--white-color);
+    border-radius: 0 30px 30px 0;
+    text-align: center;
+    text-decoration: none;
+    color: var(--black-color);
+}
+.slider-heart:hover{
+    color: var(--primary-color);
+}
 /* Category */
 .category-main{
     display: flex;
@@ -342,6 +489,8 @@ html, body{
     display: block;
     object-fit: cover;
     float: right;
+    width: 100%;
+    height: auto;
 }
 .category-right{
     flex: 1;
@@ -357,6 +506,7 @@ html, body{
     padding-top: 16px;
     background-color: #EFB627;
     margin-bottom: 40px;
+    height: 100%;
 }
 .category-down{
     display: flex;
@@ -365,6 +515,7 @@ html, body{
     padding-left: 58px;
     padding-top: 16px;
     background: #F4F2C6;
+    height: 100%;
 }
 
 
@@ -445,103 +596,26 @@ html, body{
 .slick-next{
     right: 37px;
 }
+/* Banner 1 */
+
 
 /* Banner-Service 2 */
 .banner-about{
     margin-bottom: 70px;
 }
-.banner-about-main{
-    position: relative;
-}
-.banner-about-image{
-    float: right;
-}
-.banner-about-img{
-   width: 100%;
-   height: auto;
-}
-.banner-about-content{
-    position: absolute;
-    top: 0;
-    background: linear-gradient(90deg, #F5F5F5 71.35%, rgba(245, 245, 245, 0) 100%);
-    width: 100%;
+.banner-about-main-up{
+    background: url(../images/dichvu/baner.png) no-repeat right center/auto;
     height: 100%;
-    max-width: 1000px;
-    padding: 139px 120px;
-}
-.banner-about-content::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    border: 3px solid var(--primary-color);
-    width: 100px;
-}
-.banner-about-title{
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 26px;
-    /* identical to box height, or 118% */
-    color: var(--black-color);
-    margin-bottom: 30px;
-}
-.banner-about-text{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 25px;
-    /* or 156% */
-    text-align: justify;
-    color: var(--black-color);
-    margin-bottom: 40px;
-}
-.banner-about-text span{
-    margin-top: 10px;
-    color: var(--primary-color);
-    display: block;
-    font-weight: 800;
-    line-height: 30px;
-    font-size: 16px;
-}
-.more-links{
-    display: flex;
-    justify-content: end;
-    align-items: center;
-}
-.more-infomation{
-    text-align: right;
-    display: block;
-    text-decoration: none;
-    color: var(--black-color);
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 14px;
-    margin-right: 22px;
-}
-.more-icon{
-    font-size: 30px;
-    line-height: 30px;
-    color: var(--black-color);
-}
-.btn-readmore-links{
-    text-align: center;
-    margin-bottom: 90px;
-
-}
-.btn-readmore{
-    padding: 16px 65px;
-    text-decoration: none;
-    background: var(--primary-color);
-    border-radius: 30px;
-    color: var(--white-color);
 }
 .banner-about-body{
     background: linear-gradient(90deg, #F5F5F5 71.35%, rgba(245, 245, 245, 0) 100%);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    padding: 95px 247px 95px 124px ;
     width: 100%;
     max-width: 1000px;
+    padding: 95px 0 95px 124px;
+}
+.banner-about-main-down{
+    background: url(../images/dichvu/baner2.png) no-repeat right center/auto;
+    height: 100%;
 }
 .banner-titlee{
     font-weight: 800;
@@ -549,7 +623,7 @@ html, body{
     line-height: 50px;
     /* identical to box height, or 139% */
     text-transform: uppercase;
-    color: #D32046;
+    color: var(--primary-color);
     margin-bottom: 64px;
     position: relative;
 }
@@ -557,28 +631,148 @@ html, body{
     content: "";
     display: block;
     position: absolute;
-    border: 3px solid #EFB627;
-    bottom: -32px;
     width: 98px;
+    border: 2px solid #EFB627;
+    bottom: -28px;
 }
 .banner-heading{
     font-weight: 300;
-    font-size: 59px;
+    font-size: 60px;
     line-height: 60px;
     /* or 100% */
+    /* #1A9FA2 */
     color: #1A9FA2;
-    margin-bottom: 64px;
+    width: 100%;
+    max-width: 635px;
+    margin-bottom: 67px;
 }
 .btn-more{
+    background: var(--white-color);
+    border-radius: 30px;
     text-decoration: none;
     color: var(--black-color);
-    border-radius: 30px;
-    background: var(--white-color);
     padding: 16px 65px;
     border: 1px solid var(--black-color);
 }
-
-
+.btn-more:hover{
+    background: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+}
+.banner-about-content{
+    width: 100%;
+    max-width: 1000px;
+    padding: 139px 120px;
+    background: linear-gradient(90deg, #F5F5F5 71.35%, rgba(245, 245, 245, 0) 100%);
+    position: relative;
+}
+.banner-about-content::before{
+    content: "";
+    position: absolute;
+    width: 100px;
+    border: 2px solid var(--primary-color);
+    top: 0;
+}
+.banner-about-title{
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    color: var(--black-color);
+    margin-bottom: 30px;
+}
+.banner-about-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: justify;
+}
+.banner-about-name{
+    display: block;
+    color: var(--primary-color);
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 55px;
+}
+.more-links{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.more-infomation{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    /* identical to box height, or 100% */
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--black-color);
+    margin-right: 20px;
+}
+.btn-readmore-links{
+    text-align: center;
+}
+.btn-readmore-links .btn-readmore{
+    text-decoration: none;
+    padding: 16px 70px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-radius: 30px;
+}
+.btn-readmore-links .btn-readmore:hover{
+    opacity: 0.7;
+}
+/* SUPPORT */
+.support{
+    margin-bottom: 70px;
+}
+.support-main{
+    background: url(../images/dichvu/support.png) no-repeat;
+    /* opacity: 0.8; */
+}
+.support-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 90px 0;
+}
+.support-line{
+    width: 90px;
+    border: 1px solid var(--black-color);
+    margin: 60px 60px 0;
+}
+.support-item{
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--black-color);
+}
+.support-image{
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+}
+.support-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.support-content{
+    margin-top: 30px;
+}
+.support-title{
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 30px;
+    /* or 188% */
+    margin-bottom: 5px;
+}
+.support-desc{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.2em;
+}
 /* CUSTOMER */
 .customer{
    margin-bottom: 70px;
@@ -1518,7 +1712,8 @@ html, body{
     position: absolute;
     z-index: 1;
     right: 0;
-    padding: 23px 30px 23px 0;
+    /* padding: 23px 30px 23px 0; */
+    padding: 16px 100px 23px 10px;
     border: 0;
     outline: 0;
     background: transparent;
