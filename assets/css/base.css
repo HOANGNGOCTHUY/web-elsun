@@ -34,6 +34,7 @@
     text-align: center;
 }
 .global-title{
+    /* position: relative; */
     text-align: center;
     text-transform: uppercase;
     color: var(--black-color);
