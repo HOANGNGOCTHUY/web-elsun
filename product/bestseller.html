@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BESTSELLER PRODUCT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/grid.css">
+    <link rel="stylesheet" href="../assets/css/fontello.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/productresponsive.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+</head>
+<body>
+    <div id="app">
+        <!-- Header -->
+        <section class="header">
+            <div class="container-fuild">
+                <div class="header-main">
+                    <div class="header_logo">
+                        <img src="../assets/images/logo.png" alt="">
+                    </div>
+                    <div id="overlay"></div>
+                    <div class="header-hamburger">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                    </div>
+                    <ul class="menu_list" >
+                        <li class="item active"><a href="../index.html">Trang chủ</a></li>
+                        <li class="item"><a href="#"> Nội thất 5.0</a></li>
+                        <li class="dropdown">
+                            <a href="#"> DỊCH VỤ CỦA ELSUN <i class="icon-down-open"></i></a>
+                            <div class="dropdown-content">
+                                <a href="aboutus.html">Về chúng tôi</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="product.html" class="dropbtn"> SẢN PHẨM NỘI THẤT <i class="icon-down-open"></i></a>
+                            <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                        </li>
+                        <li class="item"><a href="#"> Studio sáng tạo</a></li>
+                        <li class="item"><a href="contact.html"> Contact</a></li>
+                    </ul>
+                        
+                    <div class="header_search">
+                        <input type="search" class="search-box" placeholder="Nhập tìm kiếm"/>
+                            <div class="search-button">
+                                <i class="icon-search-cart icon-search" aria-hidden="true"></i>
+                            </div>
+                        
+                    </div>
+                        <div class="header_cart">
+                            <div class="header_cart-wrap">
+                                <i class=" icon-search-cart icon-cart"></i>
+                                <span class="header_cart-notice">3</span>
+                                <!-- no cart: header_cart-no-cart  -->
+                                <!-- <div class="header_cart-list ">
+                                        <img src="../assets/images/no-cart.png" alt="" class="header_cart-no-cart-img">
+                                        <span class="header_cart-no-cart-msg">
+                                            Chưa có sản phẩm
+                                        </span>
+                                    
+                                    <h4 class="header_cart-heading">Sản phẩm đã thêm</h4>
+                                    <ul class="header_cart-list-item">
+                                        //Cart item
+                                        <li class="header_cart-item">
+                                            <img src="../assets/images/logo.png" alt="" class="header_cart-img">
+                                            <div class="header_cart-item-info">
+                                                <div class="header_cart-item-head">
+                                                    <h5 class="header_cart-item-name">Armchair with wooden frame</h5>
+                                                    <div class="header_cart-item-wrap">
+                                                        <span class="header_cart-item-price">900,000</span>
+                                                        <span class="header_cart-item-multiply">x</span>
+                                                        <span class="header_cart-item-quantity">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header_cart-item-body">
+                                                    <span class="header_cart-item-description">
+                                                        TF-BST02-01
+                                                    </span>
+                                                    <span class="header_cart-item-remove">xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                        <a href="#" class="header_cart-view btn btn-cart">Xem giỏ hàng</a>
+        
+                                </div> -->
+                            </div>
+                            
+                        </div>
+                </div>
+            </div>
+        </section>
+         <!-- Banner -->
+         <section class="banner">
+            <div class="container-fuild">
+                <div class="banner-image">
+                    <img src="../assets/images/product/bannerbsl.png" alt="" class="banner-img">
+                </div>
+                <div class="banner-content">
+                    <h3 class="banner-title">BEST SELLER</h3>
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+                        <li class="breadcrumb-item"><a href="#">Best Seller</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- Product Bestseler -->
+        <section class="product">
+        <div class="container">
+            <div class="product-main">
+                <div class="product-filter">
+                    <div class="filter-menu">
+                        <i class="filter-icon fa-solid fa-bars"></i>
+                        <div class="filter-name">Bộ lọc</div>
+
+                        <div class="filter-group">
+                            <div class="sorted-by">
+                                <div class="sorted-head">
+                                   <span class="sorted-name">Sắp xếp theo</span> 
+                                   <i class="sorted-icon fa-solid fa-sort-down"></i>
+                                </div>
+                                <ul class="sorted-list">
+                                    <li class="sorted-item"><i class="fa-solid fa-check"></i><a href="#!" class="sorted-links">Nổi bật nhất</a></li>
+                                    <li class="sorted-item"><i class="fa-solid fa-check"></i><a href="#!" class="sorted-links">Bán chạy nhất</a></li>
+                                    <li class="sorted-item"><i class="fa-solid fa-check"></i><a href="#!" class="sorted-links">Giá thấp đến cao</a></li>
+                                    <li class="sorted-item"><i class="fa-solid fa-check"></i><a href="#!" class="sorted-links">Giá cao đến thấp</a></li>
+                                </ul>
+                            </div>
+                            <div class="filter-price">
+                                <span class="sorted-name">Giá (VND)</span>
+                                <div class="price-head">
+                                    <h3 class="price-number">0 </h3>
+                                    <h3 class="price-number">50,125,007</h3>
+                                </div>
+                                <div class="progress-price">
+                                    <div class="progress-bar" style="width: 85%;">
+                                        <div class="progress-value">85%</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filter-size">
+                                   <span class="sorted-name">Kích thước</span>
+                                   <div class="size-list">
+                                    <div class="size-table">
+                                        <h2 class="size-title">Dài</h2>
+                                        <span class="size-desc">100 cm</span>
+                                   </div>
+                                   <div class="size-table">
+                                        <h2 class="size-title">Rộng</h2>
+                                        <span class="size-desc">100 cm</span>
+                                    </div>
+                                    <div class="size-table">
+                                        <h2 class="size-title">Cao</h2>
+                                        <span class="size-desc">100 cm</span>
+                                    </div>
+                                   </div>
+                            </div>
+
+                            <div class="filter-color">
+                                <span class="sorted-name">Màu sắc</span>
+                                <div class="color-list">
+                                    <span class="color-black"></span>
+                                    <span class="color-white"></span>
+                                    <span class="color-grey"></span>
+                                    <span class="color-lightgrey"></span>
+                                    <span class="color-pink"></span>
+                                    <span class="color-green"></span>
+                                    <span class="color-yellow"></span>
+                                    <span class="color-lightyellow"></span>
+                                    <span class="color-flamingo"></span>
+                                    <span class="color-darkgrey"></span>
+                                    <span class="color-blue"></span>
+                                    <span class="color-carrot"></span>
+                                    <span class="color-neongreen"></span>
+                                    <span class="color-lavender"></span>
+                                    <span class="color-irish"></span>
+                                    <span class="color-caramel"></span>
+                                </div>
+                         </div>
+
+                        </div>
+                    </div>
+                    <ul class="filter-list">
+                        <li class="filler-item"><a href="#!" class="filter-links">TẤT CẢ</a></li>
+                        <li class="filler-item"><a href="#!" class="filter-links">NỘI THẤT 5.0</a></li>
+                        <li class="filler-item"><a href="#!" class="filter-links">NỘI THẤT TRUYỀN THỐNG</a></li>
+                        <li class="filler-item"><a href="#!" class="filter-links">ĐỒ GIA DỤNG TIỆN ÍCH</a></li>
+                        <li class="filler-item"><a href="#!" class="filter-links">DỤNG CỤ LÀM VIỆC TIỆN ÍCH</a></li>
+                    </ul>
+                </div>
+                
+                <div class="product-list">
+                    <div class="product-item ">
+                        <h3 class="product-directory">Nội thất 5.0</h3>
+                        <div class="product-image product-pink">
+                            <a href="#!" class="image">
+                                <img src="../assets/images/product/product1.png" alt="" class="product-img">
+                            </a>
+                            <ul class="product-links">
+                                <li><a href="#" data-tip="Yêu thích"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#" data-tip="Add cart"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                <li><a href="#" data-tip="Mua ngay" class="product-cart">Mua ngay</a></li>
+                            </ul>   
+                        </div>
+                        <div class="product-content">
+                            <div class="product-name">Armchair with wooden frame</div>
+                            <div class="product-heading">TF-BST02-01</div>
+                            <div class="product-price">900,000</div>
+                            <div class="product-line"></div>
+                        </div>
+                    </div>
+                    <div class="product-item ">
+                        <h3 class="product-directory">Nội thất truyền thống</h3>
+                        <div class="product-image product-green">
+                            <a href="#!" class="image">
+                                <img src="../assets/images/product/product2.png" alt="" class="product-img">
+                            </a>
+                            <ul class="product-links">
+                                <li><a href="#" data-tip="Yêu thích"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#" data-tip="Add cart"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                <li><a href="#" data-tip="Mua ngay" class="product-cart">Mua ngay</a></li>
+                            </ul>   
+                        </div>
+                        <div class="product-content">
+                            <div class="product-name">Armchair with wooden frame</div>
+                            <div class="product-heading">TF-BST02-01</div>
+                            <div class="product-price">900,000</div>
+                            <div class="product-line"></div>
+                        </div>
+                    </div>
+                    <div class="product-item ">
+                        <h3 class="product-directory">Dụng cụ làm việc tiện ích</h3>
+                        <div class="product-image product-bgyellow">
+                            <a href="#!" class="image">
+                                <img src="../assets/images/product/product3.png" alt="" class="product-img">
+                            </a>
+                            <ul class="product-links">
+                                <li><a href="#" data-tip="Yêu thích"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#" data-tip="Add cart"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                <li><a href="#" data-tip="Mua ngay" class="product-cart">Mua ngay</a></li>
+                            </ul>   
+                        </div>
+                        <div class="product-content">
+                            <div class="product-name">Armchair with wooden frame</div>
+                            <div class="product-heading">TF-BST02-01</div>
+                            <div class="product-price">900,000</div>
+                            <div class="product-line"></div>
+                        </div>
+                    </div>
+                    <div class="product-item ">
+                        <h3 class="product-directory">Đồ gia dụng tiện ích</h3>
+                        <div class="product-image product-yellow">
+                            <a href="#!" class="image">
+                                <img src="../assets/images/product/product4.png" alt="" class="product-img">
+                            </a>
+                            <ul class="product-links">
+                                <li><a href="#" data-tip="Yêu thích"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#" data-tip="Add cart"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                <li><a href="#" data-tip="Mua ngay" class="product-cart">Mua ngay</a></li>
+                            </ul>   
+                        </div>
+                        <div class="product-content">
+                            <div class="product-name">Armchair with wooden frame</div>
+                            <div class="product-heading">TF-BST02-01</div>
+                            <div class="product-price">900,000</div>
+                            <div class="product-line"></div>
+                        </div>
+                    </div>
+                    <div class="product-item ">
+                        <h3 class="product-directory">Nội thất 5.0</h3>
+                        <div class="product-image product-pink">
+                            <a href="#!" class="image">
+                                <img src="../assets/images/product/product5.png" alt="" class="product-img">
+                            </a>
+                            <ul class="product-links">
+                                <li><a href="#" data-tip="Yêu thích"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#" data-tip="Add cart"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                <li><a href="#" data-tip="Mua ngay" class="product-cart">Mua ngay</a></li>
+                            </ul>   
+                        </div>
+                        <div class="product-content">
+                            <div class="product-name">Armchair with wooden frame</div>
+                            <div class="product-heading">TF-BST02-01</div>
+                            <div class="product-price">900,000</div>
+                            <div class="product-line"></div>
+                        </div>
+                    </div>
+                    <div class="product-item ">
+                        <h3 class="product-directory">Nội thất truyền thống</h3>
+                        <div class="product-image product-green">
+                            <a href="#!" class="image">
+                                <img src="../assets/images/product/product6.png" alt="" class="product-img">
+                            </a>
+                            <ul class="product-links">
+                                <li><a href="#" data-tip="Yêu thích"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#" data-tip="Add cart"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                <li><a href="#" data-tip="Mua ngay" class="product-cart">Mua ngay</a></li>
+                            </ul>   
+                        </div>
+                        <div class="product-content">
+                            <div class="product-name">Armchair with wooden frame</div>
+                            <div class="product-heading">TF-BST02-01</div>
+                            <div class="product-price">900,000</div>
+                            <div class="product-line"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="product-panivation">
+                    <div class="product-btn product-prev"><i class="fa-solid fa-arrow-left-long"></i></div>
+                    <div class="product-btn product-next"><i class="fa-solid fa-arrow-right-long"></i></div>
+                </div> -->
+                <div class="project-pagination">
+                    <ul class="pagination-list">
+                        <li class="pani-item active ">
+                            <a class="pani-link" href="#">1</a>
+                        </li>
+                        <li class="pani-item">
+                            <a class="pani-link" href="#">2</a>
+                        </li>
+                        <li class="pani-item ">
+                            <a class="pani-link" href="#">3</a>
+                        </li>
+                        <li class="pani-item">
+                            <a class="pani-link" href="#">4</a>
+                        </li>
+                        <li class="pani-item">
+                            <a href="#" class="pani-link" aria-label="Next">
+                                <i class="pani-icon fa-solid fa-angle-right"></i>
+                            </a>
+                        </li>
+                        <li class="pani-item">
+                            <a href="#" class="pani-link" aria-label="Next">
+                                <i class="pani-icon fa-solid fa-angles-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="pagination-content">
+                        hiển thị 1-9 / trong 20 sản phẩm
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <!-- SERVICE -->
+        <section class="support">
+            <div class="container-fuild">
+                <div class="support-main">
+                    <div class="support-list">
+                        <div class="support-item">
+                            <div class="support-image">
+                                <img src="../assets/images/dichvu/ship.png" alt="" class="support-img">
+                            </div>
+                            <div class="support-content">
+                                <div class="support-title">vận chuyển trong</div>
+                                <div class="support-desc">2 - 4 ngày làm việc</div>
+                            </div>
+                        </div>
+                        <div class="support-line"></div>
+                        <div class="support-item">
+                            <div class="support-image">
+                                <img src="../assets/images/dichvu/24hour.png" alt="" class="support-img">
+                            </div>
+                            <div class="support-content">
+                                <div class="support-title">HỖ trợ online</div>
+                                <div class="support-desc">tất cả các ngày</div>
+                            </div>
+                        </div>
+                        <div class="support-line"></div>
+                        <div class="support-item">
+                            <div class="support-image">
+                                <img src="../assets/images/dichvu/chedo.png" alt="" class="support-img">
+                            </div>
+                            <div class="support-content">
+                                <div class="support-title">chế độ bảo hành</div>
+                                <div class="support-desc">chính hãng</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SUB -->
+        <section class="subscribe">
+            <div class="container">
+                <div class="subscribe-main">
+                    <div class="subscribe-heading">
+                        <h1 class="global-title subscribe-title">get subscribe</h1>
+                    </div>
+                    <form action="" class="form-subscribe">
+                        <label for="email">your email</label>
+                        <input type="text" class="form-sub">
+                        <input type="submit" class="btn btn-subscribe" value="subscribe">
+                    </form>
+                    <div class="service-social">
+                        <div class="service-icon">
+                            <i class="icon-facebook"></i>
+                            <span class="title">Facebook</span> 
+                        </div>
+                        <div class="line"></div>
+                        <div class="service-icon">
+                            <i class="icon-instagram"></i>
+                            <span class="title">Instagram</span> 
+                        </div>
+                        <div class="line"></div>
+                        <div class="service-icon">
+                            <svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="30px" height="30px"><path d="M 25 1 C 19.672869 1 15.604123 5.9531422 15.166016 12 L 5.0585938 12 C 3.9235937 12 2.999376 12.980995 3.0625 14.113281 L 4.7871094 44.285156 C 4.9365844 46.922145 7.1369035 49 9.7773438 49 L 40.222656 49 C 42.863851 49 45.063433 46.921831 45.212891 44.285156 L 46.9375 14.115234 C 47.002643 12.982141 46.076406 12 44.941406 12 L 34.833984 12 C 34.395877 5.9531422 30.327131 1 25 1 z M 25 3 C 29.036936 3 32.408924 6.8867916 32.835938 12 L 17.164062 12 C 17.591075 6.8867916 20.963064 3 25 3 z M 25.080078 18 C 28.920078 18 31.799062 20.060938 32.039062 20.210938 L 31.009766 21.880859 C 30.759766 21.710859 30.310625 21.439844 30.140625 21.339844 C 29.120625 20.789844 27.240078 19.970703 25.080078 19.970703 C 21.830078 19.970703 19.480469 21.77 19.480469 24.25 C 19.480469 26.72 21.660234 27.699766 25.240234 29.009766 C 28.870234 30.329766 32.970703 31.829609 32.970703 36.599609 C 32.970703 40.189609 29.430156 43.009766 24.910156 43.009766 C 20.920156 43.009766 17.640078 40.560156 16.830078 39.910156 L 17.939453 38.259766 C 17.969453 38.289766 21.160156 41.029297 24.910156 41.029297 C 28.270156 41.029297 31 39.039609 31 36.599609 C 31 33.439609 28.570547 32.319375 24.560547 30.859375 C 21.260547 29.649375 17.509766 28.28 17.509766 24.25 C 17.509766 20.69 20.760078 18 25.080078 18 z"/></svg>
+                            <span class="title">Shopee</span> 
+                        </div>
+                        <div class="line"></div>
+                        <div class="service-icon">
+                            <i class=" icon-amazon"></i>
+                            <span class="title">Amazon</span> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <section class="footer">
+            <div class="container-fuild">
+                <div class="footer-main">
+                    <div class="footer-content">
+                        <ul class="footer-list">
+                            <li class="footer-item"><a class="footer-links" href="#">CHÍNH SÁCH BẢO MẬT</a></li>
+                            <li class="footer-item"><a class="footer-links" href="#">ĐIỀU KHOẢN & ĐIỀU KIỆN</a></li>
+                            <li class="footer-item"><a class="footer-links" href="#">PHƯƠNG THỨC GIAO HÀNG</a></li>
+                            <li class="footer-item"><a class="footer-links" href="#">PHƯƠNG THỨC THANH TOÁN</a></li>
+                        </ul>
+                        <div class="footer-image">
+                            <img src="../assets/images/logofooter.png" alt="" class="footer-logo">
+                        </div>
+                        <div class="footer-desc">ELSUN đặt chân vào ngành nội thất giữa lúc thị trường đang chứng kiến sự cạnh tranh gay gắt của nhiều tên tuổi. Tuy nhiên, điều này không thể cản trở chúng tôi trên con đường đem đến không gian sống tối ưu nhất cho khách hàng. ELSUN chọn cho mình lối đi riêng và hoàn toàn khác biệt với phân nhánh nội thất 5.0 làm chủ lực. “Mảnh đất” chưa được khai phá triệt để này cùng sự sáng tạo sẽ là nền tảng vững chắc giúp ELSUN tạo dựng một thương hiệu nổi bật không chỉ ở Việt Nam mà còn trên toàn cầu.
+                        </div>
+                        <div class="footer-contact">
+                            <div class="footer-address">
+                                <span class="footer-title">Địa chỉ văn phòng:</span>
+                                <span class="footer-text"> 86/36/3 phổ quang, phường 2, quận Tân bình</span>
+                            </div>
+                            <div class="footer-address">
+                                <span class="footer-title">Hotline:</span>
+                                <span class="footer-text"> 0833 611 116</span>
+                            </div>
+                            
+                        </div>
+                        <div class="footer-coppyright">
+                            Copyright &copy; elsun.vn, 2020
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </div> 
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="../assets/js/app.js"></script>
+    <script>
+        $(".icon-search").click(function(){
+        // $(".search-box").toggleClass("active").focus;
+        // $(this).toggleClass("animate");
+        // $(".search-box").val("");
+        $(".search-box").css("display", "block");
+        });
+    </script>
+
+</body>
+</html>

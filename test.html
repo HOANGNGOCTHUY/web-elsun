@@ -4,144 +4,111 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PRODUCT ELSUN</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/productresponsive.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/fontello.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 </head>
-<style>
-    :root{
-        --background-color: #2A2E37;
-        --search-bg-color: #242628;
-        --icon-color: #00FEDE;
-        --transition: all .5s ease;
-    }
-    
-* {
-  box-sizing: border-box;
-}
 
-body {
-  background: var(--background-color);
-}
-
-.search {
-  width: 100px;
-  height: 100px;
-  margin: 40px auto 0;
-  background-color: var(--search-bg-color);
-  position: relative;
-  overflow: hidden;
-  transition: var(--transition);
-    }
-    .search:before {
-    content: '';
-    display: block;
-    width: 3px;
-    height: 100%;
-    position: relative;
-    background-color: var(--icon-color);
-    transition: var(--transition);
-  }
-  .search .open {
-    width: 420px;
-  }
-    .search .open:before {
-      height: 60px;
-      margin: 20px 0 20px 30px;
-      position: absolute;
-    }
-
-
-.search-box {
-  width: 100%;
-  height: 100%;
-  box-shadow: none;
-  border: none;
-  background: transparent;
-  color: #fff;
-  padding: 20px 100px 20px 45px;
-  font-size: 40px;
-    }
-  .search-box:focus {
-    outline: none;
-  }
-
-
-.search-button {
-  width: 100px;
-  height: 100px;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-  padding: 20px;
-  cursor: pointer;
-}
-
-.search-icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 40px;
-  border: 3px solid var(--icon-color);
-  display: block;
-  position: relative;
-  margin-left: 5px;
-  transition: var(--transition);
-    }
-  .search-icon:before {
-    content: '';
-    width: 3px;
-    height: 15px;
-    position: absolute;
-    right: -2px;
-    top: 30px;
-    display: block;
-    background-color: var(--icon-color);
-    transform: rotate(-45deg);
-    transition: var(--transition);
-  }
-  .search-icon:after {
-    content: '';
-    width: 3px;
-    height: 15px;
-    position: absolute;
-    right: -12px;
-    top: 40px;
-    display: block;
-    background-color: var(--icon-color);
-    transform: rotate(-45deg);
-    transition: var(--transition);
-  }
-  .open{
-    margin: 0;
-    width: 60px;
-    height: 60px;
-    border-radius: 60px;
-  }
-
-  .open:before {
-      transform: rotate(52deg);
-      right: 22px;
-      top: 23px;
-      height: 18px;
-    }
-   .open:after {
-      transform: rotate(-230deg);
-      right: 22px;
-      top: 13px;
-      height: 18px;
-    }
-</style>
 <body>
-    
-    <div class="search">
-        <input type="search" class="search-box" />
-        <span class="search-button">
-          <span class="search-icon"></span>
-        </span>
-      </div>
-      <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-      <script>
-      $('.search-button').click(function(){
-        $(this).parent().toggleClass('open');
-      });</script>
+   <div id="app">
+        <!-- Header -->
+        <section class="header">
+            <div class="container-fuild">
+                <div class="header-main">
+                    <div class="header_logo">
+                        <img src="./assets/images/logo.png" alt="">
+                    </div>
+                    <div id="overlay"></div>
+                    <div class="header-hamburger">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                    </div>
+                    <ul class="menu_list" >
+                        <li class="item active"><a href="index.html">Trang chủ</a></li>
+                        <li class="item"><a href="#"> Nội thất 5.0</a></li>
+                        <li class="dropdown">
+                            <a href="#"> DỊCH VỤ CỦA ELSUN <i class="icon-down-open"></i></a>
+                            <div class="dropdown-content">
+                                <a href="aboutus.html">Về chúng tôi</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="product.html" class="dropbtn"> SẢN PHẨM NỘI THẤT <i class="icon-down-open"></i></a>
+                            <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                        </li>
+                        <li class="item"><a href="#"> Studio sáng tạo</a></li>
+                        <li class="item"><a href="contact.html"> Contact</a></li>
+                    </ul>
+                        
+                    <div class="header_search">
+                        <input type="search" class="search-box" placeholder="Nhập tìm kiếm"/>
+                            <div class="search-button">
+                                <i class="icon-search-cart icon-search" aria-hidden="true"></i>
+                            </div>
+                        
+                    </div>
+                        <div class="header_cart">
+                            <div class="header_cart-wrap">
+                                <i class=" icon-search-cart icon-cart"></i>
+                                <span class="header_cart-notice">3</span>
+                                <!-- no cart: header_cart-no-cart  -->
+                                <!-- <div class="header_cart-list ">
+                                        <img src="./assets/images/no-cart.png" alt="" class="header_cart-no-cart-img">
+                                        <span class="header_cart-no-cart-msg">
+                                            Chưa có sản phẩm
+                                        </span>
+                                    
+                                    <h4 class="header_cart-heading">Sản phẩm đã thêm</h4>
+                                    <ul class="header_cart-list-item">
+                                        //Cart item
+                                        <li class="header_cart-item">
+                                            <img src="./assets/images/logo.png" alt="" class="header_cart-img">
+                                            <div class="header_cart-item-info">
+                                                <div class="header_cart-item-head">
+                                                    <h5 class="header_cart-item-name">Armchair with wooden frame</h5>
+                                                    <div class="header_cart-item-wrap">
+                                                        <span class="header_cart-item-price">900,000</span>
+                                                        <span class="header_cart-item-multiply">x</span>
+                                                        <span class="header_cart-item-quantity">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header_cart-item-body">
+                                                    <span class="header_cart-item-description">
+                                                        TF-BST02-01
+                                                    </span>
+                                                    <span class="header_cart-item-remove">xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                        <a href="#" class="header_cart-view btn btn-cart">Xem giỏ hàng</a>
+        
+                                </div> -->
+                            </div>
+                            
+                        </div>
+                </div>
+            </div>
+        </section>
+        
+        
+
+    </div> 
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/js/app.js"></script>
 </body>
 </html>

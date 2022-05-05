@@ -4,24 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PRODUCT ELSUN</title>
+    <title>HOME PRODUCT</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="./assets/css/grid.css">
-    <link rel="stylesheet" href="./assets/css/base.css">
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <link rel="stylesheet" href="./assets/css/responsive.css">
-    <link rel="stylesheet" href="./assets/css/fontello.css">
+    <link rel="stylesheet" href="../assets/css/grid.css">
+    <link rel="stylesheet" href="../assets/css/fontello.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/productresponsive.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-</head>
 
+</head>
 <body>
-   <div id="app">
+    <div id="app">
         <!-- Header -->
         <section class="header">
             <div class="container-fuild">
                 <div class="header-main">
                     <div class="header_logo">
-                        <img src="./assets/images/logo.png" alt="">
+                        <img src="../assets/images/logo.png" alt="">
                     </div>
                     <div id="overlay"></div>
                     <div class="header-hamburger">
@@ -30,7 +31,7 @@
                             <div class="bar"></div>
                     </div>
                     <ul class="menu_list" >
-                        <li class="item active"><a href="index.html">Trang chủ</a></li>
+                        <li class="item active"><a href="../index.html">Trang chủ</a></li>
                         <li class="item"><a href="#"> Nội thất 5.0</a></li>
                         <li class="dropdown">
                             <a href="#"> DỊCH VỤ CỦA ELSUN <i class="icon-down-open"></i></a>
@@ -52,14 +53,20 @@
                         <li class="item"><a href="contact.html"> Contact</a></li>
                     </ul>
                         
-                    <div class="header_search"><i class="icon-search-cart icon-search"></i></div>
+                    <div class="header_search">
+                        <input type="search" class="search-box" placeholder="Nhập tìm kiếm"/>
+                            <div class="search-button">
+                                <i class="icon-search-cart icon-search" aria-hidden="true"></i>
+                            </div>
+                        
+                    </div>
                         <div class="header_cart">
                             <div class="header_cart-wrap">
                                 <i class=" icon-search-cart icon-cart"></i>
                                 <span class="header_cart-notice">3</span>
                                 <!-- no cart: header_cart-no-cart  -->
                                 <!-- <div class="header_cart-list ">
-                                        <img src="./assets/images/no-cart.png" alt="" class="header_cart-no-cart-img">
+                                        <img src="../assets/images/no-cart.png" alt="" class="header_cart-no-cart-img">
                                         <span class="header_cart-no-cart-msg">
                                             Chưa có sản phẩm
                                         </span>
@@ -68,7 +75,7 @@
                                     <ul class="header_cart-list-item">
                                         //Cart item
                                         <li class="header_cart-item">
-                                            <img src="./assets/images/logo.png" alt="" class="header_cart-img">
+                                            <img src="../assets/images/logo.png" alt="" class="header_cart-img">
                                             <div class="header_cart-item-info">
                                                 <div class="header_cart-item-head">
                                                     <h5 class="header_cart-item-name">Armchair with wooden frame</h5>
@@ -102,7 +109,7 @@
                 <div class="product-slider_main">
                     <div class="product-slider_wrap">
                         <div class="product-slider_image">
-                            <img src="./assets/images/product/slider.png" alt="">
+                            <img src="../assets/images/product/slider.png" alt="">
                         </div>
                         <div class="product-slider_content">
                             <div class="product-slider_heading">
@@ -135,7 +142,7 @@
                 <div class="product-category_up">
                     <div class="product-category_left">
                         <div class="product-category_image">
-                            <img src="./assets/images/product/sofa.png" alt="">
+                            <img src="../assets/images/product/sofa.png" alt="">
                         </div>
                         <div class="product-category_content content-left">
                             <div class="sale-off">20% sale off</div>
@@ -153,7 +160,7 @@
                     </div>
                     <div class="product-category_right">
                         <div class="product-category_image">
-                            <img src="./assets/images/product/giadung.png" alt="">
+                            <img src="../assets/images/product/giadung.png" alt="">
                         </div>
                         <div class="product-category_content content-right">
                             <div class="product-category_body body-right">
@@ -172,7 +179,7 @@
                 <div class="product-category_down">
                     <div class="category_down-left">
                         <div class="product-category_image">
-                            <img src="./assets/images/product/studio.png" alt="">
+                            <img src="../assets/images/product/studio.png" alt="">
                         </div>
                         <div class="category_down_content  down_content-left">
                             <div class="sale-off">sắp ra mắt</div>
@@ -191,7 +198,7 @@
                         <div class="category_down_content down_content-right">
                             <div class="sale-off">hàng mới về</div>
                             <div class="product-category_body  down-body">
-                                <div class="product-category_name down_name" >Nội thất truyền thống</div>
+                                <div class="product-category_name down_name">dụng cụ làm việc tiện ích</div>
                                 <div class="product-category_price down_price-right">Giá từ 1,200,000</div>
                                 <div class="product-category_line line-down-right"></div>
                             </div>
@@ -201,7 +208,7 @@
                             </div>
                         </div>
                         <div class="product-category_image">
-                            <img src="./assets/images/product/tienich.png" alt="">
+                            <img src="../assets/images/product/tienich.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -209,133 +216,133 @@
         </section>
         <!-- Product Bestseler -->
         <section class="product">
-            <div class="container">
-                <div class="product-main">
-                    <div class="product-heading">
-                        <h1 class="global-title product-title">best seller</h1>
-                    </div>
-                    <div class="product-list">
-                        <div class="product-item ">
-                            <h3 class="product-directory">Nội thất 5.0</h3>
-                            <div class="product-image product-pink">
-                                <a href="#!" class="image">
-                                    <img src="./assets/images/product/product1.png" alt="" class="product-img">
-                                </a>
-                                <ul class="product-links">
-                                    <li><a href="#" data-tip="Yêu thích"><i class="fa fa-heart"></i></a></li>
-                                    <li><a href="#" data-tip="Add cart"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                                    <li><a href="#" data-tip="Mua ngay" class="product-cart">Mua ngay</a></li>
-                                </ul>   
-                            </div>
-                            <div class="product-content">
-                                <div class="product-name">Armchair with wooden frame</div>
-                                <div class="product-heading">TF-BST02-01</div>
-                                <div class="product-price">900,000</div>
-                                <div class="product-line"></div>
-                            </div>
+        <div class="container">
+            <div class="product-main">
+                <div class="product-heading">
+                    <h1 class="global-title product-title">best seller</h1>
+                </div>
+                <div class="product-list">
+                    <div class="product-item ">
+                        <h3 class="product-directory">Nội thất 5.0</h3>
+                        <div class="product-image product-pink">
+                            <a href="#!" class="image">
+                                <img src="../assets/images/product/product1.png" alt="" class="product-img">
+                            </a>
+                            <ul class="product-links">
+                                <li><a href="#" data-tip="Yêu thích"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#" data-tip="Add cart"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                <li><a href="#" data-tip="Mua ngay" class="product-cart">Mua ngay</a></li>
+                            </ul>   
                         </div>
-                        <div class="product-item ">
-                            <h3 class="product-directory">Nội thất truyền thống</h3>
-                            <div class="product-image product-green">
-                                <a href="#!" class="image">
-                                    <img src="./assets/images/product/product2.png" alt="" class="product-img">
-                                </a>
-                                <ul class="product-links">
-                                    <li><a href="#" data-tip="Yêu thích"><i class="fa fa-heart"></i></a></li>
-                                    <li><a href="#" data-tip="Add cart"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                                    <li><a href="#" data-tip="Mua ngay" class="product-cart">Mua ngay</a></li>
-                                </ul>   
-                            </div>
-                            <div class="product-content">
-                                <div class="product-name">Armchair with wooden frame</div>
-                                <div class="product-heading">TF-BST02-01</div>
-                                <div class="product-price">900,000</div>
-                                <div class="product-line"></div>
-                            </div>
-                        </div>
-                        <div class="product-item ">
-                            <h3 class="product-directory">Dụng cụ làm việc tiện ích</h3>
-                            <div class="product-image product-bgyellow">
-                                <a href="#!" class="image">
-                                    <img src="./assets/images/product/product3.png" alt="" class="product-img">
-                                </a>
-                                <ul class="product-links">
-                                    <li><a href="#" data-tip="Yêu thích"><i class="fa fa-heart"></i></a></li>
-                                    <li><a href="#" data-tip="Add cart"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                                    <li><a href="#" data-tip="Mua ngay" class="product-cart">Mua ngay</a></li>
-                                </ul>   
-                            </div>
-                            <div class="product-content">
-                                <div class="product-name">Armchair with wooden frame</div>
-                                <div class="product-heading">TF-BST02-01</div>
-                                <div class="product-price">900,000</div>
-                                <div class="product-line"></div>
-                            </div>
-                        </div>
-                        <div class="product-item ">
-                            <h3 class="product-directory">Đồ gia dụng tiện ích</h3>
-                            <div class="product-image product-yellow">
-                                <a href="#!" class="image">
-                                    <img src="./assets/images/product/product4.png" alt="" class="product-img">
-                                </a>
-                                <ul class="product-links">
-                                    <li><a href="#" data-tip="Yêu thích"><i class="fa fa-heart"></i></a></li>
-                                    <li><a href="#" data-tip="Add cart"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                                    <li><a href="#" data-tip="Mua ngay" class="product-cart">Mua ngay</a></li>
-                                </ul>   
-                            </div>
-                            <div class="product-content">
-                                <div class="product-name">Armchair with wooden frame</div>
-                                <div class="product-heading">TF-BST02-01</div>
-                                <div class="product-price">900,000</div>
-                                <div class="product-line"></div>
-                            </div>
-                        </div>
-                        <div class="product-item ">
-                            <h3 class="product-directory">Nội thất 5.0</h3>
-                            <div class="product-image product-pink">
-                                <a href="#!" class="image">
-                                    <img src="./assets/images/product/product5.png" alt="" class="product-img">
-                                </a>
-                                <ul class="product-links">
-                                    <li><a href="#" data-tip="Yêu thích"><i class="fa fa-heart"></i></a></li>
-                                    <li><a href="#" data-tip="Add cart"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                                    <li><a href="#" data-tip="Mua ngay" class="product-cart">Mua ngay</a></li>
-                                </ul>   
-                            </div>
-                            <div class="product-content">
-                                <div class="product-name">Armchair with wooden frame</div>
-                                <div class="product-heading">TF-BST02-01</div>
-                                <div class="product-price">900,000</div>
-                                <div class="product-line"></div>
-                            </div>
-                        </div>
-                        <div class="product-item ">
-                            <h3 class="product-directory">Nội thất truyền thống</h3>
-                            <div class="product-image product-green">
-                                <a href="#!" class="image">
-                                    <img src="./assets/images/product/product6.png" alt="" class="product-img">
-                                </a>
-                                <ul class="product-links">
-                                    <li><a href="#" data-tip="Yêu thích"><i class="fa fa-heart"></i></a></li>
-                                    <li><a href="#" data-tip="Add cart"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                                    <li><a href="#" data-tip="Mua ngay" class="product-cart">Mua ngay</a></li>
-                                </ul>   
-                            </div>
-                            <div class="product-content">
-                                <div class="product-name">Armchair with wooden frame</div>
-                                <div class="product-heading">TF-BST02-01</div>
-                                <div class="product-price">900,000</div>
-                                <div class="product-line"></div>
-                            </div>
+                        <div class="product-content">
+                            <div class="product-name">Armchair with wooden frame</div>
+                            <div class="product-heading">TF-BST02-01</div>
+                            <div class="product-price">900,000</div>
+                            <div class="product-line"></div>
                         </div>
                     </div>
-                    <div class="product-panivation">
-                        <div class="product-btn product-prev"><i class="fa-solid fa-arrow-left-long"></i></div>
-                        <div class="product-btn product-next"><i class="fa-solid fa-arrow-right-long"></i></div>
+                    <div class="product-item ">
+                        <h3 class="product-directory">Nội thất truyền thống</h3>
+                        <div class="product-image product-green">
+                            <a href="#!" class="image">
+                                <img src="../assets/images/product/product2.png" alt="" class="product-img">
+                            </a>
+                            <ul class="product-links">
+                                <li><a href="#" data-tip="Yêu thích"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#" data-tip="Add cart"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                <li><a href="#" data-tip="Mua ngay" class="product-cart">Mua ngay</a></li>
+                            </ul>   
+                        </div>
+                        <div class="product-content">
+                            <div class="product-name">Armchair with wooden frame</div>
+                            <div class="product-heading">TF-BST02-01</div>
+                            <div class="product-price">900,000</div>
+                            <div class="product-line"></div>
+                        </div>
+                    </div>
+                    <div class="product-item ">
+                        <h3 class="product-directory">Dụng cụ làm việc tiện ích</h3>
+                        <div class="product-image product-bgyellow">
+                            <a href="#!" class="image">
+                                <img src="../assets/images/product/product3.png" alt="" class="product-img">
+                            </a>
+                            <ul class="product-links">
+                                <li><a href="#" data-tip="Yêu thích"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#" data-tip="Add cart"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                <li><a href="#" data-tip="Mua ngay" class="product-cart">Mua ngay</a></li>
+                            </ul>   
+                        </div>
+                        <div class="product-content">
+                            <div class="product-name">Armchair with wooden frame</div>
+                            <div class="product-heading">TF-BST02-01</div>
+                            <div class="product-price">900,000</div>
+                            <div class="product-line"></div>
+                        </div>
+                    </div>
+                    <div class="product-item ">
+                        <h3 class="product-directory">Đồ gia dụng tiện ích</h3>
+                        <div class="product-image product-yellow">
+                            <a href="#!" class="image">
+                                <img src="../assets/images/product/product4.png" alt="" class="product-img">
+                            </a>
+                            <ul class="product-links">
+                                <li><a href="#" data-tip="Yêu thích"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#" data-tip="Add cart"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                <li><a href="#" data-tip="Mua ngay" class="product-cart">Mua ngay</a></li>
+                            </ul>   
+                        </div>
+                        <div class="product-content">
+                            <div class="product-name">Armchair with wooden frame</div>
+                            <div class="product-heading">TF-BST02-01</div>
+                            <div class="product-price">900,000</div>
+                            <div class="product-line"></div>
+                        </div>
+                    </div>
+                    <div class="product-item ">
+                        <h3 class="product-directory">Nội thất 5.0</h3>
+                        <div class="product-image product-pink">
+                            <a href="#!" class="image">
+                                <img src="../assets/images/product/product5.png" alt="" class="product-img">
+                            </a>
+                            <ul class="product-links">
+                                <li><a href="#" data-tip="Yêu thích"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#" data-tip="Add cart"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                <li><a href="#" data-tip="Mua ngay" class="product-cart">Mua ngay</a></li>
+                            </ul>   
+                        </div>
+                        <div class="product-content">
+                            <div class="product-name">Armchair with wooden frame</div>
+                            <div class="product-heading">TF-BST02-01</div>
+                            <div class="product-price">900,000</div>
+                            <div class="product-line"></div>
+                        </div>
+                    </div>
+                    <div class="product-item ">
+                        <h3 class="product-directory">Nội thất truyền thống</h3>
+                        <div class="product-image product-green">
+                            <a href="#!" class="image">
+                                <img src="../assets/images/product/product6.png" alt="" class="product-img">
+                            </a>
+                            <ul class="product-links">
+                                <li><a href="#" data-tip="Yêu thích"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#" data-tip="Add cart"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                <li><a href="#" data-tip="Mua ngay" class="product-cart">Mua ngay</a></li>
+                            </ul>   
+                        </div>
+                        <div class="product-content">
+                            <div class="product-name">Armchair with wooden frame</div>
+                            <div class="product-heading">TF-BST02-01</div>
+                            <div class="product-price">900,000</div>
+                            <div class="product-line"></div>
+                        </div>
                     </div>
                 </div>
+                <div class="product-panivation">
+                    <div class="product-btn product-prev"><i class="fa-solid fa-arrow-left-long"></i></div>
+                    <div class="product-btn product-next"><i class="fa-solid fa-arrow-right-long"></i></div>
+                </div>
             </div>
+        </div>
         </section>
         <!-- Banner About -->
         <section class="banner-product">
@@ -346,7 +353,7 @@
                             <span class="banner-product-text">chỉ trong tuần này</span>
                         </div>
                         <div class="banner-product-title">Chỉ trong tuần này</div>
-                        <div class="banner-product-heading">-20% cho các <br> sản phẩm truyền thống </div>
+                        <div class="banner-product-heading">-20% cho các sản phẩm truyền thống </div>
                         <div class="btn-more-links">
                             <a href="#" class="btn-more">Xem thêm</a>
                         </div>
@@ -354,8 +361,8 @@
                 </div>
             </div>
         </section>
-         <!-- Product New -->
-         <section class="product">
+        <!-- Product New -->
+        <section class="product">
             <div class="container">
                 <div class="product-main">
                     <div class="product-heading">
@@ -366,7 +373,7 @@
                             <h3 class="product-directory">Nội thất 5.0</h3>
                             <div class="product-image product-pink">
                                 <a href="#!" class="image">
-                                    <img src="./assets/images/product/product1.png" alt="" class="product-img">
+                                    <img src="../assets/images/product/product1.png" alt="" class="product-img">
                                 </a>
                                 <ul class="product-links">
                                     <li><a href="#" data-tip="Yêu thích"><i class="fa fa-heart"></i></a></li>
@@ -385,7 +392,7 @@
                             <h3 class="product-directory">Nội thất truyền thống</h3>
                             <div class="product-image product-green">
                                 <a href="#!" class="image">
-                                    <img src="./assets/images/product/product2.png" alt="" class="product-img">
+                                    <img src="../assets/images/product/product2.png" alt="" class="product-img">
                                 </a>
                                 <ul class="product-links">
                                     <li><a href="#" data-tip="Yêu thích"><i class="fa fa-heart"></i></a></li>
@@ -404,7 +411,7 @@
                             <h3 class="product-directory">Dụng cụ làm việc tiện ích</h3>
                             <div class="product-image product-bgyellow">
                                 <a href="#!" class="image">
-                                    <img src="./assets/images/product/product3.png" alt="" class="product-img">
+                                    <img src="../assets/images/product/product3.png" alt="" class="product-img">
                                 </a>
                                 <ul class="product-links">
                                     <li><a href="#" data-tip="Yêu thích"><i class="fa fa-heart"></i></a></li>
@@ -423,7 +430,7 @@
                             <h3 class="product-directory">Đồ gia dụng tiện ích</h3>
                             <div class="product-image product-yellow">
                                 <a href="#!" class="image">
-                                    <img src="./assets/images/product/product4.png" alt="" class="product-img">
+                                    <img src="../assets/images/product/product4.png" alt="" class="product-img">
                                 </a>
                                 <ul class="product-links">
                                     <li><a href="#" data-tip="Yêu thích"><i class="fa fa-heart"></i></a></li>
@@ -442,7 +449,7 @@
                             <h3 class="product-directory">Nội thất 5.0</h3>
                             <div class="product-image product-pink">
                                 <a href="#!" class="image">
-                                    <img src="./assets/images/product/product5.png" alt="" class="product-img">
+                                    <img src="../assets/images/product/product5.png" alt="" class="product-img">
                                 </a>
                                 <ul class="product-links">
                                     <li><a href="#" data-tip="Yêu thích"><i class="fa fa-heart"></i></a></li>
@@ -461,7 +468,7 @@
                             <h3 class="product-directory">Nội thất truyền thống</h3>
                             <div class="product-image product-green">
                                 <a href="#!" class="image">
-                                    <img src="./assets/images/product/product6.png" alt="" class="product-img">
+                                    <img src="../assets/images/product/product6.png" alt="" class="product-img">
                                 </a>
                                 <ul class="product-links">
                                     <li><a href="#" data-tip="Yêu thích"><i class="fa fa-heart"></i></a></li>
@@ -477,6 +484,7 @@
                             </div>
                         </div>
                     </div>
+                
                     <div class="product-panivation">
                         <div class="product-btn product-prev"><i class="fa-solid fa-arrow-left-long"></i></div>
                         <div class="product-btn product-next"><i class="fa-solid fa-arrow-right-long"></i></div>
@@ -510,25 +518,25 @@
                     </div>
                     <div class="service-customer container">
                         <div class="customer-image">
-                            <img src="./assets/images/dichvu/khachhang1.png" alt="">
+                            <img src="../assets/images/dichvu/khachhang1.png" alt="">
                         </div>
                         <div class="customer-image">
-                            <img src="./assets/images/dichvu/khachhang2.png" alt="">
+                            <img src="../assets/images/dichvu/khachhang2.png" alt="">
                         </div>
                         <div class="customer-image">
-                            <img src="./assets/images/dichvu/khachhang3.png" alt="">
+                            <img src="../assets/images/dichvu/khachhang3.png" alt="">
                         </div>
                         <div class="customer-image">
-                            <img src="./assets/images/dichvu/khachhang4.png" alt="">
+                            <img src="../assets/images/dichvu/khachhang4.png" alt="">
                         </div>
                         <div class="customer-image">
-                            <img src="./assets/images/dichvu/khachhang5.png" alt="">
+                            <img src="../assets/images/dichvu/khachhang5.png" alt="">
                         </div>
                         <div class="customer-image">
-                            <img src="./assets/images/dichvu/khachhang6.png" alt="">
+                            <img src="../assets/images/dichvu/khachhang6.png" alt="">
                         </div>
                         <div class="customer-image">
-                            <img src="./assets/images/dichvu/khachhang7.png" alt="">
+                            <img src="../assets/images/dichvu/khachhang7.png" alt="">
                         </div>
                         
                     </div>
@@ -542,7 +550,7 @@
                                 </div>
                             </div>
                             <div class="customers-image">
-                                <img src="./assets/images/dichvu/customer1.png" alt="">
+                                <img src="../assets/images/dichvu/customer1.png" alt="">
                             </div>
                             <div class="customers-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum vitae fugiat accusamus rerum nobis molestias quae vero provident voluptatum dicta eum, aperiam porro beatae voluptatem obcaecati distinctio expedita minus sunt.</div>
                         </div>
@@ -555,7 +563,7 @@
                                 </div>
                             </div>
                             <div class="customers-image">
-                                <img src="./assets/images/dichvu/customer2.png" alt="">
+                                <img src="../assets/images/dichvu/customer2.png" alt="">
                             </div>
                             <div class="customers-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum vitae fugiat accusamus rerum nobis molestias quae vero provident voluptatum dicta eum, aperiam porro beatae voluptatem obcaecati distinctio expedita minus sunt.</div>
                         </div>
@@ -568,7 +576,7 @@
                                 </div>
                             </div>
                             <div class="customers-image">
-                                <img src="./assets/images/dichvu/customer3.png" alt="">
+                                <img src="../assets/images/dichvu/customer3.png" alt="">
                             </div>
                             <div class="customers-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum vitae fugiat accusamus rerum nobis molestias quae vero provident voluptatum dicta eum, aperiam porro beatae voluptatem obcaecati distinctio expedita minus sunt.</div>
                         </div>
@@ -581,7 +589,7 @@
                                 </div>
                             </div>
                             <div class="customers-image">
-                                <img src="./assets/images/dichvu/customer1.png" alt="">
+                                <img src="../assets/images/dichvu/customer1.png" alt="">
                             </div>
                             <div class="customers-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum vitae fugiat accusamus rerum nobis molestias quae vero provident voluptatum dicta eum, aperiam porro beatae voluptatem obcaecati distinctio expedita minus sunt.</div>
                         </div>
@@ -594,7 +602,7 @@
                                 </div>
                             </div>
                             <div class="customers-image">
-                                <img src="./assets/images/dichvu/customer2.png" alt="">
+                                <img src="../assets/images/dichvu/customer2.png" alt="">
                             </div>
                             <div class="customers-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum vitae fugiat accusamus rerum nobis molestias quae vero provident voluptatum dicta eum, aperiam porro beatae voluptatem obcaecati distinctio expedita minus sunt.</div>
                         </div>
@@ -607,7 +615,7 @@
                                 </div>
                             </div>
                             <div class="customers-image">
-                                <img src="./assets/images/dichvu/customer3.png" alt="">
+                                <img src="../assets/images/dichvu/customer3.png" alt="">
                             </div>
                             <div class="customers-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum vitae fugiat accusamus rerum nobis molestias quae vero provident voluptatum dicta eum, aperiam porro beatae voluptatem obcaecati distinctio expedita minus sunt.</div>
                         </div>
@@ -621,85 +629,88 @@
         <section class="subscribe">
             <div class="container">
                 <div class="subscribe-main">
-                   <div class="subscribe-heading">
-                       <h1 class="global-title subscribe-title">get subscribe</h1>
-                   </div>
-                   <form action="" class="form-subscribe">
-                       <label for="email">your email</label>
-                       <input type="text" class="form-sub">
-                       <input type="submit" class="btn btn-subscribe" value="subscribe">
-                   </form>
-                   <div class="service-social">
-                       <div class="service-icon">
-                           <i class="icon-facebook"></i>
-                           <span class="title">Facebook</span> 
-                       </div>
-                       <div class="line"></div>
-                       <div class="service-icon">
-                           <i class="icon-instagram"></i>
-                           <span class="title">Instagram</span> 
-                       </div>
-                       <div class="line"></div>
-                       <div class="service-icon">
-                           <svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="30px" height="30px"><path d="M 25 1 C 19.672869 1 15.604123 5.9531422 15.166016 12 L 5.0585938 12 C 3.9235937 12 2.999376 12.980995 3.0625 14.113281 L 4.7871094 44.285156 C 4.9365844 46.922145 7.1369035 49 9.7773438 49 L 40.222656 49 C 42.863851 49 45.063433 46.921831 45.212891 44.285156 L 46.9375 14.115234 C 47.002643 12.982141 46.076406 12 44.941406 12 L 34.833984 12 C 34.395877 5.9531422 30.327131 1 25 1 z M 25 3 C 29.036936 3 32.408924 6.8867916 32.835938 12 L 17.164062 12 C 17.591075 6.8867916 20.963064 3 25 3 z M 25.080078 18 C 28.920078 18 31.799062 20.060938 32.039062 20.210938 L 31.009766 21.880859 C 30.759766 21.710859 30.310625 21.439844 30.140625 21.339844 C 29.120625 20.789844 27.240078 19.970703 25.080078 19.970703 C 21.830078 19.970703 19.480469 21.77 19.480469 24.25 C 19.480469 26.72 21.660234 27.699766 25.240234 29.009766 C 28.870234 30.329766 32.970703 31.829609 32.970703 36.599609 C 32.970703 40.189609 29.430156 43.009766 24.910156 43.009766 C 20.920156 43.009766 17.640078 40.560156 16.830078 39.910156 L 17.939453 38.259766 C 17.969453 38.289766 21.160156 41.029297 24.910156 41.029297 C 28.270156 41.029297 31 39.039609 31 36.599609 C 31 33.439609 28.570547 32.319375 24.560547 30.859375 C 21.260547 29.649375 17.509766 28.28 17.509766 24.25 C 17.509766 20.69 20.760078 18 25.080078 18 z"/></svg>
-                           <span class="title">Shopee</span> 
-                       </div>
-                       <div class="line"></div>
-                       <div class="service-icon">
-                           <i class=" icon-amazon"></i>
-                           <span class="title">Amazon</span> 
-                       </div>
-                   </div>
+                    <div class="subscribe-heading">
+                        <h1 class="global-title subscribe-title">get subscribe</h1>
+                    </div>
+                    <form action="" class="form-subscribe">
+                        <label for="email">your email</label>
+                        <input type="text" class="form-sub">
+                        <input type="submit" class="btn btn-subscribe" value="subscribe">
+                    </form>
+                    <div class="service-social">
+                        <div class="service-icon">
+                            <i class="icon-facebook"></i>
+                            <span class="title">Facebook</span> 
+                        </div>
+                        <div class="line"></div>
+                        <div class="service-icon">
+                            <i class="icon-instagram"></i>
+                            <span class="title">Instagram</span> 
+                        </div>
+                        <div class="line"></div>
+                        <div class="service-icon">
+                            <svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="30px" height="30px"><path d="M 25 1 C 19.672869 1 15.604123 5.9531422 15.166016 12 L 5.0585938 12 C 3.9235937 12 2.999376 12.980995 3.0625 14.113281 L 4.7871094 44.285156 C 4.9365844 46.922145 7.1369035 49 9.7773438 49 L 40.222656 49 C 42.863851 49 45.063433 46.921831 45.212891 44.285156 L 46.9375 14.115234 C 47.002643 12.982141 46.076406 12 44.941406 12 L 34.833984 12 C 34.395877 5.9531422 30.327131 1 25 1 z M 25 3 C 29.036936 3 32.408924 6.8867916 32.835938 12 L 17.164062 12 C 17.591075 6.8867916 20.963064 3 25 3 z M 25.080078 18 C 28.920078 18 31.799062 20.060938 32.039062 20.210938 L 31.009766 21.880859 C 30.759766 21.710859 30.310625 21.439844 30.140625 21.339844 C 29.120625 20.789844 27.240078 19.970703 25.080078 19.970703 C 21.830078 19.970703 19.480469 21.77 19.480469 24.25 C 19.480469 26.72 21.660234 27.699766 25.240234 29.009766 C 28.870234 30.329766 32.970703 31.829609 32.970703 36.599609 C 32.970703 40.189609 29.430156 43.009766 24.910156 43.009766 C 20.920156 43.009766 17.640078 40.560156 16.830078 39.910156 L 17.939453 38.259766 C 17.969453 38.289766 21.160156 41.029297 24.910156 41.029297 C 28.270156 41.029297 31 39.039609 31 36.599609 C 31 33.439609 28.570547 32.319375 24.560547 30.859375 C 21.260547 29.649375 17.509766 28.28 17.509766 24.25 C 17.509766 20.69 20.760078 18 25.080078 18 z"/></svg>
+                            <span class="title">Shopee</span> 
+                        </div>
+                        <div class="line"></div>
+                        <div class="service-icon">
+                            <i class=" icon-amazon"></i>
+                            <span class="title">Amazon</span> 
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- Footer -->
         <section class="footer">
-           <div class="container-fuild">
-               <div class="footer-main">
-                   <div class="footer-content">
-                       <ul class="footer-list">
-                           <li class="footer-item"><a class="footer-links" href="#">CHÍNH SÁCH BẢO MẬT</a></li>
-                           <li class="footer-item"><a class="footer-links" href="#">ĐIỀU KHOẢN & ĐIỀU KIỆN</a></li>
-                           <li class="footer-item"><a class="footer-links" href="#">PHƯƠNG THỨC GIAO HÀNG</a></li>
-                           <li class="footer-item"><a class="footer-links" href="#">PHƯƠNG THỨC THANH TOÁN</a></li>
-                       </ul>
-                       <div class="footer-image">
-                           <img src="./assets/images/logofooter.png" alt="" class="footer-logo">
-                       </div>
-                       <div class="footer-desc">ELSUN đặt chân vào ngành nội thất giữa lúc thị trường đang chứng kiến sự cạnh tranh gay gắt của nhiều tên tuổi. Tuy nhiên, điều này không thể cản trở chúng tôi trên con đường đem đến không gian sống tối ưu nhất cho khách hàng. ELSUN chọn cho mình lối đi riêng và hoàn toàn khác biệt với phân nhánh nội thất 5.0 làm chủ lực. “Mảnh đất” chưa được khai phá triệt để này cùng sự sáng tạo sẽ là nền tảng vững chắc giúp ELSUN tạo dựng một thương hiệu nổi bật không chỉ ở Việt Nam mà còn trên toàn cầu.
-                       </div>
-                       <div class="footer-contact">
-                           <div class="footer-address">
-                               <span class="footer-title">Địa chỉ văn phòng:</span>
-                               <span class="footer-text"> 86/36/3 phổ quang, phường 2, quận Tân bình</span>
-                           </div>
-                           <div class="footer-address">
-                               <span class="footer-title">Hotline:</span>
-                               <span class="footer-text"> 0833 611 116</span>
-                           </div>
-                           
-                       </div>
-                       <div class="footer-coppyright">
-                           Copyright &copy; elsun.vn, 2020
-                       </div>
-                   </div>
-                   
-               </div>
-              
-               
-           </div>
+            <div class="container-fuild">
+                <div class="footer-main">
+                    <div class="footer-content">
+                        <ul class="footer-list">
+                            <li class="footer-item"><a class="footer-links" href="#">CHÍNH SÁCH BẢO MẬT</a></li>
+                            <li class="footer-item"><a class="footer-links" href="#">ĐIỀU KHOẢN & ĐIỀU KIỆN</a></li>
+                            <li class="footer-item"><a class="footer-links" href="#">PHƯƠNG THỨC GIAO HÀNG</a></li>
+                            <li class="footer-item"><a class="footer-links" href="#">PHƯƠNG THỨC THANH TOÁN</a></li>
+                        </ul>
+                        <div class="footer-image">
+                            <img src="../assets/images/logofooter.png" alt="" class="footer-logo">
+                        </div>
+                        <div class="footer-desc">ELSUN đặt chân vào ngành nội thất giữa lúc thị trường đang chứng kiến sự cạnh tranh gay gắt của nhiều tên tuổi. Tuy nhiên, điều này không thể cản trở chúng tôi trên con đường đem đến không gian sống tối ưu nhất cho khách hàng. ELSUN chọn cho mình lối đi riêng và hoàn toàn khác biệt với phân nhánh nội thất 5.0 làm chủ lực. “Mảnh đất” chưa được khai phá triệt để này cùng sự sáng tạo sẽ là nền tảng vững chắc giúp ELSUN tạo dựng một thương hiệu nổi bật không chỉ ở Việt Nam mà còn trên toàn cầu.
+                        </div>
+                        <div class="footer-contact">
+                            <div class="footer-address">
+                                <span class="footer-title">Địa chỉ văn phòng:</span>
+                                <span class="footer-text"> 86/36/3 phổ quang, phường 2, quận Tân bình</span>
+                            </div>
+                            <div class="footer-address">
+                                <span class="footer-title">Hotline:</span>
+                                <span class="footer-text"> 0833 611 116</span>
+                            </div>
+                            
+                        </div>
+                        <div class="footer-coppyright">
+                            Copyright &copy; elsun.vn, 2020
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
         </section>
     </div> 
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script
       type="text/javascript"
-      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
-    ></script>
-    <script
-      type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
-    <script src="./assets/js/app.js"></script>
+    <script src="../assets/js/app.js"></script>
+    <script>
+        $(".icon-search").click(function(){
+        // $(".search-box").toggleClass("active").focus;
+        // $(this).toggleClass("animate");
+        // $(".search-box").val("");
+        $(".search-box").css("display", "block");
+        });
+    </script>
+
 </body>
 </html>
