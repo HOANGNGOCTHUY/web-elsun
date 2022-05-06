@@ -140,18 +140,23 @@
                                     <li class="sorted-item"><i class="fa-solid fa-check"></i><a href="#!" class="sorted-links">Giá cao đến thấp</a></li>
                                 </ul>
                             </div>
+                            <div class="filter-line"></div>
+                            <!-- <div class="filter-price">
+                                <span class="sorted-name">Giá (VND)</span>
+                                <div class="price-values">
+                                    <div>$<span id="first"></span></div> - <div>$<span id="second"></span></div>
+                                </div>                            
+                                <div class="progress-price" data-value-0="#first" data-value-1="#second" data-range="#third"></div>
+                            </div> -->
                             <div class="filter-price">
                                 <span class="sorted-name">Giá (VND)</span>
-                                <div class="price-head">
-                                    <h3 class="price-number">0 </h3>
-                                    <h3 class="price-number">50,125,007</h3>
+                                <div class="price-values">
+                                    <div>$<span id="first"></span></div> -- <div>$<span id="second"></span></div>
                                 </div>
-                                <div class="progress-price">
-                                    <div class="progress-bar" style="width: 85%;">
-                                        <div class="progress-value">85%</div>
-                                    </div>
-                                </div>
+                                <div class="progress-price" data-value-0="#first" data-value-1="#second" data-range="#third"></div>
+                            
                             </div>
+                            <!-- <div class="filter-line"></div> -->
 
                             <div class="filter-size">
                                    <span class="sorted-name">Kích thước</span>
@@ -162,34 +167,66 @@
                                    </div>
                                    <div class="size-table">
                                         <h2 class="size-title">Rộng</h2>
-                                        <span class="size-desc">100 cm</span>
+                                        <span class="size-desc">70 cm</span>
                                     </div>
                                     <div class="size-table">
                                         <h2 class="size-title">Cao</h2>
-                                        <span class="size-desc">100 cm</span>
+                                        <span class="size-desc">40 cm</span>
                                     </div>
                                    </div>
                             </div>
-
+                            <div class="filter-line"></div>
                             <div class="filter-color">
                                 <span class="sorted-name">Màu sắc</span>
                                 <div class="color-list">
-                                    <span class="color-black"></span>
-                                    <span class="color-white"></span>
-                                    <span class="color-grey"></span>
-                                    <span class="color-lightgrey"></span>
-                                    <span class="color-pink"></span>
-                                    <span class="color-green"></span>
-                                    <span class="color-yellow"></span>
-                                    <span class="color-lightyellow"></span>
-                                    <span class="color-flamingo"></span>
-                                    <span class="color-darkgrey"></span>
-                                    <span class="color-blue"></span>
-                                    <span class="color-carrot"></span>
-                                    <span class="color-neongreen"></span>
-                                    <span class="color-lavender"></span>
-                                    <span class="color-irish"></span>
-                                    <span class="color-caramel"></span>
+                                    <div class="color-item">
+                                        <div class="color-size color-black"></div>
+                                    </div>
+                                    <div class="color-item">
+                                        <div class="color-size color-white"></div>
+                                    </div>
+                                    <div class="color-item">
+                                        <div class="color-size color-grey"></div>
+                                    </div>
+                                    <div class="color-item">
+                                        <div class="color-size color-lightgrey"></div>
+                                    </div>
+                                    <div class="color-item">
+                                        <div class="color-size color-pink"></div>
+                                    </div>
+                                    <div class="color-item">
+                                        <div class="color-size color-green"></div>
+                                    </div>
+                                    <div class="color-item">
+                                        <div class="color-size color-yellow"></div>
+                                    </div>
+                                    <div class="color-item">
+                                        <div class="color-size color-lightyellow"></div>
+                                    </div>
+                                    <div class="color-item">
+                                        <div class="color-size color-flamingo"></div>
+                                    </div>
+                                    <div class="color-item">
+                                        <div class="color-size color-darkgrey"></div>
+                                    </div>
+                                    <div class="color-item">
+                                        <div class="color-size color-blue"></div>
+                                    </div>
+                                    <div class="color-item">
+                                        <div class="color-size color-carrot"></div>
+                                    </div>
+                                    <div class="color-item">
+                                        <div class="color-size color-neongreen"></div>
+                                    </div>
+                                    <div class="color-item">
+                                        <div class="color-size color-lavender"></div>
+                                    </div>
+                                    <div class="color-item">
+                                        <div class="color-size color-irish"></div>
+                                    </div>
+                                    <div class="color-item">
+                                        <div class="color-size color-caramel"></div>   
+                                    </div>
                                 </div>
                          </div>
 
@@ -471,15 +508,11 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
-    <script src="../assets/js/app.js"></script>
-    <script>
-        $(".icon-search").click(function(){
-        // $(".search-box").toggleClass("active").focus;
-        // $(this).toggleClass("animate");
-        // $(".search-box").val("");
-        $(".search-box").css("display", "block");
-        });
-    </script>
 
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+
+    <script src="../assets/js/app.js"></script>
 </body>
 </html>
