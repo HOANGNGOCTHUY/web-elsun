@@ -2057,16 +2057,26 @@ html, body{
     font-weight: 400;
     font-size: 20px;
     color: var(--primary-color);
-    margin-left: 57px;
-    
+    padding-left: 57px;
+    position: relative ;
 }
-.product-line{
+.product-price::before{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    border: 1px solid var(--primary-color);
+    transform: rotate(45deg);
+    width: 60px;
+    left: -5px;
+}
+/* .product-line{
     position: absolute;
     width: 60px;
     border:  1px solid var(--primary-color);
     transform: rotate(45deg);
     left: -5px;
-}
+} */
 
 .product-panivation{
     
@@ -2367,6 +2377,10 @@ html, body{
     cursor: pointer;
     position: relative;
 }
+.filter-menu.actived, .filter-group.actived{
+    display: block;
+}
+
 .filter-icon{
     margin-right: 10px;
     font-size: 20px;
@@ -2406,6 +2420,7 @@ html, body{
     width: 100%;
     z-index: 1;
     padding: 20px 23px;
+    display: none;
 }
 .filter-line{
     width: 100%;
@@ -2451,44 +2466,127 @@ html, body{
     color: var(--primary-color);
 }
 /* Price */
-    .ui-slider-active{
-        cursor: -webkit-grabbing;
-        cursor: grabbing;
+    .ui-slider-active {
+    cursor: -webkit-grabbing;
+    cursor: grabbing;
     }
-    .filter-price{
-        --primary: #275efe;
-        --headline: #3F4656;
-        --text: #99A3BA;
-        width: 100%;
-    }
-    .filter-price .price-values{
-        max-width: 0;
-        font-weight: 500;
-        color: var(--black-color);
-    }
+  
+    .filter-price {
+    --primary: #275efe;
+    --headline: #3F4656;
+    --text: #99A3BA;
+    width: 100%;
+  }
+  
+  .filter-price .price-values div
+    {
+    display: inline-block;
+    vertical-align: top;
+  }
+  .filter-price .price-values {
+    /* margin: 0; */
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--black-color);
+    margin-top: 10px;
+  }
+  .filter-price .price-values > div:first-child {
+    margin-right: 2px;
+  }
+  .filter-price .price-values > div:last-child {
+    margin-left: 2px;
+  }
+  .filter-price .progress-price {
+    margin: 10px 0 10px 5px;
+  }
+  
+  .progress-price {
+    --primary: #000;
+    --handle: #fff;
+    --handle-active: #000000;
+    --handle-hover: #000000;
+    --handle-border: 2px solid var(--primary);
+    --line: #c3c3c3;
+    --line-active: var(--black-color);
+    width: 100%;
+    height: 23px;
+    position: relative;
+    pointer-events: none;
+  }
+  .progress-price .ui-slider-handle {
+    --y: 0;
+    --background: var(--handle);
+    cursor: -webkit-grab;
+    cursor: grab;
+    -webkit-tap-highlight-color: transparent;
+    top: 50%;
+    width: 9px;
+    height: 9px;
+    transform: translateX(-50%) translate(-50%);
+    position: absolute;
+    outline: none;
+    display: block;
+    pointer-events: auto;
+  }
+  .progress-price .ui-slider-handle div {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    transition: background 0.4s ease;
+    transform: translateY(calc(var(--y) * 1px));
+    border: var(--black-color);
+    background: var(--black-color);
+  }
+  .progress-price .ui-slider-handle:hover {
+    --background: var(--handle-hover);
+  }
+  .progress-price .ui-slider-handle:active {
+    --background: var(--handle-active);
+    cursor: -webkit-grabbing;
+    cursor: grabbing;
+  }
+  .progress-price svg {
+    --stroke: var(--line);
+    display: block;
+    height: 83px;
+  }
+  .progress-price svg path {
+    fill: none;
+    stroke: var(--stroke);
+    stroke-width: 1;
+  }
+  .progress-price .active, .progress-price > svg {
+    position: absolute;
+    top: -27px;
+    height: 83px;
+  }
+  .progress-price > svg {
+    left: 0;
+    width: 100%;
+  }
+  .progress-price .active {
+    position: absolute;
+    overflow: hidden;
+    left: calc(var(--l) * 1px);
+    right: calc(var(--r) * 1px);
+  }
+  .progress-price .active svg {
+    --stroke: var(--line-active);
+    position: relative;
+    left: calc(var(--l) * -1px);
+    right: calc(var(--r) * -1px);
+  }
+  .progress-price .active svg path {
+    stroke-width: 2;
+  }
+  .values-line{
+      width: 10px;
+      border: 1px solid var(--black-color);
+      line-height: 22px;
+      margin-top: 5px;
+  }
 
-    .filter-price .price-values > div:first-child{
-        margin-right: 2px;
-    }
-    .filter-price .price-values > div:last-child{
-        margin-left: 2px;
-    }
-    .filter-price .progress-price{
-        margin-top: 22px;
-    }
-    .progress-price{
-        --primary: #275efe;
-        --handle: #fff;
-        --handle-active: #becfff;
-        --handle-hover: #e9efff;
-        --handle-border: 2px solid var(--primary);
-        --line: #cdd9ed;
-        --line-active: var(--primary);
-        height: 23px;
-        width: 100%;
-        position: relative;
-        pointer-events: none;
-        }
 
 /*  */
 .size-list{
@@ -2599,4 +2697,58 @@ html, body{
 }
 .color-caramel{
     background: #670303;
+}
+
+/* DETAIL */
+.message{
+    margin-bottom: 34px;
+}
+.message-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 65px;
+    background: rgba(243, 243, 243, 0.7);
+}
+.message-link{
+    text-decoration: none;
+    color: var(--primary-color);
+    text-transform: lowercase;
+    border: 1px solid var(--primary-color);
+    border-radius: 30px;
+    padding: 5px 14px;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 14px;
+}
+.message-link:hover{
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+
+.detail-main{
+    display: flex;
+}
+.detail-slider{
+    display: flex;
+    margin-right: 30px;
+}
+.detail-slider-left{
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+}
+.detail-slider-left-image{
+    /* background: rgba(255, 255, 255, 0.6); */
+    background: blue;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+.detail-slider-left img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+
 }

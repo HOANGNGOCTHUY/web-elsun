@@ -139,7 +139,16 @@ $(document).ready(function(){
     overlay.classList.remove("actived");
 
   })
+  // bộ lọc
+  var filtermenu = document.querySelector('.filter-menu');
+  var filtergroup = document.querySelector('.filter-group');
 
+
+  filtermenu.addEventListener("click", function(){
+    filtermenu.classList.toggle("active");
+    filtergroup.classList.toggle("actived");
+
+  })
 
   // Price
   $('.progress-price').each(function(e) {
@@ -159,9 +168,9 @@ $(document).ready(function(){
         range: true,
         values: [0, 0],
         min: 0,
-        step: 5,
+        step: 1,
         minRange: 1000,
-        max: 999999999,
+        max: 99999999,
         create(event, ui) {
 
           price.find('.ui-slider-handle').append($('<div />'));

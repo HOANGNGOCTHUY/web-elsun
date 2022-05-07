@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BESTSELLER PRODUCT</title>
+    <title>DETAIL PRODUCT</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="../assets/css/grid.css">
     <link rel="stylesheet" href="../assets/css/fontello.css">
@@ -110,11 +110,78 @@
                     <img src="../assets/images/product/bannerbsl.png" alt="" class="banner-img">
                 </div>
                 <div class="banner-content">
-                    <h3 class="banner-title">BEST SELLER</h3>
+                    <h3 class="banner-title">Sản phẩm</h3>
                     <ul class="breadcrumb">
                         <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
                         <li class="breadcrumb-item"><a href="#">Best Seller</a></li>
+                        <li class="breadcrumb-item"><a href="#">Nội thất 5.0</a></li>
+                        <li class="breadcrumb-item"><a href="#">Flow Slim Armchair (TF-BST02-01</a></li>
+                        
                     </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Message -->
+        <section class="message">
+            <div class="container">
+                <div class="message-main">
+                    <span class="message-text">“Flow Slim Armchair” đã được thêm vào giỏ hàng của bạn.</span>
+                    <a href="#" class="message-link">Xem giỏ hàng</a>
+                </div>
+            </div>
+        </section>
+        <!-- Detail -->
+        <section class="detail">
+            <div class="container">
+                <div class="detail-main">
+                    <div class="detail-slider">
+                        <div class="detail-slider-left">
+                            <div class="detail-slider-left-image">
+                                <img src="../assets/images/product/product1.png" alt="">
+                            </div>
+                            <div class="detail-slider-left-image">
+                                <img src="../assets/images/product/product1.png" alt="">
+                            </div>
+                            <div class="detail-slider-left-image">
+                                <img src="../assets/images/product/product1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="detail-slider-right">
+                            <div class="detail-slider-item">
+                                <a href="#"><img src="../assets/images/product/detail/detail1.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="detail-product">
+                        <div class="product-name">Armchair with wooden frame</div>
+                        <div class="product-heading">TF-BST02-01</div>
+                        <div class="product-evaluate">
+                            <i class="detail-icon fa-solid fa-heart"></i>
+                            <i class="detail-icon fa-solid fa-heart"></i>
+                            <i class="detail-icon fa-solid fa-heart"></i>
+                            <i class="detail-icon fa-solid fa-heart"></i>
+                            <i class="detail-icon fa-solid fa-heart"></i> 
+                            <span class="detail-evaluate">(7 đánh giá)</span>
+                        </div>
+                        <div class="product-price">900,000</div>
+                        <div class="product-status">Trạng thái: <span>Còn hàng</span></div>
+                        <div class="product-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat, ...</div>
+                        <div class="product-quanity">
+                            <span>Số lượng</span>
+                        </div>
+                        <div class="product-add">
+                           <a href="#" class="product-cart">
+                                <i class="fa-solid fa-shop"></i>
+                                <span>thêm vào giỏ hàng</span>
+                           </a>
+                           <div class="product-heart">
+                            <i class="fa-solid fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="product-catalog">Danh mục: <span>Nội thất 5.0, nội thất, ghế</span></div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -122,127 +189,6 @@
         <section class="product">
         <div class="container">
             <div class="product-main">
-                <div class="product-filter">
-                    <div class="filter-menu">
-                        <i class="filter-icon fa-solid fa-bars"></i>
-                        <div class="filter-name">Bộ lọc</div>
-
-                        <div class="filter-group">
-                            <div class="sorted-by">
-                                <div class="sorted-head">
-                                   <span class="sorted-name">Sắp xếp theo</span> 
-                                   <i class="sorted-icon fa-solid fa-sort-down"></i>
-                                </div>
-                                <ul class="sorted-list">
-                                    <li class="sorted-item"><i class="fa-solid fa-check"></i><a href="#!" class="sorted-links">Nổi bật nhất</a></li>
-                                    <li class="sorted-item"><i class="fa-solid fa-check"></i><a href="#!" class="sorted-links">Bán chạy nhất</a></li>
-                                    <li class="sorted-item"><i class="fa-solid fa-check"></i><a href="#!" class="sorted-links">Giá thấp đến cao</a></li>
-                                    <li class="sorted-item"><i class="fa-solid fa-check"></i><a href="#!" class="sorted-links">Giá cao đến thấp</a></li>
-                                </ul>
-                            </div>
-                            <div class="filter-line"></div>
-                            <!-- <div class="filter-price">
-                                <span class="sorted-name">Giá (VND)</span>
-                                <div class="price-values">
-                                    <div>$<span id="first"></span></div> - <div>$<span id="second"></span></div>
-                                </div>                            
-                                <div class="progress-price" data-value-0="#first" data-value-1="#second" data-range="#third"></div>
-                            </div> -->
-                            <div class="filter-price">
-                                <span class="sorted-name">Giá (VND)</span>
-                                <div class="price-values">
-                                    <div><span id="first"></span></div> 
-                                    <div class="values-line"></div>
-                                    <div><span id="second"></span></div>
-                                </div>
-                                <div class="progress-price" data-value-0="#first" data-value-1="#second" data-range="#third"></div>
-                            
-                            </div>
-                            <div class="filter-line"></div>
-
-                            <div class="filter-size">
-                                   <span class="sorted-name">Kích thước</span>
-                                   <div class="size-list">
-                                    <div class="size-table">
-                                        <h2 class="size-title">Dài</h2>
-                                        <span class="size-desc">100 cm</span>
-                                   </div>
-                                   <div class="size-table">
-                                        <h2 class="size-title">Rộng</h2>
-                                        <span class="size-desc">70 cm</span>
-                                    </div>
-                                    <div class="size-table">
-                                        <h2 class="size-title">Cao</h2>
-                                        <span class="size-desc">40 cm</span>
-                                    </div>
-                                   </div>
-                            </div>
-                            <div class="filter-line"></div>
-                            <div class="filter-color">
-                                <span class="sorted-name">Màu sắc</span>
-                                <div class="color-list">
-                                    <div class="color-item">
-                                        <div class="color-size color-black"></div>
-                                    </div>
-                                    <div class="color-item">
-                                        <div class="color-size color-white"></div>
-                                    </div>
-                                    <div class="color-item">
-                                        <div class="color-size color-grey"></div>
-                                    </div>
-                                    <div class="color-item">
-                                        <div class="color-size color-lightgrey"></div>
-                                    </div>
-                                    <div class="color-item">
-                                        <div class="color-size color-pink"></div>
-                                    </div>
-                                    <div class="color-item">
-                                        <div class="color-size color-green"></div>
-                                    </div>
-                                    <div class="color-item">
-                                        <div class="color-size color-yellow"></div>
-                                    </div>
-                                    <div class="color-item">
-                                        <div class="color-size color-lightyellow"></div>
-                                    </div>
-                                    <div class="color-item">
-                                        <div class="color-size color-flamingo"></div>
-                                    </div>
-                                    <div class="color-item">
-                                        <div class="color-size color-darkgrey"></div>
-                                    </div>
-                                    <div class="color-item">
-                                        <div class="color-size color-blue"></div>
-                                    </div>
-                                    <div class="color-item">
-                                        <div class="color-size color-carrot"></div>
-                                    </div>
-                                    <div class="color-item">
-                                        <div class="color-size color-neongreen"></div>
-                                    </div>
-                                    <div class="color-item">
-                                        <div class="color-size color-lavender"></div>
-                                    </div>
-                                    <div class="color-item">
-                                        <div class="color-size color-irish"></div>
-                                    </div>
-                                    <div class="color-item">
-                                        <div class="color-size color-caramel"></div>   
-                                    </div>
-                                </div>
-                         </div>
-
-                        </div>
-                    </div>
-                    <ul class="filter-list">
-                        <li class="filler-item"><a href="#!" class="filter-links">TẤT CẢ</a></li>
-                        <li class="filler-item"><a href="#!" class="filter-links">NỘI THẤT 5.0</a></li>
-                        <li class="filler-item"><a href="#!" class="filter-links">NỘI THẤT TRUYỀN THỐNG</a></li>
-                        <li class="filler-item"><a href="#!" class="filter-links">ĐỒ GIA DỤNG TIỆN ÍCH</a></li>
-                        <li class="filler-item"><a href="#!" class="filter-links">DỤNG CỤ LÀM VIỆC TIỆN ÍCH</a></li>
-                    </ul>
-                </div>
-                
                 <div class="product-list">
                     <div class="product-item ">
                         <h3 class="product-directory">Nội thất 5.0</h3>
@@ -300,96 +246,6 @@
                             <div class="product-price">900,000</div>
                             <div class="product-line"></div>
                         </div>
-                    </div>
-                    <div class="product-item ">
-                        <h3 class="product-directory">Đồ gia dụng tiện ích</h3>
-                        <div class="product-image product-yellow">
-                            <a href="#!" class="image">
-                                <img src="../assets/images/product/product4.png" alt="" class="product-img">
-                            </a>
-                            <ul class="product-links">
-                                <li><a href="#" data-tip="Yêu thích"><i class="fa fa-heart"></i></a></li>
-                                <li><a href="#" data-tip="Add cart"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                                <li><a href="#" data-tip="Mua ngay" class="product-cart">Mua ngay</a></li>
-                            </ul>   
-                        </div>
-                        <div class="product-content">
-                            <div class="product-name">Armchair with wooden frame</div>
-                            <div class="product-heading">TF-BST02-01</div>
-                            <div class="product-price">900,000</div>
-                            <div class="product-line"></div>
-                        </div>
-                    </div>
-                    <div class="product-item ">
-                        <h3 class="product-directory">Nội thất 5.0</h3>
-                        <div class="product-image product-pink">
-                            <a href="#!" class="image">
-                                <img src="../assets/images/product/product5.png" alt="" class="product-img">
-                            </a>
-                            <ul class="product-links">
-                                <li><a href="#" data-tip="Yêu thích"><i class="fa fa-heart"></i></a></li>
-                                <li><a href="#" data-tip="Add cart"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                                <li><a href="#" data-tip="Mua ngay" class="product-cart">Mua ngay</a></li>
-                            </ul>   
-                        </div>
-                        <div class="product-content">
-                            <div class="product-name">Armchair with wooden frame</div>
-                            <div class="product-heading">TF-BST02-01</div>
-                            <div class="product-price">900,000</div>
-                            <div class="product-line"></div>
-                        </div>
-                    </div>
-                    <div class="product-item ">
-                        <h3 class="product-directory">Nội thất truyền thống</h3>
-                        <div class="product-image product-green">
-                            <a href="#!" class="image">
-                                <img src="../assets/images/product/product6.png" alt="" class="product-img">
-                            </a>
-                            <ul class="product-links">
-                                <li><a href="#" data-tip="Yêu thích"><i class="fa fa-heart"></i></a></li>
-                                <li><a href="#" data-tip="Add cart"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                                <li><a href="#" data-tip="Mua ngay" class="product-cart">Mua ngay</a></li>
-                            </ul>   
-                        </div>
-                        <div class="product-content">
-                            <div class="product-name">Armchair with wooden frame</div>
-                            <div class="product-heading">TF-BST02-01</div>
-                            <div class="product-price">900,000</div>
-                            <div class="product-line"></div>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="product-panivation">
-                    <div class="product-btn product-prev"><i class="fa-solid fa-arrow-left-long"></i></div>
-                    <div class="product-btn product-next"><i class="fa-solid fa-arrow-right-long"></i></div>
-                </div> -->
-                <div class="project-pagination">
-                    <ul class="pagination-list">
-                        <li class="pani-item active ">
-                            <a class="pani-link" href="#">1</a>
-                        </li>
-                        <li class="pani-item">
-                            <a class="pani-link" href="#">2</a>
-                        </li>
-                        <li class="pani-item ">
-                            <a class="pani-link" href="#">3</a>
-                        </li>
-                        <li class="pani-item">
-                            <a class="pani-link" href="#">4</a>
-                        </li>
-                        <li class="pani-item">
-                            <a href="#" class="pani-link" aria-label="Next">
-                                <i class="pani-icon fa-solid fa-angle-right"></i>
-                            </a>
-                        </li>
-                        <li class="pani-item">
-                            <a href="#" class="pani-link" aria-label="Next">
-                                <i class="pani-icon fa-solid fa-angles-right"></i>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="pagination-content">
-                        hiển thị 1-9 / trong 20 sản phẩm
                     </div>
                 </div>
             </div>
