@@ -140,15 +140,15 @@ $(document).ready(function(){
 
   })
   // bộ lọc
-  var filtermenu = document.querySelector('.filter-menu');
-  var filtergroup = document.querySelector('.filter-group');
+  // var filtermenu = document.querySelector('.filter-menu');
+  // var filtergroup = document.querySelector('.filter-group');
 
 
-  filtermenu.addEventListener("click", function(){
-    filtermenu.classList.toggle("active");
-    filtergroup.classList.toggle("actived");
+  // filtermenu.addEventListener("click", function(){
+  //   filtermenu.classList.toggle("active");
+  //   filtergroup.classList.toggle("actived");
 
-  })
+  // })
 
   // Price
   $('.progress-price').each(function(e) {
@@ -341,3 +341,5 @@ function setCSSVars(price) {
         '--r': price.outerWidth() - (handle.eq(1).position().left + handle.eq(1).outerWidth() / 2)
     });
 }
+
+
