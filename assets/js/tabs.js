@@ -8,7 +8,7 @@ const panes = $$('.tabs-pane');
 const tabActive = $('.tabs-item.active');
 
 const line = $('.tabs-line');
-console.log(line);
+
 
 line.style.left= tabActive.offsetLeft+ 'px';
 line.style.width= tabActive.offsetWidth+'px';
@@ -29,3 +29,18 @@ tabs.forEach((tab,index) => {
 
      }
 });
+
+
+const navsliders = $$('.detail-slider-left-image');
+const sliders = $$('.detail-slider-item');
+
+navsliders.forEach((navslider,index) => {
+     const slide  = sliders[index];
+     navslider.onclick = function(){
+          $('.detail-slider-left-image.active').classList.remove('active');
+          $('.detail-slider-item.active').classList.remove('active');
+
+          navslider.classList.add("active");
+          slide.classList.add("active");
+     }
+})

@@ -2756,21 +2756,40 @@ html, body{
     display: flex;
     flex-direction: column;
     margin-right: 40px;
+    
 }
 .detail-slider-left-image{
-    /* background: rgba(255, 255, 255, 0.6); */
-    background: blue;
+    background: #f7f5f5;
     width: 120px;
     height: 120px;
     margin-bottom: 40px;
     padding: 20px;
+    opacity: 0.6;
+    cursor: pointer;
+    
 }
-.detail-slider-left img{
-    width: 100%;
-    height: auto;
-    object-fit: contain;
+.detail-slider-left-image:last-child{
+    margin-bottom: 0;
+}
+.detail-slider-left-image.active{
+    opacity: 1;
 }
 
+.detail-slider-left img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.detail-slider-item img{
+    Width : 447px;
+    Height :436px;
+}
+.detail-slider-item{
+    display: none;   
+}
+.detail-slider-item.active{
+    display: block;   
+}
 .product-evaluate i{
     font-size: 15px;
     color: #FFD600;
@@ -2804,11 +2823,72 @@ html, body{
     color: var(--black-color);
     margin-bottom: 21px;
 }
+/* Quantity */
 .product-number{
     display: flex;
+    align-items: center;
+    margin-bottom: 25px;
 }
+.product-number h2{
+    margin-right: 29px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--black-color);
+}
+.counter {
+    display: flex;
+    align-items: center;
+    border: 1px solid #C4C4C4;
+    max-width: 150px;
+    width: 100%;
+    border-radius: 30px;
+    padding: 9px 18px;
+    margin-right: 69px;
+    
 
-
+}
+.counter input {
+    flex: 1;
+    width: 50px;
+    border: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    color: var(--black-color);
+    appearance: none;
+    outline: 0;
+}
+.quantity-icon{
+    font-size: 14px;
+    line-height: 14px;
+    cursor: pointer;
+}
+.product-size{
+    border: 1px solid #C4C4C4;
+    border-radius: 30px;
+    padding: 9px 18px;
+    flex: 1;
+   
+}
+.product-size select{
+    border: none;
+    outline: none;
+    width: 100%;
+    max-width: 150px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    
+}
+.product-size  option{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    cursor: pointer;
+}
 .product-add{
     display: flex;
     align-items: center;
@@ -2825,6 +2905,8 @@ html, body{
     bottom: -20px;
 }
 .product-buy{
+    display: flex;
+    align-items: center;
     padding: 12px 32px;
     background: var(--primary-color);
     margin-right: 40px;
@@ -3133,6 +3215,7 @@ html, body{
 .chekout-head{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .checkout-list{
     background: rgba(243, 243, 243, 0.7);
