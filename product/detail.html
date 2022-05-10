@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DETAIL PRODUCT</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="../assets/css/grid.css">
     <link rel="stylesheet" href="../assets/css/fontello.css">
     <link rel="stylesheet" href="../assets/css/base.css">
@@ -137,24 +136,24 @@
                 <div class="detail-main">
                     <div class="detail-slider">
                         <div class="detail-slider-left">
+                            <div class="detail-slider-left-image ">
+                                <img src="../assets/images/product/detail/product-sub.png" alt="">
+                            </div>
+                            <div class="detail-slider-left-image">
+                                <img src="../assets/images/product/detail/product-sub.png" alt="">
+                            </div>
                             <div class="detail-slider-left-image active">
-                                <img src="../assets/images/product/detail/product-sub.png" alt="">
-                            </div>
-                            <div class="detail-slider-left-image">
-                                <img src="../assets/images/product/detail/product-sub.png" alt="">
-                            </div>
-                            <div class="detail-slider-left-image">
                                 <img src="../assets/images/product/detail/product-sub.png" alt="">
                             </div>
                         </div>
                         <div class="detail-slider-right">
-                            <div class="detail-slider-item active">
+                            <div class="detail-slider-item ">
                                 <a href="#"><img src="../assets/images/product/product1.png" alt=""></a>
                             </div>
                             <div class="detail-slider-item">
                                 <a href="#"><img src="../assets/images/product/product2.png" alt=""></a>
                             </div>
-                            <div class="detail-slider-item">
+                            <div class="detail-slider-item active">
                                 <a href="#"><img src="../assets/images/product/detail/detail1.png" alt=""></a>
                             </div>
 
@@ -165,11 +164,11 @@
                         <div class="product-name">Armchair with wooden frame</div>
                         <div class="product-heading">TF-BST02-01</div>
                         <div class="product-evaluate">
-                            <i class="detail-icon fa-solid fa-heart"></i>
-                            <i class="detail-icon fa-solid fa-heart"></i>
-                            <i class="detail-icon fa-solid fa-heart"></i>
-                            <i class="detail-icon fa-solid fa-heart"></i>
-                            <i class="detail-icon fa-solid fa-heart"></i> 
+                            <i class="detail-icon icon-star"></i>
+                            <i class="detail-icon icon-star"></i>
+                            <i class="detail-icon icon-star"></i>
+                            <i class="detail-icon icon-star"></i>
+                            <i class="detail-icon icon-star"></i> 
                             <span class="detail-evaluate">(7 đánh giá)</span>
                         </div>
                         <div class="product-price">900,000</div>
@@ -178,10 +177,10 @@
                         <div class="product-number">
                             <h2>SL:</h2>
                             <div class="counter">
-                                <span class="down" onClick='decreaseCount(event, this)'><i class="quantity-icon fa-solid fa-angle-down"></i></span>
+                                <span class="down" onClick='decreaseCount(event, this)'><i class="quantity-icon icon-up-open-1"></i></span>
                                 <input type="text" value="1">
-                                <span class="up" ><i class="quantity-icon fa-solid fa-angle-up"></i></span>
-                            </div>
+                                <span class="up" onClick='increaseCount(event, this)' ><i class="quantity-icon icon-up-open-1"></i></span>
+                            </div> 
                             <h2>KT:</h2>
                             <div class="product-size">
                                     <select id="" name="">
@@ -195,11 +194,11 @@
                        
                         <div class="product-add">
                            <a href="#" class="product-buy">
-                                <i class="fa-solid fa-cart-shopping"></i>
+                                <i class="icon-cart"></i>
                                 <span>thêm vào giỏ hàng</span>
                            </a>
                            <div class="product-heart">
-                                <i class="detail-heart fa-solid fa-heart"></i>
+                                <i class="detail-heart icon-heart"></i>
                             </div>
                         </div>
                         <div class="product-catalog">Danh mục: <span>Nội thất 5.0, nội thất, ghế</span></div>
@@ -276,8 +275,8 @@
                                 <img src="../assets/images/product/product1.png" alt="" class="product-img">
                             </a>
                             <ul class="product-links">
-                                <li><a href="#" data-tip="Yêu thích"><i class="fa fa-heart"></i></a></li>
-                                <li><a href="#" data-tip="Add cart"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                <li><a href="#" data-tip="Yêu thích"><i class="icon-heart"></i></a></li>
+                                <li><a href="#" data-tip="Add cart"><i class="icon-cart"></i></a></li>
                                 <li><a href="#" data-tip="Mua ngay" class="product-cart">Mua ngay</a></li>
                             </ul>   
                         </div>

@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CART PRODUCT</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="../assets/css/grid.css">
     <link rel="stylesheet" href="../assets/css/fontello.css">
     <link rel="stylesheet" href="../assets/css/base.css">
@@ -107,7 +106,7 @@
          <section class="banner">
             <div class="container-fuild">
                 <div class="banner-image">
-                    <img src="../assets/images/product/bannerbsl.png" alt="" class="banner-img">
+                    <img src="../assets/images/banner/bannercart.png" alt="" class="banner-img">
                 </div>
                 <div class="banner-content">
                     <h3 class="banner-title">Giỏ hàng</h3>
@@ -126,12 +125,12 @@
                   <div class="checkout-main">
                        <div class="checkout-header">
                               <div class="checkout-feedback">
-                                   <i class="check-icon fa-regular fa-user"></i>
+                                   <i class="check-icon icon-user-o"></i>
                                    <div class="checkout-heading">
                                         PHẢN HỒI KHÁCH HÀNG? <a href="#" class="check-links">NHẤN VÀO ĐÂY ĐỂ ĐĂNG NHẬP</a></div>
                               </div>
                               <div class="checkout-discount">
-                                   <i class="check-icon fa-solid fa-tags"></i>
+                                   <i class="check-icon icon-tag"></i>
                                    <div class="checkout-heading">
                                         CÓ PHIẾU GIẢM GIÁ? <a href="#" class="check-links">NHẤN VÀO ĐÂY ĐỂ ĐĂNG NHẬP</a>
                                    </div>
@@ -216,10 +215,20 @@
                                         </div>
      
                                         <div class="checkout-shipping">
-                                             <input type="radio">
-                                             <input type="radio">
-                                             <input type="radio">
+                                            <label>
+                                                <input type="radio" class="option-input radio" name="radio" checked />
+                                                Trả tiền mặt khi nhận hàng COD
+                                            </label>
+                                            <label>
+                                                <input type="radio" class="option-input radio" name="radio" />
+                                                Chuyển khoản ngân hàng
+                                            </label>
+                                            <label>
+                                                <input type="radio" class="option-input radio" name="radio" />
+                                                Thanh toán Online bằng thẻ ATM/Visa/Master Card....
+                                            </label>
                                         </div>
+
      
                                         <div class="checkout-links">
                                              <a href="#" class="check-order">Đặt hàng</a>

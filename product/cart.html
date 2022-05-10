@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CART PRODUCT</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="../assets/css/grid.css">
     <link rel="stylesheet" href="../assets/css/fontello.css">
     <link rel="stylesheet" href="../assets/css/base.css">
@@ -107,7 +106,7 @@
          <section class="banner">
             <div class="container-fuild">
                 <div class="banner-image">
-                    <img src="../assets/images/product/bannerbsl.png" alt="" class="banner-img">
+                    <img src="../assets/images/banner/bannercart.png" alt="" class="banner-img">
                 </div>
                 <div class="banner-content">
                     <h3 class="banner-title">Giỏ hàng</h3>
@@ -127,36 +126,50 @@
                          <div class="shopping-left">
                               <div class="shopping-title">GIỎ HÀNG CỦA BẠN</div>
                               <table class="shopping-list">
-                                   <thead>
-                                        <tr>
-                                             <th>sản phẩm</th>
-                                             <th></th>
-                                             <th>Giá bán</th>
-                                             <th>số lượng</th>
-                                             <th>Tạm tính</th>
-                                             <th></th>
+                                    <thead>
+                                        <tr class="shopping-nav">
+                                            <th class="shopping-nav_item">Sản phẩm</th>
+                                            <th></th>
+                                            <th class="shopping-nav_item">Giá bán</th>
+                                            <th class="shopping-nav_item">số lượng</th>
+                                            <th class="shopping-nav_item">Tạm tính</th>
+                                            <th></th>
                                         </tr>
-                                   </thead>
-     
-                                   <tbody>
-                                        <tr>
-                                             <td><img src="../assets/images/product/product1.png" alt=""></td>
-                                             <td>Flow Slim Armchair (TF-BST02-01)</td>
-                                             <td>900,000</td>
-                                             <td>
-                                                  <div class="counter">
-                                                       <input type="text" value="1">
-                                                       <span class="down" onClick='decreaseCount(event, this)'>-</span>
-                                                       <span class="up" onClick='increaseCount(event, this)'>+</span>
-                                                     </div>
-                                             </td>
-                                             <td>900,000</td>
-                                             <td><i class="fa-solid fa-trash-can"></i></td>
+                                    </thead>
+                                   
+                                    <tbody>
+                                        <tr class="shopping-items">
+                                            <td class="shopping-image">
+                                                <img src="../assets/images/product/detail/detail1.png" alt="">
+                                            </td>
+                                            <td class="shopping-name">Flow Slim Armchair <div>(TF-BST02-01)</div></td>
+                                            <td class="shopping-price">900,000</td>
+                                            <td class="shopping-quantity">
+                                                <input type="text" value="1">
+                                                <div class="shopping-control">
+                                                    <span class="up" onClick='increaseCount(event, this)' ><i class="quantity-icon icon-up-open-big "></i></span>
+                                                    <span class="down" onClick='decreaseCount(event, this)'><i class="quantity-icon icon-down-open-big "></i></span>
+                                                </div>
+                                            </td>
+                                            <td class="shopping-provisional">900,000</td>
+                                            <td class="shopping-remove"><i class="icon-trash"></i></td>
+                                        </tr> 
+                                        <tr class="shopping-coupon">
+                                            <td class="coupon-name">Coupon</td>
+                                            <td class="coupon-input">
+                                                <input type="text" name="coupon" id="coupon" placeholder="nhập mã ưu đãi ">
+                                            </td>
+                                            <td class="coupon-submit" >
+                                                <input type="submit" class="coupon-btn" value="áp dụng">
+                                            </td>
                                         </tr>
-                                   </tbody>             
+                                    </tbody>
+
+                                   
+                                  
                               </table>
                          </div>   
-                         <div class="shopping-right">
+                          <div class="shopping-right">
                               <div class="shopping-title">TỔNG SẢN PHẨM TRONG GIỎ HÀNG</div>
                               <div class="total-list">
                                    <div class="total-item">
@@ -166,25 +179,26 @@
                                    <div class="total-item">
                                         <span class="total-name">Giao hàng</span>
                                         <div class="total-shipping">
-                                             <label class="total-container">MIỄN PHÍ giao hàng trong 48 giờ (T2 - T7, trừ CN & Lễ)
-                                                  <input type="radio" checked="checked" name="radio" value="">
-                                                  <span class="checkmark"></span>
-                                             </label>
-                                             <label class="total-container">Giao hàng ngoài giờ ( Sau 17h30, cN )  : phí 150,000₫
-                                                  <input type="radio" name="radio">
-                                                  <span class="checkmark"></span>
-                                             </label>
-                                             <label class="total-container">giá ship tùy tỉnh - thành phố
-                                                  <input type="radio" name="radio">
-                                                  <span class="checkmark"></span>
-                                             </label>
+                                            <label>
+                                                <input type="radio" class="option-input radio" name="radio" checked />
+                                                MIỄN PHÍ giao hàng trong 48 giờ (T2 - T7, trừ CN & Lễ)
+                                            </label>
+                                            <label>
+                                                <input type="radio" class="option-input radio" name="radio" />
+                                                Giao hàng ngoài giờ 
+                                                ( Sau 17h30, cN )  : phí 150,000₫
+                                            </label>
+                                            <label>
+                                                <input type="radio" class="option-input radio" name="radio" />
+                                                giá ship tùy tỉnh - thành phố
+                                            </label>
                                         </div>
                                    </div>
                                    <div class="total-item">
                                         <span class="total-name">vat 10%</span>
                                         <span class="total-number">503,000</span>
                                    </div>
-                                   <div class="total-item">
+                                   <div class="total-total">
                                         <span class="total-name">tổng cộng</span>
                                         <span class="total-style">5,030,000</span>
                                    </div>

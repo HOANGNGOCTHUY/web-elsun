@@ -4,7 +4,7 @@ $(document).ready(function(){
         slidesToScroll: 4,
         infinite: true,
         arrows: true,
-        prevArrow:`<button type='button' class='slick-prev slick-arrow'><i class="icon-left slick-icon"></i></button>`,
+        prevArrow:`<button type='button' class='slick-prev slick-arrow'><i class="icon-left-1 slick-icon"></i></button>`,
         nextArrow:`<button type='button' class='slick-next slick-arrow'><i class="icon-right-1 slick-icon"></i></button>`,        
         responsive: [
           {
@@ -78,7 +78,7 @@ $(document).ready(function(){
       speed: 300,
       slidesToShow: 3,
       slidesToScroll: 3,
-      prevArrow:`<button type='button' class='slick-prev slick-arrow'><i class="icon-left slick-icon"></i></button>`,
+      prevArrow:`<button type='button' class='slick-prev slick-arrow'><i class="icon-left-1 slick-icon"></i></button>`,
       nextArrow:`<button type='button' class='slick-next slick-arrow'><i class="icon-right-1 slick-icon"></i></button>`,
       responsive: [
         {
