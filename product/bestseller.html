@@ -49,10 +49,15 @@
                     </ul>
                         
                     <div class="header_search">
-                        <input type="search" class="search-box" placeholder="Nhập tìm kiếm"/>
-                            <div class="search-button">
-                                <i class="icon-search-cart icon-search" aria-hidden="true"></i>
-                            </div>
+                        <div class="search-button">
+                            <i class="icon-search-cart icon-search" aria-hidden="true"></i>
+                        </div>
+                        <div class="search-list">
+                            <form action="" class="form-search">
+                                <input type="search" class="search-box" placeholder="Nhập tìm kiếm"/>
+                                <input type="submit" class="search-sub" value="Tìm kiếm">
+                            </form>
+                        </div>
                         
                     </div>
                         <div class="header_cart">
@@ -119,20 +124,22 @@
             <div class="product-main">
                 <div class="product-filter">
                     <div class="filter-menu">
-                        <i class="filter-icon icon-menu"></i>
+                        <i class="filter-icon icon-menu menu-none"></i>
+                        <i class="filter-icon icon-filter"></i>
+
                         <div class="filter-name">Bộ lọc</div>
 
                         <div class="filter-group">
                             <div class="sorted-by">
                                 <div class="sorted-head">
                                    <span class="sorted-name">Sắp xếp theo</span> 
-                                   <i class="sorted-icon fa-solid fa-sort-down"></i>
+                                   <i class="sorted-icon icon-down-open-1"></i>
                                 </div>
                                 <ul class="sorted-list">
-                                    <li class="sorted-item"><i class="fa-solid fa-check"></i><a href="#!" class="sorted-links">Nổi bật nhất</a></li>
-                                    <li class="sorted-item"><i class="fa-solid fa-check"></i><a href="#!" class="sorted-links">Bán chạy nhất</a></li>
-                                    <li class="sorted-item"><i class="fa-solid fa-check"></i><a href="#!" class="sorted-links">Giá thấp đến cao</a></li>
-                                    <li class="sorted-item"><i class="fa-solid fa-check"></i><a href="#!" class="sorted-links">Giá cao đến thấp</a></li>
+                                    <li class="sorted-item"><i class="icon-check"></i><a href="#!" class="sorted-links">Nổi bật nhất</a></li>
+                                    <li class="sorted-item"><i class="icon-check"></i><a href="#!" class="sorted-links">Bán chạy nhất</a></li>
+                                    <li class="sorted-item"><i class="icon-check"></i><a href="#!" class="sorted-links">Giá thấp đến cao</a></li>
+                                    <li class="sorted-item"><i class="icon-check"></i><a href="#!" class="sorted-links">Giá cao đến thấp</a></li>
                                 </ul>
                             </div>
                             <div class="filter-line"></div>
@@ -228,6 +235,10 @@
                          </div>
 
                         </div>
+                    </div>
+                    <div class="filter-category">
+                        <i class="filter-icon icon-menu"></i>
+                        <span>Danh mục</span>
                     </div>
                     <ul class="filter-list">
                         <li class="filler-item"><a href="#!" class="filter-links">TẤT CẢ</a></li>

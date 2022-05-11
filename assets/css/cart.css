@@ -1,0 +1,41 @@
+@media screen and (max-width: 1440px){
+   
+}
+@media screen and (max-width: 1365px) {
+    .shopping-main{
+        padding: 40px;
+    }
+    .total-list{
+        padding: 0 20px 38px;
+    }
+    .total-shipping{
+        margin-left: 40px;
+    }
+}
+@media screen and (max-width: 1023px) {
+    .shopping-main{
+        padding: 30px;
+        flex-direction: column;
+    }
+    .shopping-left, .shopping-right{
+        max-width: 100%;
+        margin: 0;
+    }
+    .shopping-left{
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width:767px) {
+    .shopping-main{
+        padding: 20px;
+    }
+    .auto-flow{
+        overflow-x: auto;
+    }
+    .shopping-list th{
+        display: none;
+    }
+    .shopping-list td{
+        padding: 10px 5px;
+    }
+}

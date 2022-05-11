@@ -298,21 +298,60 @@ html, body{
     color: var(--black-color);
     cursor: pointer;
 }
-.header_search{
+.form-search{
     position: relative;
 }
-.search-box{
+.header_search{
+    position: relative;
+
+}
+.search-list::after{
+    content: "";
     position: absolute;
-    width: 500px;
-    top: 15%;
-    left: -337%;
-    border:  1px solid #ccc;
-    outline: none;
-    background: beige;
-    padding: 16px 32px;
-    transform: translateX(-50%) translateY(-50%);
-    border-radius: 30px;
+    right: 5px;
+    top: -20px;
+    border-width: 15px 10px;
+    border-style: solid;
+    border-color:  transparent transparent #FFFFFF transparent;
+    cursor: pointer;
+}
+.search-list{
+    position: absolute;
+    background: var(--white-color);
+    top: calc(100% + -50px);
+    width: 360px;
+    box-shadow: 0 1px 3.125rem 0 rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    right: 0;
+    padding: 15px;
     display: none;
+}
+.header_search:hover .search-list {
+    display: block;
+}
+.search-sub{
+    position: absolute;
+    right: 0;
+    padding: 9px 15px;
+    border: 1px solid #E5E5E5;
+    background: var(--white-color);
+    font-weight: 700;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 0 30px 30px 0;
+}
+.search-sub:hover{
+    color: var(--white-color);
+    background: var(--primary-color);
+
+}
+.search-box{
+    width: 100%;
+    border: 1px solid #E1E1E1;
+    border-radius: 25px;
+    padding: 9px 80px 9px 15px;
+    outline: none;
+
 }
 /* Slider-Service */
 .slider{
@@ -2476,7 +2515,7 @@ html, body{
 }
 .sorted-icon{
     font-size: 20px;
-    margin-bottom: 14px;
+    /* margin-bottom: 14px; */
 }
 .sorted-list{
     list-style: none;
@@ -2864,6 +2903,10 @@ html, body{
     align-items: center;
     margin-bottom: 25px;
 }
+.quantity-left, .quantity-right{
+    display: flex;
+    align-items: center;
+}
 .product-number h2{
     margin-right: 29px;
     font-weight: 400;
@@ -3087,26 +3130,32 @@ html, body{
     margin-bottom: 35px;
 }
 .shopping-left{
-    max-width: 593px;
     width: 100%;
     margin-right: 42px;
 }
 .shopping-list{
     border: 1px solid rgba(225, 225, 225, 0.5);
     width: 100%;
-    padding:  19px 27px 16px;
+    border-collapse:collapse;
 }
-
-.shopping-nav_item{
+.shopping-list th, td{
+    border-bottom: 1px solid #E1E1E1;
+}
+.shopping-list th{
     font-weight: 700;
     font-size: 12px;
     line-height: 16px;
     text-transform: uppercase;
     color: var(--black-color);
-    text-align: left;
+    padding: 29px 0 25px;
 }
-.shopping-items{
-    
+.shopping-list td {
+    padding: 21px 12px;
+    vertical-align: middle;
+    text-align: center;
+}
+.shopping-list td:first-child{
+    padding-left: 15px;
 }
 
 .shopping-image img{
@@ -3125,7 +3174,34 @@ html, body{
     font-size: 14px;
     line-height: 14px;
 }
-
+.shopping-combo{
+    display: block;
+    border: 1px solid rgba(225, 225, 225, 0.5);
+    background: var(--white-color);
+    border-radius: 25px;
+    padding: 5px 19px !important;
+    height: 35px;
+    width: 75px;
+    position: relative;
+}
+.shopping-quantity input{
+    width: 20px;
+    border: none;
+    outline: none;
+}
+.shopping-control{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+.shopping-control .plus{
+    margin-bottom: -10px;
+}
+.shopping-control .min:hover, .shopping-control .plus:hover{
+    color: var(--primary-color);
+}
 .shopping-provisional{
     font-weight: 600;
     font-size: 14px;
@@ -3135,9 +3211,14 @@ html, body{
 .shopping-remove{
     /* width: 62px; */
     text-align: center;
+    cursor: pointer;
 }
+
 .shopping-remove i{
     font-size: 15px;
+}
+.shopping-remove i:hover{
+    color: var(--primary-color);
 }
 .coupon-name{
     font-weight: 600;
@@ -3146,12 +3227,14 @@ html, body{
     text-align: justify;
     text-transform: uppercase;
     color: #5B5B5B;
+    border-right: 1px solid #5B5B5B;
 }
 .coupon-input input{
     border: 1px solid #5B5B5B;
     border-radius: 25px;
-    padding: 5px 20px;
+    padding: 5px 15px;
     outline: none;
+    width: 130px;
 }
 .coupon-btn{
     border: 1px solid var(--primary-color);
@@ -3162,6 +3245,10 @@ html, body{
     background: var(--white-color);
     color: var(--primary-color);
     cursor: pointer;
+}
+.coupon-btn:hover{
+    background: var(--primary-color);
+    color: var(--white-color);
 }
 .shopping-right{
     max-width: 475px;
@@ -3331,7 +3418,7 @@ html, body{
 .checkout-discount{
     display: flex;
     align-items: center;
-    padding: 15px 86px;
+    padding: 15px 0;
     background: var(--primary-color);
     width: 50%;
     justify-content: center;
@@ -3347,7 +3434,7 @@ html, body{
 }
 .checkout-heading{
     font-weight: 700;
-    font-size: 11px;
+    font-size: 12px;
     line-height: 16px;
     /* text-align: center; */
     text-transform: uppercase;

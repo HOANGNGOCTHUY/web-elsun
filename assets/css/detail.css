@@ -1,0 +1,122 @@
+@media screen and (max-width: 1440px){
+   
+}
+@media screen and (max-width: 1365px) {
+    .detail-main{
+        padding: 0 30px;
+    }
+    .detail-slider-left{
+        margin-right: 30px;
+    }
+    .detail-slider-left-image{
+        margin-bottom: 30px;
+    }
+    .detail-slider-item img{
+        width: 420px;
+        height: 420px;
+    }
+    .counter{
+        max-width: 130px;
+        margin-right: 10px;   
+    }
+}
+@media screen and (max-width: 1023px) {
+    .detail-slider{
+        margin-right: 20px;
+    }
+    .detail-slider-left{
+        margin-right: 20px;
+    }
+    .detail-slider-left-image{
+        width: 100px;
+        height: 100px;
+        margin-bottom: 20px;
+    }
+    .detail-slider-item img{
+        width: 340px;
+        height: 340px;
+        object-fit: contain;
+    }
+    .product-name{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .product-price::before{
+        bottom: 0;
+        width: 35px;
+    }
+    .product-status{
+        margin-top: 25px;
+    }
+    .product-number{
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+    .quantity-left, .quantity-right{
+        margin-bottom: 10px;
+        width: 100%;
+        justify-content: space-between;
+        
+    }
+    .counter , .product-size select{
+        max-width: 175px;
+        margin-right: 0;
+    }
+    .product-buy{
+        padding: 9px 18px;
+        margin-right: 20px;
+    }
+    .detail-heart::after{
+        width: 35px;
+        height: 35px;
+    }
+    .detail-heart{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:767px) {
+    .detail-main{
+        padding: 0 10px;
+        flex-direction: column;
+    }
+    .message-main{
+        padding: 18px 10px;
+    }
+    .message-text{
+        font-size: 10px;
+    }
+    .message-link{
+        padding: 2px 8px;
+    }
+    .detail-slider{
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+    .detail-slider-item img{
+        width: 100%;
+    }
+    .detail-slider-left{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px 0;
+    }
+    .detail-slider-left-image{
+        margin: 0;
+    }
+    .counter, .product-size select{
+        max-width: 100%;
+        text-align: center;
+    }
+    .product-add{
+        justify-content: center;
+    }
+    .tabs-item{
+        font-size: 14px;
+        line-height: 16px;
+        margin: 0 10px;
+    }
+    .tabs-pane{
+        padding: 20px;
+    }
+}

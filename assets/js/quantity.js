@@ -1,10 +1,7 @@
 const up = document.querySelector('.up');
 const down = document.querySelector('.down');
 
-up.addEventListener("click", function(){
-    increaseCount();
-    
-})
+
 function increaseCount(a, b) {
     var input = b.previousElementSibling;
     var value = parseInt(input.value, 10);
@@ -22,3 +19,27 @@ function increaseCount(a, b) {
       input.value = value;
     }
   }
+
+  $(document).ready(function(){
+    var quantity = 0;
+
+    $(".plus").click(function(e){
+      e.preventDefault();
+      var quantity = parseInt($('.quantity').val());
+      $('.quantity').val(quantity + 1);
+    });
+
+    $('.min').click(function(e){
+      // Stop acting like a button
+      e.preventDefault();
+      // Get the field name
+      var quantity = parseInt($('.quantity').val());
+      
+      // If is not undefined
+    
+          // Increment
+          if(quantity>0){
+          $('.quantity').val(quantity - 1);
+          }
+  });
+  })

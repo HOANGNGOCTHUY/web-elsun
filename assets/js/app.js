@@ -343,3 +343,11 @@ function setCSSVars(price) {
 }
 
 
+// Toggle Menu
+const filter = document.querySelector('.filter-category');
+const filterlist = document.querySelector('.filter-list');
+
+filter.addEventListener("click", function(){
+  filter.classList.toggle("active");
+  filterlist.classList.toggle("active");
+})

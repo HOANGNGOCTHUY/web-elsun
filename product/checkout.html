@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../assets/css/styles.css">
     <link rel="stylesheet" href="../assets/css/responsive.css">
     <link rel="stylesheet" href="../assets/css/productresponsive.css">
+    <link rel="stylesheet" href="../assets/css/checkout.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
 </head>
@@ -49,10 +50,15 @@
                     </ul>
                         
                     <div class="header_search">
-                        <input type="search" class="search-box" placeholder="Nhập tìm kiếm"/>
-                            <div class="search-button">
-                                <i class="icon-search-cart icon-search" aria-hidden="true"></i>
-                            </div>
+                        <div class="search-button">
+                            <i class="icon-search-cart icon-search" aria-hidden="true"></i>
+                        </div>
+                        <div class="search-list">
+                            <form action="" class="form-search">
+                                <input type="search" class="search-box" placeholder="Nhập tìm kiếm"/>
+                                <input type="submit" class="search-sub" value="Tìm kiếm">
+                            </form>
+                        </div>
                         
                     </div>
                         <div class="header_cart">
@@ -212,17 +218,11 @@
      
                                         <div class="checkout-shipping">
                                             <label>
-                                                <input type="radio" class="option-input radio" name="radio" checked />
-                                                Trả tiền mặt khi nhận hàng COD
-                                            </label>
+                                                <input type="radio" class="option-input radio" name="radio" checked />Trả tiền mặt khi nhận hàng COD</label>
                                             <label>
-                                                <input type="radio" class="option-input radio" name="radio" />
-                                                Chuyển khoản ngân hàng
-                                            </label>
+                                                <input type="radio" class="option-input radio" name="radio" />Chuyển khoản ngân hàng</label>
                                             <label>
-                                                <input type="radio" class="option-input radio" name="radio" />
-                                                Thanh toán Online bằng thẻ ATM/Visa/Master Card....
-                                            </label>
+                                                <input type="radio" class="option-input radio" name="radio" />Thanh toán Online bằng thẻ ATM/Visa/Master Card....</label>
                                         </div>
 
      

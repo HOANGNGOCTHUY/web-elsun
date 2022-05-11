@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../assets/css/styles.css">
     <link rel="stylesheet" href="../assets/css/responsive.css">
     <link rel="stylesheet" href="../assets/css/productresponsive.css">
+    <link rel="stylesheet" href="../assets/css/detail.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
 </head>
@@ -49,10 +50,15 @@
                     </ul>
                         
                     <div class="header_search">
-                        <input type="search" class="search-box" placeholder="Nhập tìm kiếm"/>
-                            <div class="search-button">
-                                <i class="icon-search-cart icon-search" aria-hidden="true"></i>
-                            </div>
+                        <div class="search-button">
+                            <i class="icon-search-cart icon-search" aria-hidden="true"></i>
+                        </div>
+                        <div class="search-list">
+                            <form action="" class="form-search">
+                                <input type="search" class="search-box" placeholder="Nhập tìm kiếm"/>
+                                <input type="submit" class="search-sub" value="Tìm kiếm">
+                            </form>
+                        </div>
                         
                     </div>
                         <div class="header_cart">
@@ -171,20 +177,24 @@
                         <div class="product-status">Trạng thái: <span>Còn hàng</span></div>
                         <div class="product-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat, ...</div>
                         <div class="product-number">
-                            <h2>SL:</h2>
-                            <div class="counter">
-                                <span class="down" onClick='decreaseCount(event, this)'><i class="quantity-icon icon-up-open-1"></i></span>
-                                <input type="text" value="1">
-                                <span class="up" onClick='increaseCount(event, this)' ><i class="quantity-icon icon-up-open-1"></i></span>
-                            </div> 
-                            <h2>KT:</h2>
-                            <div class="product-size">
-                                    <select id="" name="">
-                                        <option selected> 60x90cm </option>
-                                        <option>80x100cm</option>
-                                        <option>100x120cm</option>
-                                    </select>
-                                </label>
+                            <div class="quantity-left">
+                                <h2>SL:</h2>
+                                <div class="counter">
+                                    <span class="down" onClick='decreaseCount(event, this)'><i class="quantity-icon icon-down-open-1"></i></span>
+                                    <input type="text" value="1">
+                                    <span class="up" onClick='increaseCount(event, this)' ><i class="quantity-icon icon-up-open-1"></i></span>
+                                </div> 
+                            </div>
+                            <div class="quantity-right">
+                                <h2>KT:</h2>
+                                <div class="product-size">
+                                        <select id="" name="">
+                                            <option selected> 60x90cm </option>
+                                            <option>80x100cm</option>
+                                            <option>100x120cm</option>
+                                        </select>
+                                    </label>
+                                </div>
                             </div>
                         </div>
                        
@@ -446,6 +456,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 
+    <script src="../assets/js/app.js"></script>
     <script src="../assets/js/tabs.js"></script>
     <script src="../assets/js/quantity.js"></script>
 
