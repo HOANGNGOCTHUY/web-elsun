@@ -325,6 +325,7 @@ html, body{
     right: 0;
     padding: 15px;
     display: none;
+    z-index: 1;
 }
 .header_search:hover .search-list {
     display: block;
