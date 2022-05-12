@@ -2455,7 +2455,12 @@ html, body{
 .filter-menu.actived, .filter-group.actived{
     display: block;
 }
-
+.filter-category{
+    display: none;
+}
+.icon-filter{
+    display: none;
+}
 .filter-icon{
     margin-right: 10px;
     font-size: 20px;

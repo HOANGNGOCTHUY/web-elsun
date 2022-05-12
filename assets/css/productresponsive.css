@@ -337,4 +337,10 @@
       top: 35px;
       left: -120px;
   }
+  .filter-category{
+    display: block;
+    }
+    .icon-filter{
+    display: block;
+}
 }
