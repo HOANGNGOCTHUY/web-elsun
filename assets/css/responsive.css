@@ -452,7 +452,10 @@
     .breadcrumb .breadcrumb-item{
         font-size: 8px;
     }
-
+    /* Custommer */
+    .slick-initialized .customers-item{
+        margin-right: 15px;
+    }
    /* Sub */
    .subscribe{
     margin-bottom: 30px;
@@ -800,7 +803,7 @@
     line-height: 60px;
 }
 .customers-name{
-    font-size: 22px;
+    font-size: 21px;
 }
 .customers-profect{
     font-size: 20px;
